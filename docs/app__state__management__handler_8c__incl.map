@@ -1,6 +1,6 @@
 <map id="app_state_management_handler.c" name="app_state_management_handler.c">
-<area shape="rect" id="Node000001" title="Source file for EVSE state machine module." alt="" coords="737,5,897,48"/>
-<area shape="rect" id="Node000002" href="$app__state__management__handler_8h.html" title=" " alt="" coords="598,96,759,139"/>
+<area shape="rect" id="Node000001" title="Implementation of the EVSE state machine module." alt="" coords="737,5,897,48"/>
+<area shape="rect" id="Node000002" href="$app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="598,96,759,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="786,51,725,90,722,85,783,46"/>
 <area shape="rect" id="Node000016" href="$drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="958,427,1071,453"/>
 <area shape="poly" id="edge32_Node000001_Node000016" title=" " alt="" coords="863,46,905,72,949,108,967,129,982,153,992,179,996,206,996,292,1001,356,1011,411,1005,412,996,357,991,292,991,207,987,180,977,155,963,133,945,112,902,77,860,51"/>
@@ -10,16 +10,16 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="760,137,797,156,829,185,849,215,861,244,860,274,845,306,819,331,788,348,754,358,722,364,721,359,753,353,786,343,816,326,840,302,855,273,855,245,845,218,824,188,794,161,757,142"/>
 <area shape="rect" id="Node000005" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="134,352,319,379"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="598,122,499,126,390,137,339,145,295,157,259,171,235,189,224,205,216,223,211,263,214,303,221,337,216,338,208,304,205,263,211,222,219,202,231,185,256,166,293,152,338,140,390,131,499,121,598,117"/>
-<area shape="rect" id="Node000008" href="$mid__fault__management__handler_8h.html" title="Comprehensive fault management system for power supply protection." alt="" coords="658,187,814,229"/>
+<area shape="rect" id="Node000008" href="$mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="658,187,814,229"/>
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="694,138,717,172,712,175,690,141"/>
-<area shape="rect" id="Node000009" href="$mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="395,277,583,304"/>
+<area shape="rect" id="Node000009" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="395,277,583,304"/>
 <area shape="poly" id="edge27_Node000002_Node000009" title=" " alt="" coords="669,141,639,185,596,231,565,254,533,273,530,268,562,250,593,227,634,181,664,138"/>
-<area shape="rect" id="Node000012" href="$mid__llc__handler_8h.html" title="LLC resonant converter control system interface." alt="" coords="245,195,368,221"/>
+<area shape="rect" id="Node000012" href="$mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="245,195,368,221"/>
 <area shape="poly" id="edge19_Node000002_Node000012" title=" " alt="" coords="599,139,382,189,368,193,367,188,381,184,598,134"/>
 <area shape="rect" id="Node000015" href="$mid__power__control__handler_8h.html" title="Power control and derating system middleware." alt="" coords="393,195,583,221"/>
 <area shape="poly" id="edge28_Node000002_Node000015" title=" " alt="" coords="635,142,530,190,528,185,633,137"/>
 <area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="265,377,390,424,441,451,560,496,559,501,439,456,388,429,264,382"/>
-<area shape="rect" id="Node000006" href="$mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="228,427,377,453"/>
+<area shape="rect" id="Node000006" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="228,427,377,453"/>
 <area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="242,377,280,414,277,418,238,381"/>
 <area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="356,451,560,499,558,505,355,457"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="268,501,337,528"/>

@@ -25,6 +25,14 @@
 var NAVTREE =
 [
   [ "LadyBug", "index.html", [
+    [ "MainPage", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html", [
+      [ "🌐 Overview", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#intro_sec", null ],
+      [ "🧩 Software Architecture", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#arch_sec", null ],
+      [ "⚙️ Key Features", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#feature_sec", null ],
+      [ "📘 How to Use This Documentation", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#usage_sec", null ],
+      [ "🧾 Notes", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#note_sec", null ],
+      [ "📬 Contact", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#contact_sec", null ]
+    ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -40,7 +48,6 @@ var NAVTREE =
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
@@ -52,8 +59,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_lady_bug_8c.html",
-"group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26",
-"group___m_i_d_d_l_e___l_a_y_e_r.html#gaf26528b3d1f5a1aef9288c26f2fee6cf"
+"group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449",
+"mid__llc__handler_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

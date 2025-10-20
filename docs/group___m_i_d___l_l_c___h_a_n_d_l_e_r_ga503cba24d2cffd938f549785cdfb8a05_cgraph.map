@@ -1,0 +1,15 @@
+<map id="llc_regulator_hybrid_loop" name="llc_regulator_hybrid_loop">
+<area shape="rect" id="Node000001" title="Hybrid PFM/PWM control strategy." alt="" coords="5,132,170,159"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47" title="Applies anti&#45;windup protection to prevent integral saturation." alt="" coords="218,5,375,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,130,150,87,182,63,216,42,229,36,231,40,219,46,185,67,153,91,104,134"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda" title="Executes one iteration of the PI control algorithm." alt="" coords="221,56,372,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,129,217,92,236,85,238,90,219,97,123,134"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="226,107,367,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,133,210,128,211,133,171,138"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="240,157,353,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,153,225,159,224,165,170,158"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="224,208,369,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,157,219,193,238,200,236,205,217,199,122,162"/>
+<area shape="rect" id="Node000007" href="$group___m_i_d___g_l_o_b_a_l.html#ga467c12fbae6d58401cc50a392b1fc82d" title="Ramp up a value at a specified rate with initialization support." alt="" coords="246,259,347,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="104,157,153,200,185,223,219,244,232,251,230,255,216,249,182,228,150,204,101,161"/>
+</map>

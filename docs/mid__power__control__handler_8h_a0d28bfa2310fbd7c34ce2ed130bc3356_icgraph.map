@@ -1,7 +1,0 @@
-<map id="pwrctrl_update_coef_" name="pwrctrl_update_coef_">
-<area shape="rect" id="Node000001" title="Update all derating coefficients." alt="" coords="350,5,495,32"/>
-<area shape="rect" id="Node000002" href="$_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540" title="Infinite loop system function implementation." alt="" coords="163,5,302,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="335,21,302,21,302,16,335,16"/>
-<area shape="rect" id="Node000003" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
-</map>

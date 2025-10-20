@@ -1,21 +1,21 @@
 <map id="app_state_management_handler.h" name="app_state_management_handler.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="536,5,696,48"/>
+<area shape="rect" id="Node000001" title="Header file for EVSE state machine module." alt="" coords="536,5,696,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="461,411,525,437"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="697,33,735,41,775,53,813,71,848,94,873,117,890,139,899,165,901,199,901,276,898,291,890,305,859,329,815,351,761,370,642,400,541,418,540,413,641,395,759,365,812,346,856,325,886,301,893,289,896,276,896,199,893,166,885,142,869,120,845,98,811,75,773,58,734,46,696,38"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="620,261,694,288"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="697,30,732,37,767,50,799,68,825,94,835,119,834,144,822,167,804,189,753,227,701,256,698,252,750,223,800,185,818,164,829,142,830,120,820,98,795,72,764,54,730,42,696,35"/>
 <area shape="rect" id="Node000004" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="124,261,310,288"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="535,34,451,40,360,52,282,71,252,83,232,98,221,114,213,132,206,172,207,212,213,246,207,247,202,213,201,172,208,131,216,111,229,94,250,79,280,66,359,46,450,35,535,28"/>
-<area shape="rect" id="Node000007" href="$mid__fault__management__handler_8h.html" title="Comprehensive fault management system for power supply protection." alt="" coords="654,96,810,139"/>
+<area shape="rect" id="Node000007" href="$mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="654,96,810,139"/>
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="644,46,694,84,691,88,641,51"/>
-<area shape="rect" id="Node000008" href="$mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="403,187,591,213"/>
+<area shape="rect" id="Node000008" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="403,187,591,213"/>
 <area shape="poly" id="edge26_Node000001_Node000008" title=" " alt="" coords="618,49,612,93,605,118,593,140,570,164,544,181,541,177,567,160,588,137,600,115,607,92,613,48"/>
-<area shape="rect" id="Node000011" href="$mid__llc__handler_8h.html" title="LLC resonant converter control system interface." alt="" coords="243,104,365,131"/>
+<area shape="rect" id="Node000011" href="$mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="243,104,365,131"/>
 <area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="543,51,364,102,362,97,542,46"/>
 <area shape="rect" id="Node000014" href="$mid__power__control__handler_8h.html" title="Power control and derating system middleware." alt="" coords="389,104,579,131"/>
 <area shape="poly" id="edge27_Node000001_Node000014" title=" " alt="" coords="586,51,517,97,514,93,583,46"/>
 <area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="241,286,376,360,455,401,453,406,373,365,238,291"/>
-<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="163,336,311,363"/>
+<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="163,336,311,363"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="223,288,232,320,227,322,218,289"/>
 <area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="282,361,447,407,445,412,281,366"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="203,411,271,437"/>

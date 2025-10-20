@@ -1,0 +1,17 @@
+<map id="llc_standby_" name="llc_standby_">
+<area shape="rect" id="Node000001" title="Places LLC converter in standby mode." alt="" coords="747,56,841,83"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="553,5,676,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,54,664,35,665,30,732,49"/>
+<area shape="rect" id="Node000006" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="530,56,699,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="731,72,699,72,699,67,731,67"/>
+<area shape="rect" id="Node000007" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="555,107,674,133"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="732,89,665,109,664,104,731,84"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,56,482,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="551,39,483,58,482,53,549,34"/>
+<area shape="rect" id="Node000004" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,56,338,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="371,72,339,72,339,67,371,67"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,56,115,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,72,115,72,115,67,147,67"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="515,72,483,72,483,67,515,67"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="549,105,482,85,483,80,551,99"/>
+</map>

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +88,7 @@ $(function(){initNavTree('struct_s___e_v_s_e___counter__t.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">S_EVSE_Counter_t Struct Reference<div class="ingroups"><a class="el" href="group___a_p_p___l_a_y_e_r.html">Application Layer</a></div></div></div>
+  <div class="headertitle"><div class="title">S_EVSE_Counter_t Struct Reference<div class="ingroups"><a class="el" href="group___a_p_p___l_a_y_e_r.html">Application Layer</a> &raquo; <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html">State Machine Management</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,29 +96,134 @@ $(function(){initNavTree('struct_s___e_v_s_e___counter__t.html','',''); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="app__state__management__handler_8h_source.html">app_state_management_handler.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for S_EVSE_Counter_t:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_s___e_v_s_e___counter__t__coll__graph.png" border="0" usemap="#a_s___e_v_s_e___counter__t_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="a_s___e_v_s_e___counter__t_coll__map" id="a_s___e_v_s_e___counter__t_coll__map">
-<area shape="rect" title="State counter structure for debounce and delay." alt="" coords="5,5,178,256"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ga02aee36035331678c8b64c0e8bfa1686" id="r_ga02aee36035331678c8b64c0e8bfa1686"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga02aee36035331678c8b64c0e8bfa1686">state_idle_counter</a></td></tr>
-<tr class="memitem:ga6d1d583c8b9fb11b3101cb5dc78cebcc" id="r_ga6d1d583c8b9fb11b3101cb5dc78cebcc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga6d1d583c8b9fb11b3101cb5dc78cebcc">state_softstart_counter</a></td></tr>
-<tr class="memitem:gac8b8c625e5d58ed25ace710149fbc598" id="r_gac8b8c625e5d58ed25ace710149fbc598"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gac8b8c625e5d58ed25ace710149fbc598">state_handshake_counter</a></td></tr>
-<tr class="memitem:ga17ec81a7cf5b2a28c7011e8f704b17c5" id="r_ga17ec81a7cf5b2a28c7011e8f704b17c5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga17ec81a7cf5b2a28c7011e8f704b17c5">state_charging_counter</a></td></tr>
-<tr class="memitem:ga82e4b20b051990589df4a11a8f3f0611" id="r_ga82e4b20b051990589df4a11a8f3f0611"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga82e4b20b051990589df4a11a8f3f0611">state_fullycharged_counter</a></td></tr>
-<tr class="memitem:gaf5bf297929c29861056930cc34cc4595" id="r_gaf5bf297929c29861056930cc34cc4595"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gaf5bf297929c29861056930cc34cc4595">state_fault_counter</a></td></tr>
-<tr class="memitem:gae12c073b6fc4669cff5c6e9adfc76cfb" id="r_gae12c073b6fc4669cff5c6e9adfc76cfb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gae12c073b6fc4669cff5c6e9adfc76cfb">state_autorecovery_counter</a></td></tr>
-<tr class="memitem:gaa37f99f54afc673a4592182b17828635" id="r_gaa37f99f54afc673a4592182b17828635"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gaa37f99f54afc673a4592182b17828635">state_shutdown_counter</a></td></tr>
+<tr class="memitem:a02aee36035331678c8b64c0e8bfa1686" id="r_a02aee36035331678c8b64c0e8bfa1686"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02aee36035331678c8b64c0e8bfa1686">state_idle_counter</a></td></tr>
+<tr class="memitem:a6d1d583c8b9fb11b3101cb5dc78cebcc" id="r_a6d1d583c8b9fb11b3101cb5dc78cebcc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d1d583c8b9fb11b3101cb5dc78cebcc">state_softstart_counter</a></td></tr>
+<tr class="memitem:ac8b8c625e5d58ed25ace710149fbc598" id="r_ac8b8c625e5d58ed25ace710149fbc598"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8b8c625e5d58ed25ace710149fbc598">state_handshake_counter</a></td></tr>
+<tr class="memitem:a17ec81a7cf5b2a28c7011e8f704b17c5" id="r_a17ec81a7cf5b2a28c7011e8f704b17c5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17ec81a7cf5b2a28c7011e8f704b17c5">state_charging_counter</a></td></tr>
+<tr class="memitem:a82e4b20b051990589df4a11a8f3f0611" id="r_a82e4b20b051990589df4a11a8f3f0611"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e4b20b051990589df4a11a8f3f0611">state_fullycharged_counter</a></td></tr>
+<tr class="memitem:af5bf297929c29861056930cc34cc4595" id="r_af5bf297929c29861056930cc34cc4595"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5bf297929c29861056930cc34cc4595">state_fault_counter</a></td></tr>
+<tr class="memitem:ae12c073b6fc4669cff5c6e9adfc76cfb" id="r_ae12c073b6fc4669cff5c6e9adfc76cfb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae12c073b6fc4669cff5c6e9adfc76cfb">state_autorecovery_counter</a></td></tr>
+<tr class="memitem:aa37f99f54afc673a4592182b17828635" id="r_aa37f99f54afc673a4592182b17828635"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37f99f54afc673a4592182b17828635">state_shutdown_counter</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>State counter structure for debounce and delay. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a id="ae12c073b6fc4669cff5c6e9adfc76cfb" name="ae12c073b6fc4669cff5c6e9adfc76cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12c073b6fc4669cff5c6e9adfc76cfb">&#9670;&#160;</a></span>state_autorecovery_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_autorecovery_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17ec81a7cf5b2a28c7011e8f704b17c5" name="a17ec81a7cf5b2a28c7011e8f704b17c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ec81a7cf5b2a28c7011e8f704b17c5">&#9670;&#160;</a></span>state_charging_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_charging_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5bf297929c29861056930cc34cc4595" name="af5bf297929c29861056930cc34cc4595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5bf297929c29861056930cc34cc4595">&#9670;&#160;</a></span>state_fault_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_fault_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82e4b20b051990589df4a11a8f3f0611" name="a82e4b20b051990589df4a11a8f3f0611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e4b20b051990589df4a11a8f3f0611">&#9670;&#160;</a></span>state_fullycharged_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_fullycharged_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8b8c625e5d58ed25ace710149fbc598" name="ac8b8c625e5d58ed25ace710149fbc598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b8c625e5d58ed25ace710149fbc598">&#9670;&#160;</a></span>state_handshake_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_handshake_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02aee36035331678c8b64c0e8bfa1686" name="a02aee36035331678c8b64c0e8bfa1686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02aee36035331678c8b64c0e8bfa1686">&#9670;&#160;</a></span>state_idle_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_idle_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa37f99f54afc673a4592182b17828635" name="aa37f99f54afc673a4592182b17828635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37f99f54afc673a4592182b17828635">&#9670;&#160;</a></span>state_shutdown_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_shutdown_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d1d583c8b9fb11b3101cb5dc78cebcc" name="a6d1d583c8b9fb11b3101cb5dc78cebcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d1d583c8b9fb11b3101cb5dc78cebcc">&#9670;&#160;</a></span>state_softstart_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_softstart_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="app__state__management__handler_8h_source.html">app_state_management_handler.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -106,9 +105,9 @@ Include dependency graph for mid_power_control_handler.c:</div>
 <area shape="poly" title=" " alt="" coords="103,33,103,64,98,64,98,33"/>
 <area shape="rect" title=" " alt="" coords="75,229,150,256"/>
 <area shape="poly" title=" " alt="" coords="104,107,113,214,108,214,99,107"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="122,304,271,331"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="122,304,271,331"/>
 <area shape="poly" title=" " alt="" coords="94,108,77,137,61,175,54,216,57,236,65,255,89,279,120,296,118,300,86,283,61,257,52,238,49,216,56,173,72,134,89,106"/>
-<area shape="rect" href="mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="138,155,327,181"/>
+<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="138,155,327,181"/>
 <area shape="poly" title=" " alt="" coords="125,105,198,145,195,149,122,110"/>
 <area shape="rect" title=" " alt="" coords="286,379,350,405"/>
 <area shape="poly" title=" " alt="" coords="219,329,285,368,282,373,216,334"/>
@@ -140,13 +139,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a849ee7e22e003710fe0f940ae2f50334" id="r_a849ee7e22e003710fe0f940ae2f50334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a849ee7e22e003710fe0f940ae2f50334">pwrctrl_update_buffer_</a> (<a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> *buffer, int size, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> new_value)</td></tr>
+<tr class="memitem:a849ee7e22e003710fe0f940ae2f50334" id="r_a849ee7e22e003710fe0f940ae2f50334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a849ee7e22e003710fe0f940ae2f50334">pwrctrl_update_buffer_</a> (uq15_t *buffer, int size, uq15_t new_value)</td></tr>
 <tr class="memdesc:a849ee7e22e003710fe0f940ae2f50334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update measurement buffer with new value.  <br /></td></tr>
-<tr class="memitem:a2cde8f1802d1d7f9b83c6381d1f576c7" id="r_a2cde8f1802d1d7f9b83c6381d1f576c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cde8f1802d1d7f9b83c6381d1f576c7">pwrctrl_calc_average_</a> (<a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> *buffer, int size)</td></tr>
+<tr class="memitem:a2cde8f1802d1d7f9b83c6381d1f576c7" id="r_a2cde8f1802d1d7f9b83c6381d1f576c7"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cde8f1802d1d7f9b83c6381d1f576c7">pwrctrl_calc_average_</a> (uq15_t *buffer, int size)</td></tr>
 <tr class="memdesc:a2cde8f1802d1d7f9b83c6381d1f576c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate average of buffer values.  <br /></td></tr>
 <tr class="memitem:aef859e2b7a51ae3ed4534469a76d1fdc" id="r_aef859e2b7a51ae3ed4534469a76d1fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef859e2b7a51ae3ed4534469a76d1fdc">pwrctrl_value_swap_</a> (int *a, int *b)</td></tr>
 <tr class="memdesc:aef859e2b7a51ae3ed4534469a76d1fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap two integer values.  <br /></td></tr>
-<tr class="memitem:aa8a37e530fad0e49546479a1cd0cbced" id="r_aa8a37e530fad0e49546479a1cd0cbced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a37e530fad0e49546479a1cd0cbced">pwrctrl_get_median_</a> (<a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> *values)</td></tr>
+<tr class="memitem:aa8a37e530fad0e49546479a1cd0cbced" id="r_aa8a37e530fad0e49546479a1cd0cbced"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a37e530fad0e49546479a1cd0cbced">pwrctrl_get_median_</a> (uq15_t *values)</td></tr>
 <tr class="memdesc:aa8a37e530fad0e49546479a1cd0cbced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get median of 4-sample array.  <br /></td></tr>
 <tr class="memitem:ga3ea28682838bb6082b26dbaf4b46d561" id="r_ga3ea28682838bb6082b26dbaf4b46d561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_o_w_e_r.html#ga3ea28682838bb6082b26dbaf4b46d561">pwrctrl_init_</a> (<a class="el" href="struct_s___power_ctrl__t.html">S_PowerCtrl_t</a> *pPowerControl)</td></tr>
 <tr class="memdesc:ga3ea28682838bb6082b26dbaf4b46d561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize power control structure.  <br /></td></tr>
@@ -164,10 +163,6 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Middleware for power derating and control. </p>
-<p>Implements temperature/voltage derating, buffer management, and power control logic.</p>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab </dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a2cde8f1802d1d7f9b83c6381d1f576c7" name="a2cde8f1802d1d7f9b83c6381d1f576c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2cde8f1802d1d7f9b83c6381d1f576c7">&#9670;&#160;</a></span>pwrctrl_calc_average_()</h2>
@@ -176,9 +171,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> pwrctrl_calc_average_ </td>
+          <td class="memname">uq15_t pwrctrl_calc_average_ </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+          <td class="paramtype">uq15_t *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -196,7 +191,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133" title="Unsigned Q15 fixed-point type.">uq15_t</a> Average value in Q15 format </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>uq15_t Average value in Q15 format </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -338,9 +333,9 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> pwrctrl_get_median_ </td>
+          <td class="memname">uq15_t pwrctrl_get_median_ </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> *</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td class="paramtype">uq15_t *</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -354,7 +349,7 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133" title="Unsigned Q15 fixed-point type.">uq15_t</a> Median value in Q15 format </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>uq15_t Median value in Q15 format </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -396,7 +391,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void pwrctrl_update_buffer_ </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+          <td class="paramtype">uq15_t *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -406,7 +401,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a></td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>&#160;)</td>
+          <td class="paramtype">uq15_t</td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -2,9 +2,9 @@
 <area shape="rect" id="Node000001" title="Power control and derating system middleware." alt="" coords="5,5,196,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="75,155,150,181"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,32,113,139,108,139,99,33"/>
-<area shape="rect" id="Node000003" href="$mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="122,229,271,256"/>
+<area shape="rect" id="Node000003" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="122,229,271,256"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,34,77,62,61,100,54,142,57,161,65,180,89,204,120,221,118,226,86,209,61,183,52,163,49,142,56,99,72,60,89,31"/>
-<area shape="rect" id="Node000006" href="$mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="138,80,327,107"/>
+<area shape="rect" id="Node000006" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="138,80,327,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="125,30,198,70,195,75,122,35"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="286,304,350,331"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="219,254,285,293,282,298,216,259"/>

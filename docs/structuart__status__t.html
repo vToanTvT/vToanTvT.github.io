@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,28 +92,17 @@ $(function(){initNavTree('structuart__status__t.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Private data types and enumerations.  
+<p>Private UART status structure.  
  <a href="#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for uart_status_t:</div>
-<div class="dyncontent">
-<div class="center"><img src="structuart__status__t__coll__graph.png" border="0" usemap="#auart__status__t_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="auart__status__t_coll__map" id="auart__status__t_coll__map">
-<area shape="rect" title="Private data types and enumerations." alt="" coords="5,5,94,117"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a73c8495b87f2cd1d85264f5e24b8bcf2" id="r_a73c8495b87f2cd1d85264f5e24b8bcf2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c8495b87f2cd1d85264f5e24b8bcf2">is_tx_busy</a></td></tr>
-<tr class="memdesc:a73c8495b87f2cd1d85264f5e24b8bcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">TX channel busy flag.  <br /></td></tr>
 <tr class="memitem:aead52f5a1c24d46360182d9f3a649e89" id="r_aead52f5a1c24d46360182d9f3a649e89"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aead52f5a1c24d46360182d9f3a649e89">is_rx_busy</a></td></tr>
-<tr class="memdesc:aead52f5a1c24d46360182d9f3a649e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">RX channel busy flag.  <br /></td></tr>
 <tr class="memitem:aedd33235b875180b4a57e5bd210cadd3" id="r_aedd33235b875180b4a57e5bd210cadd3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd33235b875180b4a57e5bd210cadd3">error_count</a></td></tr>
-<tr class="memdesc:aedd33235b875180b4a57e5bd210cadd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error counter.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Private data types and enumerations. </p>
+<div class="textblock"><p>Private UART status structure. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="aedd33235b875180b4a57e5bd210cadd3" name="aedd33235b875180b4a57e5bd210cadd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedd33235b875180b4a57e5bd210cadd3">&#9670;&#160;</a></span>error_count</h2>
@@ -127,8 +115,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Error counter. </p>
+<p>Error counter </p>
 
 </div>
 </div>
@@ -143,8 +130,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>RX channel busy flag. </p>
+<p>RX busy flag </p>
 
 </div>
 </div>
@@ -159,8 +145,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>TX channel busy flag. </p>
+<p>TX busy flag </p>
 
 </div>
 </div>

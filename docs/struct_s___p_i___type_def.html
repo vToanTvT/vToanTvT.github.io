@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +88,7 @@ $(function(){initNavTree('struct_s___p_i___type_def.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">S_PI_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group___m_i_d_d_l_e___l_a_y_e_r.html">Middleware Layer</a> &raquo; <a class="el" href="group___m_i_d___c_t_r_l.html">Mid_Controller_Handler</a></div></div></div>
+  <div class="headertitle"><div class="title">S_PI_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group___m_i_d_d_l_e___l_a_y_e_r.html">Middleware Layer</a> &raquo; <a class="el" href="group___m_i_d___c_t_r_l.html">Controller Handler Middleware</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,55 +96,211 @@ $(function(){initNavTree('struct_s___p_i___type_def.html','',''); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mid__controller__handler_8h_source.html">mid_controller_handler.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for S_PI_TypeDef:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_s___p_i___type_def__coll__graph.png" border="0" usemap="#a_s___p_i___type_def_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="a_s___p_i___type_def_coll__map" id="a_s___p_i___type_def_coll__map">
-<area shape="rect" title="Structure defining a PI controller instance." alt="" coords="5,5,106,544"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr id="pub-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Configuration Parameters</div></td></tr>
-<tr class="memitem:ga6ec4b37fe2246a7e017dd07578fe5bbd" id="r_ga6ec4b37fe2246a7e017dd07578fe5bbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga6ec4b37fe2246a7e017dd07578fe5bbd">Kp</a></td></tr>
-<tr class="memdesc:ga6ec4b37fe2246a7e017dd07578fe5bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proportional gain.  <br /></td></tr>
-<tr class="memitem:ga84a6c05c16369c905193da0d5fc9a7b0" id="r_ga84a6c05c16369c905193da0d5fc9a7b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga84a6c05c16369c905193da0d5fc9a7b0">Ki</a></td></tr>
-<tr class="memdesc:ga84a6c05c16369c905193da0d5fc9a7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral gain.  <br /></td></tr>
-<tr class="memitem:ga9f4863b28fc74581b46435fda753289b" id="r_ga9f4863b28fc74581b46435fda753289b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga9f4863b28fc74581b46435fda753289b">Ki_x_Tz</a></td></tr>
-<tr class="memdesc:ga9f4863b28fc74581b46435fda753289b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral gain scaled by sampling time.  <br /></td></tr>
-<tr class="memitem:gaec62f8a5a60688434e3b4f9d68e3fb62" id="r_gaec62f8a5a60688434e3b4f9d68e3fb62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gaec62f8a5a60688434e3b4f9d68e3fb62">high_limit</a></td></tr>
-<tr class="memdesc:gaec62f8a5a60688434e3b4f9d68e3fb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper limit for output.  <br /></td></tr>
-<tr class="memitem:ga6842fd7a9f4472703c1f00c24a7bc1a6" id="r_ga6842fd7a9f4472703c1f00c24a7bc1a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga6842fd7a9f4472703c1f00c24a7bc1a6">low_limit</a></td></tr>
-<tr class="memdesc:ga6842fd7a9f4472703c1f00c24a7bc1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower limit for output.  <br /></td></tr>
+<tr class="memitem:a6ec4b37fe2246a7e017dd07578fe5bbd" id="r_a6ec4b37fe2246a7e017dd07578fe5bbd"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec4b37fe2246a7e017dd07578fe5bbd">Kp</a></td></tr>
+<tr class="memitem:a84a6c05c16369c905193da0d5fc9a7b0" id="r_a84a6c05c16369c905193da0d5fc9a7b0"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84a6c05c16369c905193da0d5fc9a7b0">Ki</a></td></tr>
+<tr class="memitem:a9f4863b28fc74581b46435fda753289b" id="r_a9f4863b28fc74581b46435fda753289b"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f4863b28fc74581b46435fda753289b">Ki_x_Tz</a></td></tr>
+<tr class="memitem:aec62f8a5a60688434e3b4f9d68e3fb62" id="r_aec62f8a5a60688434e3b4f9d68e3fb62"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec62f8a5a60688434e3b4f9d68e3fb62">high_limit</a></td></tr>
+<tr class="memitem:a6842fd7a9f4472703c1f00c24a7bc1a6" id="r_a6842fd7a9f4472703c1f00c24a7bc1a6"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6842fd7a9f4472703c1f00c24a7bc1a6">low_limit</a></td></tr>
 <tr id="pub-attribs-1" class="groupHeader"><td colspan="2"><div class="groupHeader">Input Parameters</div></td></tr>
-<tr class="memitem:ga4fb34d638bf57573d11ffbee8792ff6e" id="r_ga4fb34d638bf57573d11ffbee8792ff6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga4fb34d638bf57573d11ffbee8792ff6e">ref_val</a></td></tr>
-<tr class="memdesc:ga4fb34d638bf57573d11ffbee8792ff6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference/setpoint value.  <br /></td></tr>
-<tr class="memitem:ga2c0224210f0bd3944fbcd8435811972f" id="r_ga2c0224210f0bd3944fbcd8435811972f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga2c0224210f0bd3944fbcd8435811972f">feedback_val</a></td></tr>
-<tr class="memdesc:ga2c0224210f0bd3944fbcd8435811972f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feedback/measured value.  <br /></td></tr>
+<tr class="memitem:a4fb34d638bf57573d11ffbee8792ff6e" id="r_a4fb34d638bf57573d11ffbee8792ff6e"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fb34d638bf57573d11ffbee8792ff6e">ref_val</a></td></tr>
+<tr class="memitem:a2c0224210f0bd3944fbcd8435811972f" id="r_a2c0224210f0bd3944fbcd8435811972f"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c0224210f0bd3944fbcd8435811972f">feedback_val</a></td></tr>
 <tr id="pub-attribs-2" class="groupHeader"><td colspan="2"><div class="groupHeader">Internal States</div></td></tr>
-<tr class="memitem:gafe60aec5afd7c8835336294120519bad" id="r_gafe60aec5afd7c8835336294120519bad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gafe60aec5afd7c8835336294120519bad">error</a></td></tr>
-<tr class="memdesc:gafe60aec5afd7c8835336294120519bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current error (reference - feedback)  <br /></td></tr>
-<tr class="memitem:ga1c39a2e0d8595bd5512e4bc327a15d8f" id="r_ga1c39a2e0d8595bd5512e4bc327a15d8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga1c39a2e0d8595bd5512e4bc327a15d8f">proportional</a></td></tr>
-<tr class="memdesc:ga1c39a2e0d8595bd5512e4bc327a15d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proportional term.  <br /></td></tr>
-<tr class="memitem:ga48688424d5265eb45ae7bfe3c8bf3874" id="r_ga48688424d5265eb45ae7bfe3c8bf3874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga48688424d5265eb45ae7bfe3c8bf3874">integral</a></td></tr>
-<tr class="memdesc:ga48688424d5265eb45ae7bfe3c8bf3874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral term.  <br /></td></tr>
+<tr class="memitem:afe60aec5afd7c8835336294120519bad" id="r_afe60aec5afd7c8835336294120519bad"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe60aec5afd7c8835336294120519bad">error</a></td></tr>
+<tr class="memitem:a1c39a2e0d8595bd5512e4bc327a15d8f" id="r_a1c39a2e0d8595bd5512e4bc327a15d8f"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c39a2e0d8595bd5512e4bc327a15d8f">proportional</a></td></tr>
+<tr class="memitem:a48688424d5265eb45ae7bfe3c8bf3874" id="r_a48688424d5265eb45ae7bfe3c8bf3874"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48688424d5265eb45ae7bfe3c8bf3874">integral</a></td></tr>
 <tr id="pub-attribs-3" class="groupHeader"><td colspan="2"><div class="groupHeader">Output and Status</div></td></tr>
-<tr class="memitem:ga280d054222a86cc9eaf5601ed738d489" id="r_ga280d054222a86cc9eaf5601ed738d489"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga280d054222a86cc9eaf5601ed738d489">output</a></td></tr>
-<tr class="memdesc:ga280d054222a86cc9eaf5601ed738d489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller output.  <br /></td></tr>
-<tr class="memitem:ga276267e17d2a1c2eab601d3835ced719" id="r_ga276267e17d2a1c2eab601d3835ced719"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga276267e17d2a1c2eab601d3835ced719">state_control</a></td></tr>
-<tr class="memdesc:ga276267e17d2a1c2eab601d3835ced719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller state (0:Disabled, 1:Enabled)  <br /></td></tr>
+<tr class="memitem:a280d054222a86cc9eaf5601ed738d489" id="r_a280d054222a86cc9eaf5601ed738d489"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a280d054222a86cc9eaf5601ed738d489">output</a></td></tr>
+<tr class="memitem:a276267e17d2a1c2eab601d3835ced719" id="r_a276267e17d2a1c2eab601d3835ced719"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a276267e17d2a1c2eab601d3835ced719">state_control</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure defining a PI controller instance. </p>
-<p>Contains all parameters and state variables needed for a PI controller:</p><ul>
-<li>Configuration parameters (gains, limits)</li>
-<li>Runtime variables (reference, feedback, error)</li>
-<li>Internal states (proportional, integral terms)</li>
-<li>Output and control state </li>
-</ul>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<p>Contains all configuration, runtime, and state variables necessary for the digital PI controller operation. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a id="afe60aec5afd7c8835336294120519bad" name="afe60aec5afd7c8835336294120519bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe60aec5afd7c8835336294120519bad">&#9670;&#160;</a></span>error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q31_t error</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current error (reference - feedback) </p>
+
+</div>
+</div>
+<a id="a2c0224210f0bd3944fbcd8435811972f" name="a2c0224210f0bd3944fbcd8435811972f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0224210f0bd3944fbcd8435811972f">&#9670;&#160;</a></span>feedback_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uq15_t feedback_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Feedback/measured value </p>
+
+</div>
+</div>
+<a id="aec62f8a5a60688434e3b4f9d68e3fb62" name="aec62f8a5a60688434e3b4f9d68e3fb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec62f8a5a60688434e3b4f9d68e3fb62">&#9670;&#160;</a></span>high_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uq15_t high_limit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Upper limit for output </p>
+
+</div>
+</div>
+<a id="a48688424d5265eb45ae7bfe3c8bf3874" name="a48688424d5265eb45ae7bfe3c8bf3874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48688424d5265eb45ae7bfe3c8bf3874">&#9670;&#160;</a></span>integral</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q31_t integral</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Integral term </p>
+
+</div>
+</div>
+<a id="a84a6c05c16369c905193da0d5fc9a7b0" name="a84a6c05c16369c905193da0d5fc9a7b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a6c05c16369c905193da0d5fc9a7b0">&#9670;&#160;</a></span>Ki</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q31_t Ki</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Integral gain </p>
+
+</div>
+</div>
+<a id="a9f4863b28fc74581b46435fda753289b" name="a9f4863b28fc74581b46435fda753289b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4863b28fc74581b46435fda753289b">&#9670;&#160;</a></span>Ki_x_Tz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q31_t Ki_x_Tz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Integral gain scaled by sampling time </p>
+
+</div>
+</div>
+<a id="a6ec4b37fe2246a7e017dd07578fe5bbd" name="a6ec4b37fe2246a7e017dd07578fe5bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec4b37fe2246a7e017dd07578fe5bbd">&#9670;&#160;</a></span>Kp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q31_t Kp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proportional gain </p>
+
+</div>
+</div>
+<a id="a6842fd7a9f4472703c1f00c24a7bc1a6" name="a6842fd7a9f4472703c1f00c24a7bc1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6842fd7a9f4472703c1f00c24a7bc1a6">&#9670;&#160;</a></span>low_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uq15_t low_limit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lower limit for output </p>
+
+</div>
+</div>
+<a id="a280d054222a86cc9eaf5601ed738d489" name="a280d054222a86cc9eaf5601ed738d489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280d054222a86cc9eaf5601ed738d489">&#9670;&#160;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uq15_t output</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controller output </p>
+
+</div>
+</div>
+<a id="a1c39a2e0d8595bd5512e4bc327a15d8f" name="a1c39a2e0d8595bd5512e4bc327a15d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c39a2e0d8595bd5512e4bc327a15d8f">&#9670;&#160;</a></span>proportional</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">q31_t proportional</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proportional term </p>
+
+</div>
+</div>
+<a id="a4fb34d638bf57573d11ffbee8792ff6e" name="a4fb34d638bf57573d11ffbee8792ff6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb34d638bf57573d11ffbee8792ff6e">&#9670;&#160;</a></span>ref_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uq15_t ref_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reference/setpoint value </p>
+
+</div>
+</div>
+<a id="a276267e17d2a1c2eab601d3835ced719" name="a276267e17d2a1c2eab601d3835ced719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276267e17d2a1c2eab601d3835ced719">&#9670;&#160;</a></span>state_control</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uq15_t state_control</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controller state (0:Disabled, 1:Enabled) </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="mid__controller__handler_8h_source.html">mid_controller_handler.h</a></li>
 </ul>
 </div><!-- contents -->

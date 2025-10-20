@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +88,7 @@ $(function(){initNavTree('drv__comp__core_8c.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">drv_comp_core.c File Reference<div class="ingroups"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html">Driver Layer</a></div></div></div>
+  <div class="headertitle"><div class="title">drv_comp_core.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -139,26 +138,6 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Source file for comparator driver module. </p>
-<p>Implements the initialization and processing functions for comparator:</p><ul>
-<li>Hardware initialization and configuration</li>
-<li>DAC threshold management</li>
-<li>Protection state control</li>
-<li>Fault detection and handling</li>
-</ul>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="comment">// Initialize comparator</span></div>
-<div class="line"><a class="code hl_struct" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> comp_config;</div>
-<div class="line"><a class="code hl_function" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d">comp_init_</a>(&amp;comp_config);</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Update threshold if needed</span></div>
-<div class="line">comp_config.<a class="code hl_variable" href="group___d_r_v___c_o_m_p.html#gaf6ba3377b9f5f09dbce8fd1e03c29e14">comp_threshold</a> = new_threshold;</div>
-<div class="line"><a class="code hl_function" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9">comp_set_threshold_</a>(&amp;comp_config);</div>
-<div class="ttc" id="agroup___d_r_v___c_o_m_p_html_ga79780eab52f33a6dcb63d5e0a9703ec9"><div class="ttname"><a href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9">comp_set_threshold_</a></div><div class="ttdeci">int comp_set_threshold_(S_Comp_TypeDef *pcomp)</div><div class="ttdoc">Update comparator threshold.</div><div class="ttdef"><b>Definition</b> drv_comp_core.c:102</div></div>
-<div class="ttc" id="agroup___d_r_v___c_o_m_p_html_gad782d128a4f5dedfff981ab3452de59d"><div class="ttname"><a href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d">comp_init_</a></div><div class="ttdeci">int comp_init_(S_Comp_TypeDef *pcomp)</div><div class="ttdoc">Initialize comparator module.</div><div class="ttdef"><b>Definition</b> drv_comp_core.c:69</div></div>
-<div class="ttc" id="agroup___d_r_v___c_o_m_p_html_gaf6ba3377b9f5f09dbce8fd1e03c29e14"><div class="ttname"><a href="group___d_r_v___c_o_m_p.html#gaf6ba3377b9f5f09dbce8fd1e03c29e14">S_Comp_TypeDef::comp_threshold</a></div><div class="ttdeci">uint32_t comp_threshold</div><div class="ttdoc">DAC threshold value.</div><div class="ttdef"><b>Definition</b> drv_comp_core.h:67</div></div>
-<div class="ttc" id="astruct_s___comp___type_def_html"><div class="ttname"><a href="struct_s___comp___type_def.html">S_Comp_TypeDef</a></div><div class="ttdoc">Include necessary header files.</div><div class="ttdef"><b>Definition</b> drv_comp_core.h:56</div></div>
-</div><!-- fragment --><dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

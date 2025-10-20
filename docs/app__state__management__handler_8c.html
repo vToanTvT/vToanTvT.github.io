@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('app__state__management__handler_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Source file for EVSE state machine module.  
+<p>Implementation of the EVSE state machine module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="app__state__management__handler_8h_source.html">app_state_management_handler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="drv__gpio__core_8h_source.html">drv_gpio_core.h</a>&quot;</code><br />
@@ -102,8 +101,8 @@ Include dependency graph for app_state_management_handler.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="app__state__management__handler_8c__incl.png" border="0" usemap="#aapp__state__management__handler_8c" loading="lazy" alt=""/></div>
 <map name="aapp__state__management__handler_8c" id="aapp__state__management__handler_8c">
-<area shape="rect" title="Source file for EVSE state machine module." alt="" coords="737,5,897,48"/>
-<area shape="rect" href="app__state__management__handler_8h.html" title=" " alt="" coords="598,96,759,139"/>
+<area shape="rect" title="Implementation of the EVSE state machine module." alt="" coords="737,5,897,48"/>
+<area shape="rect" href="app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="598,96,759,139"/>
 <area shape="poly" title=" " alt="" coords="786,51,725,90,722,85,783,46"/>
 <area shape="rect" href="drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="958,427,1071,453"/>
 <area shape="poly" title=" " alt="" coords="863,46,905,72,949,108,967,129,982,153,992,179,996,206,996,292,1001,356,1011,411,1005,412,996,357,991,292,991,207,987,180,977,155,963,133,945,112,902,77,860,51"/>
@@ -113,16 +112,16 @@ Include dependency graph for app_state_management_handler.c:</div>
 <area shape="poly" title=" " alt="" coords="760,137,797,156,829,185,849,215,861,244,860,274,845,306,819,331,788,348,754,358,722,364,721,359,753,353,786,343,816,326,840,302,855,273,855,245,845,218,824,188,794,161,757,142"/>
 <area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="134,352,319,379"/>
 <area shape="poly" title=" " alt="" coords="598,122,499,126,390,137,339,145,295,157,259,171,235,189,224,205,216,223,211,263,214,303,221,337,216,338,208,304,205,263,211,222,219,202,231,185,256,166,293,152,338,140,390,131,499,121,598,117"/>
-<area shape="rect" href="mid__fault__management__handler_8h.html" title="Comprehensive fault management system for power supply protection." alt="" coords="658,187,814,229"/>
+<area shape="rect" href="mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="658,187,814,229"/>
 <area shape="poly" title=" " alt="" coords="694,138,717,172,712,175,690,141"/>
-<area shape="rect" href="mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="395,277,583,304"/>
+<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="395,277,583,304"/>
 <area shape="poly" title=" " alt="" coords="669,141,639,185,596,231,565,254,533,273,530,268,562,250,593,227,634,181,664,138"/>
-<area shape="rect" href="mid__llc__handler_8h.html" title="LLC resonant converter control system interface." alt="" coords="245,195,368,221"/>
+<area shape="rect" href="mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="245,195,368,221"/>
 <area shape="poly" title=" " alt="" coords="599,139,382,189,368,193,367,188,381,184,598,134"/>
 <area shape="rect" href="mid__power__control__handler_8h.html" title="Power control and derating system middleware." alt="" coords="393,195,583,221"/>
 <area shape="poly" title=" " alt="" coords="635,142,530,190,528,185,633,137"/>
 <area shape="poly" title=" " alt="" coords="265,377,390,424,441,451,560,496,559,501,439,456,388,429,264,382"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="228,427,377,453"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="228,427,377,453"/>
 <area shape="poly" title=" " alt="" coords="242,377,280,414,277,418,238,381"/>
 <area shape="poly" title=" " alt="" coords="356,451,560,499,558,505,355,457"/>
 <area shape="rect" title=" " alt="" coords="268,501,337,528"/>
@@ -158,7 +157,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="app__state__management__handler_8c__dep__incl.png" border="0" usemap="#aapp__state__management__handler_8cdep" loading="lazy" alt=""/></div>
 <map name="aapp__state__management__handler_8cdep" id="aapp__state__management__handler_8cdep">
-<area shape="rect" title="Source file for EVSE state machine module." alt="" coords="5,5,166,48"/>
+<area shape="rect" title="Implementation of the EVSE state machine module." alt="" coords="5,5,166,48"/>
 <area shape="rect" href="main_8c.html" title=" " alt="" coords="55,96,116,123"/>
 <area shape="poly" title=" " alt="" coords="88,64,88,95,83,95,83,64"/>
 </map>
@@ -176,11 +175,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a38cde78eafa2e8dd1a1614dce505630d" id="r_a38cde78eafa2e8dd1a1614dce505630d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38cde78eafa2e8dd1a1614dce505630d">K_STATE_MAX_RETRIES_</a>&#160;&#160;&#160;3U</td></tr>
 <tr class="memdesc:a38cde78eafa2e8dd1a1614dce505630d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include public and private headers.  <br /></td></tr>
 <tr class="memitem:a9b171d753e93f26b4181679b7a88aafe" id="r_a9b171d753e93f26b4181679b7a88aafe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b171d753e93f26b4181679b7a88aafe">K_STATE_ERROR_NONE_</a>&#160;&#160;&#160;0x00U</td></tr>
-<tr class="memdesc:a9b171d753e93f26b4181679b7a88aafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">No error status.  <br /></td></tr>
 <tr class="memitem:a00e811c3f02457955cb08f8e6195747a" id="r_a00e811c3f02457955cb08f8e6195747a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00e811c3f02457955cb08f8e6195747a">K_STATE_ERROR_TIMEOUT_</a>&#160;&#160;&#160;0x01U</td></tr>
-<tr class="memdesc:a00e811c3f02457955cb08f8e6195747a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout error status.  <br /></td></tr>
 <tr class="memitem:a13d1b2f8b2f4afaf52565b7c3f525799" id="r_a13d1b2f8b2f4afaf52565b7c3f525799"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13d1b2f8b2f4afaf52565b7c3f525799">K_STATE_ERROR_INVALID_</a>&#160;&#160;&#160;0x02U</td></tr>
-<tr class="memdesc:a13d1b2f8b2f4afaf52565b7c3f525799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid state error status.  <br /></td></tr>
 <tr class="memitem:a1403dce3b307aa013cf918ab43fc89a1" id="r_a1403dce3b307aa013cf918ab43fc89a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1403dce3b307aa013cf918ab43fc89a1">M_STATE_CHECK_VALID_</a>(s)</td></tr>
 <tr class="memdesc:a1403dce3b307aa013cf918ab43fc89a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local macro definitions.  <br /></td></tr>
 <tr class="memitem:ab7482019724dbf341145fefd583984b8" id="r_ab7482019724dbf341145fefd583984b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7482019724dbf341145fefd583984b8">M_STATE_IS_FAULT_</a>(s)</td></tr>
@@ -189,49 +185,40 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6867f0e73cb92030fee0b24785908e29" id="r_a6867f0e73cb92030fee0b24785908e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6867f0e73cb92030fee0b24785908e29">state_config</a> (<a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a> *p_evse)</td></tr>
 <tr class="memdesc:a6867f0e73cb92030fee0b24785908e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize state management configuration.  <br /></td></tr>
-<tr class="memitem:gab6279279ac9e404eedf7848ce01d529c" id="r_gab6279279ac9e404eedf7848ce01d529c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gab6279279ac9e404eedf7848ce01d529c">state_init</a> (<a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a> *p_evse, <a class="el" href="group___a_p_p___l_a_y_e_r.html#gaf385e9d5b5e5b8d6dcb7451515bc0fde">E_EVSE_State_t</a> initial_state)</td></tr>
+<tr class="memitem:gab6279279ac9e404eedf7848ce01d529c" id="r_gab6279279ac9e404eedf7848ce01d529c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c">state_init</a> (<a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a> *p_evse, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaf385e9d5b5e5b8d6dcb7451515bc0fde">E_EVSE_State_t</a> initial_state)</td></tr>
 <tr class="memdesc:gab6279279ac9e404eedf7848ce01d529c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize state machine with initial state.  <br /></td></tr>
-<tr class="memitem:gafc5058be8e5904fe82c000699ae798d8" id="r_gafc5058be8e5904fe82c000699ae798d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8">state_update</a> (<a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a> *pEVSE)</td></tr>
+<tr class="memitem:gafc5058be8e5904fe82c000699ae798d8" id="r_gafc5058be8e5904fe82c000699ae798d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8">state_update</a> (<a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a> *pEVSE)</td></tr>
 <tr class="memdesc:gafc5058be8e5904fe82c000699ae798d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EVSE state according to state machine.  <br /></td></tr>
-<tr class="memitem:ga091c8d156cb84c8f94622ee7a1a4f3db" id="r_ga091c8d156cb84c8f94622ee7a1a4f3db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga091c8d156cb84c8f94622ee7a1a4f3db">state_idleHandle</a> (void)</td></tr>
+<tr class="memitem:ga091c8d156cb84c8f94622ee7a1a4f3db" id="r_ga091c8d156cb84c8f94622ee7a1a4f3db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db">state_idleHandle</a> (void)</td></tr>
 <tr class="memdesc:ga091c8d156cb84c8f94622ee7a1a4f3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute IDLE state operations.  <br /></td></tr>
-<tr class="memitem:gaaa9f8795754e1acbaf89783fc74a6c6b" id="r_gaaa9f8795754e1acbaf89783fc74a6c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gaaa9f8795754e1acbaf89783fc74a6c6b">state_softstartHandle</a> (void)</td></tr>
+<tr class="memitem:gaaa9f8795754e1acbaf89783fc74a6c6b" id="r_gaaa9f8795754e1acbaf89783fc74a6c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b">state_softstartHandle</a> (void)</td></tr>
 <tr class="memdesc:gaaa9f8795754e1acbaf89783fc74a6c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute SOFTSTART state operations.  <br /></td></tr>
-<tr class="memitem:ga29ccd3122c8c032024ab28a8b7099a8b" id="r_ga29ccd3122c8c032024ab28a8b7099a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga29ccd3122c8c032024ab28a8b7099a8b">state_handshakeHandle</a> (void)</td></tr>
+<tr class="memitem:ga29ccd3122c8c032024ab28a8b7099a8b" id="r_ga29ccd3122c8c032024ab28a8b7099a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga29ccd3122c8c032024ab28a8b7099a8b">state_handshakeHandle</a> (void)</td></tr>
 <tr class="memdesc:ga29ccd3122c8c032024ab28a8b7099a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute HANDSHAKE state operations.  <br /></td></tr>
-<tr class="memitem:ga64fedf08e758ea7727e7d73db7314f48" id="r_ga64fedf08e758ea7727e7d73db7314f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga64fedf08e758ea7727e7d73db7314f48">state_chargingHandle</a> (void)</td></tr>
+<tr class="memitem:ga64fedf08e758ea7727e7d73db7314f48" id="r_ga64fedf08e758ea7727e7d73db7314f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48">state_chargingHandle</a> (void)</td></tr>
 <tr class="memdesc:ga64fedf08e758ea7727e7d73db7314f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute CHARGING state operations.  <br /></td></tr>
-<tr class="memitem:ga35591692ae6cf3ce5c80f9b45009ec68" id="r_ga35591692ae6cf3ce5c80f9b45009ec68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga35591692ae6cf3ce5c80f9b45009ec68">state_fullychargedHandle</a> (void)</td></tr>
+<tr class="memitem:ga35591692ae6cf3ce5c80f9b45009ec68" id="r_ga35591692ae6cf3ce5c80f9b45009ec68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68">state_fullychargedHandle</a> (void)</td></tr>
 <tr class="memdesc:ga35591692ae6cf3ce5c80f9b45009ec68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute FULLYCHARGED state operations.  <br /></td></tr>
-<tr class="memitem:gac2e896631140039c72e47a4b2aea7205" id="r_gac2e896631140039c72e47a4b2aea7205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#gac2e896631140039c72e47a4b2aea7205">state_faultHandle</a> (void)</td></tr>
+<tr class="memitem:gac2e896631140039c72e47a4b2aea7205" id="r_gac2e896631140039c72e47a4b2aea7205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205">state_faultHandle</a> (void)</td></tr>
 <tr class="memdesc:gac2e896631140039c72e47a4b2aea7205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute FAULT state operations.  <br /></td></tr>
-<tr class="memitem:ga5ecdb525291f207d99643327732c3f39" id="r_ga5ecdb525291f207d99643327732c3f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga5ecdb525291f207d99643327732c3f39">state_autorecoveryHandle</a> (void)</td></tr>
+<tr class="memitem:ga5ecdb525291f207d99643327732c3f39" id="r_ga5ecdb525291f207d99643327732c3f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5ecdb525291f207d99643327732c3f39">state_autorecoveryHandle</a> (void)</td></tr>
 <tr class="memdesc:ga5ecdb525291f207d99643327732c3f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute AUTORECOVERY state operations.  <br /></td></tr>
-<tr class="memitem:ga7d010aaa755adb17c76805ac708a120f" id="r_ga7d010aaa755adb17c76805ac708a120f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga7d010aaa755adb17c76805ac708a120f">state_shutdownHandle</a> (void)</td></tr>
+<tr class="memitem:ga7d010aaa755adb17c76805ac708a120f" id="r_ga7d010aaa755adb17c76805ac708a120f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga7d010aaa755adb17c76805ac708a120f">state_shutdownHandle</a> (void)</td></tr>
 <tr class="memdesc:ga7d010aaa755adb17c76805ac708a120f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute SHUTDOWN state operations.  <br /></td></tr>
-<tr class="memitem:ga5e3af4f6ebe90cec1287b588d1ef1bde" id="r_ga5e3af4f6ebe90cec1287b588d1ef1bde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga5e3af4f6ebe90cec1287b588d1ef1bde">state_isDelayFinished</a> (uint32_t *p_counter, const uint32_t delay_ms, const uint32_t sampling_time_ms)</td></tr>
+<tr class="memitem:ga5e3af4f6ebe90cec1287b588d1ef1bde" id="r_ga5e3af4f6ebe90cec1287b588d1ef1bde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde">state_isDelayFinished</a> (uint32_t *p_counter, const uint32_t delay_ms, const uint32_t sampling_time_ms)</td></tr>
 <tr class="memdesc:ga5e3af4f6ebe90cec1287b588d1ef1bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if delay period has elapsed.  <br /></td></tr>
 <tr class="memitem:a71d74504708b0cc5f10d4e36b60fb2ad" id="r_a71d74504708b0cc5f10d4e36b60fb2ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71d74504708b0cc5f10d4e36b60fb2ad">state_isDebounceFinished</a> (bool condition, uint32_t timeout, uint32_t *p_counter)</td></tr>
 <tr class="memdesc:a71d74504708b0cc5f10d4e36b60fb2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if debounce condition is satisfied.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga4c3d9d6ec4fb0b0400ba95634c1b9ac3" id="r_ga4c3d9d6ec4fb0b0400ba95634c1b9ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga4c3d9d6ec4fb0b0400ba95634c1b9ac3">thisEVSE</a></td></tr>
+<tr class="memitem:ga4c3d9d6ec4fb0b0400ba95634c1b9ac3" id="r_ga4c3d9d6ec4fb0b0400ba95634c1b9ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___e_v_s_e__t.html">S_EVSE_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga4c3d9d6ec4fb0b0400ba95634c1b9ac3">thisEVSE</a></td></tr>
 <tr class="memdesc:ga4c3d9d6ec4fb0b0400ba95634c1b9ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global state management variables.  <br /></td></tr>
-<tr class="memitem:ga8ea1ad52470d704cc9761c0f95257004" id="r_ga8ea1ad52470d704cc9761c0f95257004"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___l_a_y_e_r.html#ga8ea1ad52470d704cc9761c0f95257004">g_relay_status</a> = 0</td></tr>
+<tr class="memitem:ga8ea1ad52470d704cc9761c0f95257004" id="r_ga8ea1ad52470d704cc9761c0f95257004"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga8ea1ad52470d704cc9761c0f95257004">g_relay_status</a> = 0</td></tr>
 <tr class="memdesc:ga8ea1ad52470d704cc9761c0f95257004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global relay status flag.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Source file for EVSE state machine module. </p>
-<p>Implements the state machine and control logic for EVSE:</p><ul>
-<li>State initialization and configuration</li>
-<li>State transitions and validation</li>
-<li>Debounce and delay management</li>
-<li>Fault handling and recovery</li>
-</ul>
-<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab</dd></dl>
+<div class="textblock"><p>Implementation of the EVSE state machine module. </p>
 </div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a13d1b2f8b2f4afaf52565b7c3f525799" name="a13d1b2f8b2f4afaf52565b7c3f525799"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13d1b2f8b2f4afaf52565b7c3f525799">&#9670;&#160;</a></span>K_STATE_ERROR_INVALID_</h2>
@@ -244,8 +231,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Invalid state error status. </p>
+<p>Invalid state error status </p>
 
 </div>
 </div>
@@ -260,8 +246,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>No error status. </p>
+<p>No error status </p>
 
 </div>
 </div>
@@ -276,8 +261,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Timeout error status. </p>
+<p>Timeout error status </p>
 
 </div>
 </div>
@@ -312,8 +296,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((s) &lt; <a class="code hl_enumvalue" href="group___a_p_p___l_a_y_e_r.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56">EVSE_STATE_SHUTDOWN</a>)</div>
-<div class="ttc" id="agroup___a_p_p___l_a_y_e_r_html_ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56"><div class="ttname"><a href="group___a_p_p___l_a_y_e_r.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56">EVSE_STATE_SHUTDOWN</a></div><div class="ttdeci">@ EVSE_STATE_SHUTDOWN</div><div class="ttdoc">Shutdown state.</div><div class="ttdef"><b>Definition</b> app_state_management_handler.h:142</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((s) &lt; <a class="code hl_enumvalue" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56">EVSE_STATE_SHUTDOWN</a>)</div>
+<div class="ttc" id="agroup___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t_html_ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56"><div class="ttname"><a href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56">EVSE_STATE_SHUTDOWN</a></div><div class="ttdeci">@ EVSE_STATE_SHUTDOWN</div><div class="ttdef"><b>Definition</b> app_state_management_handler.h:138</div></div>
 </div><!-- fragment -->
 <p>Local macro definitions. </p>
 
@@ -333,9 +317,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((s) == <a class="code hl_enumvalue" href="group___a_p_p___l_a_y_e_r.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89">EVSE_STATE_FAULT</a> || (s) == <a class="code hl_enumvalue" href="group___a_p_p___l_a_y_e_r.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb">EVSE_STATE_AUTORECOVERY</a>)</div>
-<div class="ttc" id="agroup___a_p_p___l_a_y_e_r_html_ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89"><div class="ttname"><a href="group___a_p_p___l_a_y_e_r.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89">EVSE_STATE_FAULT</a></div><div class="ttdeci">@ EVSE_STATE_FAULT</div><div class="ttdoc">Fault state.</div><div class="ttdef"><b>Definition</b> app_state_management_handler.h:140</div></div>
-<div class="ttc" id="agroup___a_p_p___l_a_y_e_r_html_ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb"><div class="ttname"><a href="group___a_p_p___l_a_y_e_r.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb">EVSE_STATE_AUTORECOVERY</a></div><div class="ttdeci">@ EVSE_STATE_AUTORECOVERY</div><div class="ttdoc">Auto recovery state.</div><div class="ttdef"><b>Definition</b> app_state_management_handler.h:141</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((s) == <a class="code hl_enumvalue" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89">EVSE_STATE_FAULT</a> || (s) == <a class="code hl_enumvalue" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb">EVSE_STATE_AUTORECOVERY</a>)</div>
+<div class="ttc" id="agroup___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t_html_ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89"><div class="ttname"><a href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89">EVSE_STATE_FAULT</a></div><div class="ttdeci">@ EVSE_STATE_FAULT</div><div class="ttdef"><b>Definition</b> app_state_management_handler.h:136</div></div>
+<div class="ttc" id="agroup___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t_html_ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb"><div class="ttname"><a href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb">EVSE_STATE_AUTORECOVERY</a></div><div class="ttdeci">@ EVSE_STATE_AUTORECOVERY</div><div class="ttdef"><b>Definition</b> app_state_management_handler.h:137</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,7 +359,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="app__state__management__handler_8c_a6867f0e73cb92030fee0b24785908e29_icgraph.png" border="0" usemap="#aapp__state__management__handler_8c_a6867f0e73cb92030fee0b24785908e29_icgraph" loading="lazy" alt=""/></div>
 <map name="aapp__state__management__handler_8c_a6867f0e73cb92030fee0b24785908e29_icgraph" id="aapp__state__management__handler_8c_a6867f0e73cb92030fee0b24785908e29_icgraph">
 <area shape="rect" title="Initialize state management configuration." alt="" coords="501,5,594,32"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gab6279279ac9e404eedf7848ce01d529c" title="Initialize state machine with initial state." alt="" coords="379,5,453,32"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Initialize state machine with initial state." alt="" coords="379,5,453,32"/>
 <area shape="poly" title=" " alt="" coords="486,21,454,21,454,16,486,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
 <area shape="poly" title=" " alt="" coords="363,21,332,21,332,16,363,16"/>
@@ -426,7 +410,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="app__state__management__handler_8c_a71d74504708b0cc5f10d4e36b60fb2ad_icgraph.png" border="0" usemap="#aapp__state__management__handler_8c_a71d74504708b0cc5f10d4e36b60fb2ad_icgraph" loading="lazy" alt=""/></div>
 <map name="aapp__state__management__handler_8c_a71d74504708b0cc5f10d4e36b60fb2ad_icgraph" id="aapp__state__management__handler_8c_a71d74504708b0cc5f10d4e36b60fb2ad_icgraph">
 <area shape="rect" title="Check if debounce condition is satisfied." alt="" coords="530,5,706,32"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
 <area shape="poly" title=" " alt="" coords="515,21,483,21,483,16,515,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
 <area shape="poly" title=" " alt="" coords="371,21,339,21,339,16,371,16"/>

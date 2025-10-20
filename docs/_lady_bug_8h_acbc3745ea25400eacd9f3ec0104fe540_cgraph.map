@@ -1,6 +1,6 @@
 <map id="LB_inf_loop_system" name="LB_inf_loop_system">
 <area shape="rect" id="Node000001" title="Infinite loop system function for continuous processing." alt="" coords="5,39,145,65"/>
-<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Updates all measurements to floating&#45;point format." alt="" coords="193,9,351,36"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Updates all measurements to floating&#45;point format." alt="" coords="193,9,351,36"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,39,177,34,178,39,145,44"/>
 <area shape="rect" id="Node000004" href="$group___m_i_d___p_o_w_e_r.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update overall derating coefficient." alt="" coords="199,64,344,91"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,58,184,63,183,69,144,64"/>

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('struct_s___indicator___led___config___type_def.html','
 </div><!--header-->
 <div class="contents">
 
-<p>LED configuration and state tracking structure.  
+<p>LED configuration and runtime state structure.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mid__indicator__handler_8h_source.html">mid_indicator_handler.h</a>&gt;</code></p>
@@ -102,30 +101,74 @@ Collaboration diagram for S_Indicator_Led_Config_TypeDef:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_s___indicator___led___config___type_def__coll__graph.png" border="0" usemap="#a_s___indicator___led___config___type_def_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_s___indicator___led___config___type_def_coll__map" id="a_s___indicator___led___config___type_def_coll__map">
-<area shape="rect" title="LED configuration and state tracking structure." alt="" coords="5,168,155,275"/>
-<area shape="rect" href="struct_s___g_p_i_o___pin___type_def.html" title="GPIO pin configuration and state structure." alt="" coords="9,5,151,96"/>
-<area shape="poly" title=" " alt="" coords="83,96,83,151,78,151,78,96"/>
+<area shape="rect" title="LED configuration and runtime state structure." alt="" coords="5,104,166,147"/>
+<area shape="rect" href="struct_s___g_p_i_o___pin___type_def.html" title="GPIO pin configuration and state structure." alt="" coords="9,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="88,47,88,103,83,103,83,47"/>
 </map>
-</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:gad7f3c69ec7862eaea6ef5414be19b357" id="r_gad7f3c69ec7862eaea6ef5414be19b357"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___g_p_i_o___pin___type_def.html">S_GPIO_Pin_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gad7f3c69ec7862eaea6ef5414be19b357">pin</a></td></tr>
-<tr class="memdesc:gad7f3c69ec7862eaea6ef5414be19b357"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO pin configuration.  <br /></td></tr>
-<tr class="memitem:ga51322ddb267b4729d6b5f2bb05d49fff" id="r_ga51322ddb267b4729d6b5f2bb05d49fff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga51322ddb267b4729d6b5f2bb05d49fff">counter</a></td></tr>
-<tr class="memdesc:ga51322ddb267b4729d6b5f2bb05d49fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal blink counter.  <br /></td></tr>
-<tr class="memitem:ga2a2dfbe4e16d354a061e65011284a313" id="r_ga2a2dfbe4e16d354a061e65011284a313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga2a2dfbe4e16d354a061e65011284a313">period</a></td></tr>
-<tr class="memdesc:ga2a2dfbe4e16d354a061e65011284a313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected blink period.  <br /></td></tr>
+<tr class="memitem:ad7f3c69ec7862eaea6ef5414be19b357" id="r_ad7f3c69ec7862eaea6ef5414be19b357"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___g_p_i_o___pin___type_def.html">S_GPIO_Pin_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7f3c69ec7862eaea6ef5414be19b357">pin</a></td></tr>
+<tr class="memitem:a51322ddb267b4729d6b5f2bb05d49fff" id="r_a51322ddb267b4729d6b5f2bb05d49fff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51322ddb267b4729d6b5f2bb05d49fff">counter</a></td></tr>
+<tr class="memitem:a2a2dfbe4e16d354a061e65011284a313" id="r_a2a2dfbe4e16d354a061e65011284a313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a2dfbe4e16d354a061e65011284a313">period</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>LED configuration and state tracking structure. </p>
-<p>Contains all parameters needed to control an LED:</p><ul>
-<li>GPIO pin configuration</li>
-<li>Blinking counter</li>
-<li>Period setting</li>
+<div class="textblock"><p>LED configuration and runtime state structure. </p>
+<p>Contains:</p><ul>
+<li>GPIO pin assignment <br  />
+</li>
+<li>Internal counter for blink timing <br  />
+</li>
+<li>Blinking period configuration </li>
 </ul>
-<p>This structure maintains both the static configuration and dynamic state of a single LED indicator. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a id="a51322ddb267b4729d6b5f2bb05d49fff" name="a51322ddb267b4729d6b5f2bb05d49fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51322ddb267b4729d6b5f2bb05d49fff">&#9670;&#160;</a></span>counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Software counter for blink timing </p>
+
+</div>
+</div>
+<a id="a2a2dfbe4e16d354a061e65011284a313" name="a2a2dfbe4e16d354a061e65011284a313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a2dfbe4e16d354a061e65011284a313">&#9670;&#160;</a></span>period</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> period</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Blink period selection </p>
+
+</div>
+</div>
+<a id="ad7f3c69ec7862eaea6ef5414be19b357" name="ad7f3c69ec7862eaea6ef5414be19b357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f3c69ec7862eaea6ef5414be19b357">&#9670;&#160;</a></span>pin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s___g_p_i_o___pin___type_def.html">S_GPIO_Pin_TypeDef</a> pin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LED GPIO pin </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="mid__indicator__handler_8h_source.html">mid_indicator_handler.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('group___d_r_v___p_w_m.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Public APIs and definitions for PWM signal generation.  
+<p>Implementation of Comp driver core functions.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for PWM Driver Module:</div>
@@ -101,83 +100,80 @@ Collaboration diagram for PWM Driver Module:</div>
 <div class="center"><img src="group___d_r_v___p_w_m.png" border="0" usemap="#agroup______d__r__v______p__w__m" loading="lazy" alt=""/></div>
 <map name="agroup______d__r__v______p__w__m" id="agroup______d__r__v______p__w__m">
 <area shape="rect" href="group___d_r_i_v_e_r___l_a_y_e_r.html" title="Low&#45;level hardware drivers (ADC, GPIO, PWM, UART...)." alt="" coords="5,5,98,32"/>
-<area shape="rect" title="Public APIs and definitions for PWM signal generation." alt="" coords="146,5,285,32"/>
+<area shape="rect" title="Implementation of Comp driver core functions." alt="" coords="146,5,285,32"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:S_5FPwm_5FConfig_5FTypeDef" id="r_S_5FPwm_5FConfig_5FTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM configuration and status structure.  <a href="struct_s___pwm___config___type_def.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM configuration and runtime structure.  <a href="struct_s___pwm___config___type_def.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
-Global PWM Instances</h2></td></tr>
-<tr class="memitem:ga25c20abb9fc1aa6499f4ec10f7e233ec" id="r_ga25c20abb9fc1aa6499f4ec10f7e233ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga25c20abb9fc1aa6499f4ec10f7e233ec">g_pwm_llc_config_</a></td></tr>
-<tr class="memdesc:ga25c20abb9fc1aa6499f4ec10f7e233ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLC converter PWM configuration.  <br /></td></tr>
-<tr class="memitem:gaed3d1d36bd2c47104e63bb4586101984" id="r_gaed3d1d36bd2c47104e63bb4586101984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaed3d1d36bd2c47104e63bb4586101984">g_pwm_fan_config_</a></td></tr>
-<tr class="memdesc:gaed3d1d36bd2c47104e63bb4586101984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fan control PWM configuration.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
-PWM Control Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
 <tr class="memitem:ga7d6efaf97c200f7181d544d024429647" id="r_ga7d6efaf97c200f7181d544d024429647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7d6efaf97c200f7181d544d024429647">pwm_init_</a> (void)</td></tr>
-<tr class="memdesc:ga7d6efaf97c200f7181d544d024429647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes PWM modules and configurations.  <br /></td></tr>
+<tr class="memdesc:ga7d6efaf97c200f7181d544d024429647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize PWM modules.  <br /></td></tr>
 <tr class="memitem:ga23898da2b0024e62dae58b7059f45397" id="r_ga23898da2b0024e62dae58b7059f45397"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga23898da2b0024e62dae58b7059f45397">pwm_enable_output_</a> (<a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a> *ppwmConfig)</td></tr>
-<tr class="memdesc:ga23898da2b0024e62dae58b7059f45397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables PWM output for specified channel.  <br /></td></tr>
+<tr class="memdesc:ga23898da2b0024e62dae58b7059f45397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PWM output channel.  <br /></td></tr>
 <tr class="memitem:ga458d338428ee338f681aea91905b4f26" id="r_ga458d338428ee338f681aea91905b4f26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga458d338428ee338f681aea91905b4f26">pwm_disable_output_</a> (<a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a> *ppwmConfig)</td></tr>
-<tr class="memdesc:ga458d338428ee338f681aea91905b4f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables PWM output for specified channel.  <br /></td></tr>
+<tr class="memdesc:ga458d338428ee338f681aea91905b4f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable PWM output channel.  <br /></td></tr>
 <tr class="memitem:ga116567f2c1c3d8f8419bc896bf1fd293" id="r_ga116567f2c1c3d8f8419bc896bf1fd293"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga116567f2c1c3d8f8419bc896bf1fd293">pwm_set_duty_</a> (<a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a> *ppwmConfig, uint32_t duty)</td></tr>
-<tr class="memdesc:ga116567f2c1c3d8f8419bc896bf1fd293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets PWM duty cycle.  <br /></td></tr>
+<tr class="memdesc:ga116567f2c1c3d8f8419bc896bf1fd293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PWM duty cycle.  <br /></td></tr>
 <tr class="memitem:gaaad481cc551cace115ec60a74249a1da" id="r_gaaad481cc551cace115ec60a74249a1da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaad481cc551cace115ec60a74249a1da">pwm_set_frequency_</a> (<a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a> *ppwmConfig, uint32_t freq)</td></tr>
-<tr class="memdesc:gaaad481cc551cace115ec60a74249a1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets PWM frequency.  <br /></td></tr>
+<tr class="memdesc:gaaad481cc551cace115ec60a74249a1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PWM frequency.  <br /></td></tr>
 <tr class="memitem:gad39744fcb0ef85f0b63c4dec1a62ca63" id="r_gad39744fcb0ef85f0b63c4dec1a62ca63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad39744fcb0ef85f0b63c4dec1a62ca63">pwm_set_deadtime_</a> (<a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a> *ppwmConfig, uint32_t deadtime)</td></tr>
-<tr class="memdesc:gad39744fcb0ef85f0b63c4dec1a62ca63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets PWM dead-time.  <br /></td></tr>
+<tr class="memdesc:gad39744fcb0ef85f0b63c4dec1a62ca63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PWM dead-time.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga25c20abb9fc1aa6499f4ec10f7e233ec" id="r_ga25c20abb9fc1aa6499f4ec10f7e233ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga25c20abb9fc1aa6499f4ec10f7e233ec">g_pwm_llc_config_</a></td></tr>
+<tr class="memdesc:ga25c20abb9fc1aa6499f4ec10f7e233ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global PWM configuration instances.  <br /></td></tr>
+<tr class="memitem:gaed3d1d36bd2c47104e63bb4586101984" id="r_gaed3d1d36bd2c47104e63bb4586101984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___pwm___config___type_def.html">S_Pwm_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaed3d1d36bd2c47104e63bb4586101984">g_pwm_fan_config_</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 Clock Configuration</h2></td></tr>
 <tr class="memitem:gac100d833cc001d5e52b2ff9b12666499" id="r_gac100d833cc001d5e52b2ff9b12666499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac100d833cc001d5e52b2ff9b12666499">K_FREQ_CLK_</a>&#160;&#160;&#160;64000000U</td></tr>
-<tr class="memdesc:gac100d833cc001d5e52b2ff9b12666499"><td class="mdescLeft">&#160;</td><td class="mdescRight">System clock frequency in Hz.  <br /></td></tr>
 <tr class="memitem:gae45d2e7f5ebc4324bf6516bed3a87be8" id="r_gae45d2e7f5ebc4324bf6516bed3a87be8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae45d2e7f5ebc4324bf6516bed3a87be8">K_DEADTIME_FACTOR_</a>&#160;&#160;&#160;64 / 1000</td></tr>
-<tr class="memdesc:gae45d2e7f5ebc4324bf6516bed3a87be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dead-time factor (64MHz/10^9)  <br /></td></tr>
-<tr class="memitem:ga9bc5dffc38034b64902f62decfe7f441" id="r_ga9bc5dffc38034b64902f62decfe7f441"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9bc5dffc38034b64902f62decfe7f441">K_PWM_TIMER_</a>&#160;&#160;&#160;htim1</td></tr>
-<tr class="memdesc:ga9bc5dffc38034b64902f62decfe7f441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main PWM timer instance.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 LLC Converter Configuration</h2></td></tr>
 <tr class="memitem:ga1d3c8d179c93b3c767609207087cbb2a" id="r_ga1d3c8d179c93b3c767609207087cbb2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d3c8d179c93b3c767609207087cbb2a">K_PWM_LLC_CHANNEL_</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memdesc:ga1d3c8d179c93b3c767609207087cbb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLC PWM channel number.  <br /></td></tr>
 <tr class="memitem:ga06f28df535fbdcfa21ab580519ee116b" id="r_ga06f28df535fbdcfa21ab580519ee116b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga06f28df535fbdcfa21ab580519ee116b">K_PWM_LLC_FREQ_</a>&#160;&#160;&#160;400000U</td></tr>
-<tr class="memdesc:ga06f28df535fbdcfa21ab580519ee116b"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLC switching frequency in Hz.  <br /></td></tr>
 <tr class="memitem:gad2f628cf439bd46ce39c8b2ac565fe11" id="r_gad2f628cf439bd46ce39c8b2ac565fe11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad2f628cf439bd46ce39c8b2ac565fe11">K_PWM_LLC_DUTY_</a>&#160;&#160;&#160;50U</td></tr>
-<tr class="memdesc:gad2f628cf439bd46ce39c8b2ac565fe11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default LLC duty cycle in %.  <br /></td></tr>
 <tr class="memitem:gac09bf0be70dbe45a260a62189982b922" id="r_gac09bf0be70dbe45a260a62189982b922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac09bf0be70dbe45a260a62189982b922">K_PWM_LLC_DEADTIME_</a>&#160;&#160;&#160;500U</td></tr>
-<tr class="memdesc:gac09bf0be70dbe45a260a62189982b922"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLC dead-time in nanoseconds.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 Fan Control Configuration</h2></td></tr>
 <tr class="memitem:ga9079700b100af26b322667ee639cd8fb" id="r_ga9079700b100af26b322667ee639cd8fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9079700b100af26b322667ee639cd8fb">K_PWM_FAN_CHANNEL_</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ga9079700b100af26b322667ee639cd8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fan PWM channel number.  <br /></td></tr>
 <tr class="memitem:ga85152d70a9a9cd5019f512a6ed6fa1a6" id="r_ga85152d70a9a9cd5019f512a6ed6fa1a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga85152d70a9a9cd5019f512a6ed6fa1a6">K_PWM_FAN_FREQ_</a>&#160;&#160;&#160;300000U</td></tr>
-<tr class="memdesc:ga85152d70a9a9cd5019f512a6ed6fa1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fan PWM frequency in Hz.  <br /></td></tr>
 <tr class="memitem:gac040760290dba3e0278c1b977132f5b5" id="r_gac040760290dba3e0278c1b977132f5b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac040760290dba3e0278c1b977132f5b5">K_PWM_FAN_DUTY_</a>&#160;&#160;&#160;25U</td></tr>
-<tr class="memdesc:gac040760290dba3e0278c1b977132f5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default fan duty cycle in %.  <br /></td></tr>
-<tr class="memitem:gad0b1a0089b94c697787230bccbd85072" id="r_gad0b1a0089b94c697787230bccbd85072"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad0b1a0089b94c697787230bccbd85072">K_PWM_FAN_TIMER_</a>&#160;&#160;&#160;htim4</td></tr>
-<tr class="memdesc:gad0b1a0089b94c697787230bccbd85072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fan control timer instance.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
-PWM Channel Configuration</h2></td></tr>
+PWM Channel Masks</h2></td></tr>
 <tr class="memitem:ga968ac8d5c58f27c29c677bcc0c4257d7" id="r_ga968ac8d5c58f27c29c677bcc0c4257d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga968ac8d5c58f27c29c677bcc0c4257d7">K_PWM_CH1_MASK_</a>&#160;&#160;&#160;((1U &lt;&lt; 0) | (1U &lt;&lt; 2))</td></tr>
-<tr class="memdesc:ga968ac8d5c58f27c29c677bcc0c4257d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel 1 CCER mask.  <br /></td></tr>
 <tr class="memitem:gadfb007cd68f645821b9d37678ef7f622" id="r_gadfb007cd68f645821b9d37678ef7f622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadfb007cd68f645821b9d37678ef7f622">K_PWM_CH2_MASK_</a>&#160;&#160;&#160;((1U &lt;&lt; 4) | (1U &lt;&lt; 6))</td></tr>
-<tr class="memdesc:gadfb007cd68f645821b9d37678ef7f622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel 2 CCER mask.  <br /></td></tr>
 <tr class="memitem:gac753c167a793ca8835593df74e3eee99" id="r_gac753c167a793ca8835593df74e3eee99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac753c167a793ca8835593df74e3eee99">K_PWM_CH3_MASK_</a>&#160;&#160;&#160;((1U &lt;&lt; 8) | (1U &lt;&lt; 10))</td></tr>
-<tr class="memdesc:gac753c167a793ca8835593df74e3eee99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel 3 CCER mask.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<p>Public APIs and definitions for PWM signal generation. </p>
-<p>This file contains all the exported function prototypes, macros, and data structures for the PWM driver module. The module provides:</p><ul>
+<p>Implementation of Comp driver core functions. </p>
+<p>Public APIs and definitions for PWM signal generation.</p>
+<p>Implements the initialization and processing functions for PWM:</p><ul>
+<li>LLC converter PWM configuration and control</li>
+<li>Fan speed PWM generation</li>
+<li>Dead-time management for complementary outputs</li>
+<li>Frequency and duty cycle control</li>
+</ul>
+<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#ga7d6efaf97c200f7181d544d024429647">pwm_init_</a>();</div>
+<div class="line"><a class="code hl_function" href="#ga23898da2b0024e62dae58b7059f45397">pwm_enable_output_</a>(&amp;<a class="code hl_variable" href="#ga25c20abb9fc1aa6499f4ec10f7e233ec">g_pwm_llc_config_</a>);</div>
+<div class="ttc" id="agroup___d_r_v___p_w_m_html_ga23898da2b0024e62dae58b7059f45397"><div class="ttname"><a href="#ga23898da2b0024e62dae58b7059f45397">pwm_enable_output_</a></div><div class="ttdeci">int pwm_enable_output_(S_Pwm_Config_TypeDef *ppwmConfig)</div><div class="ttdoc">Enable PWM output channel.</div><div class="ttdef"><b>Definition</b> drv_pwm_core.c:111</div></div>
+<div class="ttc" id="agroup___d_r_v___p_w_m_html_ga25c20abb9fc1aa6499f4ec10f7e233ec"><div class="ttname"><a href="#ga25c20abb9fc1aa6499f4ec10f7e233ec">g_pwm_llc_config_</a></div><div class="ttdeci">S_Pwm_Config_TypeDef g_pwm_llc_config_</div><div class="ttdoc">Global PWM configuration instances.</div><div class="ttdef"><b>Definition</b> drv_pwm_core.c:72</div></div>
+<div class="ttc" id="agroup___d_r_v___p_w_m_html_ga7d6efaf97c200f7181d544d024429647"><div class="ttname"><a href="#ga7d6efaf97c200f7181d544d024429647">pwm_init_</a></div><div class="ttdeci">void pwm_init_(void)</div><div class="ttdoc">Initialize PWM modules.</div><div class="ttdef"><b>Definition</b> drv_pwm_core.c:88</div></div>
+</div><!-- fragment --><dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>EVSELab</dd></dl>
+<p>This file contains all exported function prototypes, macros, and data structures for the PWM driver module:</p><ul>
 <li>LLC converter PWM generation with dead-time control</li>
 <li>Fan speed control via PWM</li>
-<li>Multiple channel configuration</li>
 <li>Frequency and duty cycle management</li>
 </ul>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
@@ -195,7 +191,6 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
 <p>Dead-time factor (64MHz/10^9) </p>
 
 </div>
@@ -211,8 +206,7 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>System clock frequency in Hz. </p>
+<p>System clock frequency in Hz </p>
 
 </div>
 </div>
@@ -228,8 +222,6 @@ PWM Channel Configuration</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Channel 1 CCER mask. </p>
-
 </div>
 </div>
 <a id="gadfb007cd68f645821b9d37678ef7f622" name="gadfb007cd68f645821b9d37678ef7f622"></a>
@@ -243,8 +235,6 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Channel 2 CCER mask. </p>
 
 </div>
 </div>
@@ -260,8 +250,6 @@ PWM Channel Configuration</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Channel 3 CCER mask. </p>
-
 </div>
 </div>
 <a id="ga9079700b100af26b322667ee639cd8fb" name="ga9079700b100af26b322667ee639cd8fb"></a>
@@ -275,8 +263,6 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Fan PWM channel number. </p>
 
 </div>
 </div>
@@ -292,8 +278,6 @@ PWM Channel Configuration</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default fan duty cycle in %. </p>
-
 </div>
 </div>
 <a id="ga85152d70a9a9cd5019f512a6ed6fa1a6" name="ga85152d70a9a9cd5019f512a6ed6fa1a6"></a>
@@ -307,24 +291,6 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Fan PWM frequency in Hz. </p>
-
-</div>
-</div>
-<a id="gad0b1a0089b94c697787230bccbd85072" name="gad0b1a0089b94c697787230bccbd85072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad0b1a0089b94c697787230bccbd85072">&#9670;&#160;</a></span>K_PWM_FAN_TIMER_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define K_PWM_FAN_TIMER_&#160;&#160;&#160;htim4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fan control timer instance. </p>
 
 </div>
 </div>
@@ -340,8 +306,6 @@ PWM Channel Configuration</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>LLC PWM channel number. </p>
-
 </div>
 </div>
 <a id="gac09bf0be70dbe45a260a62189982b922" name="gac09bf0be70dbe45a260a62189982b922"></a>
@@ -355,8 +319,6 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>LLC dead-time in nanoseconds. </p>
 
 </div>
 </div>
@@ -372,8 +334,6 @@ PWM Channel Configuration</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default LLC duty cycle in %. </p>
-
 </div>
 </div>
 <a id="ga06f28df535fbdcfa21ab580519ee116b" name="ga06f28df535fbdcfa21ab580519ee116b"></a>
@@ -387,24 +347,6 @@ PWM Channel Configuration</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>LLC switching frequency in Hz. </p>
-
-</div>
-</div>
-<a id="ga9bc5dffc38034b64902f62decfe7f441" name="ga9bc5dffc38034b64902f62decfe7f441"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9bc5dffc38034b64902f62decfe7f441">&#9670;&#160;</a></span>K_PWM_TIMER_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define K_PWM_TIMER_&#160;&#160;&#160;htim1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Main PWM timer instance. </p>
 
 </div>
 </div>
@@ -424,34 +366,17 @@ PWM Channel Configuration</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disables PWM output for specified channel. </p>
+<p>Disable PWM output channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Status code </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Disables PWM output for specified channel.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to the PWM configuration structure containing the timer handle. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Null pointer </td></tr>
-    <tr><td class="paramname">-2</td><td>Invalid timer instance </td></tr>
-    <tr><td class="paramname">-3</td><td>Invalid channel (only channel 1, 2, 3 are supported) </td></tr>
+    <tr><td class="paramname">-1</td><td>NULL pointer </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,16 +385,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_ga458d338428ee338f681aea91905b4f26_icgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_ga458d338428ee338f681aea91905b4f26_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_ga458d338428ee338f681aea91905b4f26_icgraph" id="agroup___d_r_v___p_w_m_ga458d338428ee338f681aea91905b4f26_icgraph">
-<area shape="rect" title="Disables PWM output for specified channel." alt="" coords="889,132,1036,159"/>
-<area shape="rect" href="mid__llc__handler_8c.html#afb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="747,81,841,108"/>
+<area shape="rect" title="Disable PWM output channel." alt="" coords="889,132,1036,159"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="747,81,841,108"/>
 <area shape="poly" title=" " alt="" coords="901,130,840,111,842,106,902,125"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,81,482,108"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,81,482,108"/>
 <area shape="poly" title=" " alt="" coords="874,160,799,166,712,169,620,163,530,148,488,131,453,111,456,106,490,127,531,143,621,158,712,163,799,161,873,155"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="553,5,676,32"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="553,5,676,32"/>
 <area shape="poly" title=" " alt="" coords="756,76,698,46,666,35,668,30,700,42,758,71"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="530,56,699,83"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="530,56,699,83"/>
 <area shape="poly" title=" " alt="" coords="731,88,699,84,700,79,731,83"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="555,107,674,133"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="555,107,674,133"/>
 <area shape="poly" title=" " alt="" coords="731,106,674,114,674,109,731,101"/>
 <area shape="poly" title=" " alt="" coords="549,40,531,46,459,83,457,79,529,42,547,35"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,81,338,108"/>
@@ -498,58 +423,33 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Enables PWM output for specified channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Status code </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Enables PWM output for specified channel.</p>
-<p>Activates PWM output with sequence:</p><ol type="1">
-<li>Parameter validation</li>
-<li>Enable channel output</li>
-<li>Start timer operation</li>
-<li>Update status tracking</li>
-</ol>
+<p>Enable PWM output channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Status code </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">0</td><td>Success </td></tr>
     <tr><td class="paramname">-1</td><td>NULL pointer </td></tr>
-    <tr><td class="paramname">-2</td><td>Invalid timer </td></tr>
     <tr><td class="paramname">-3</td><td>Invalid channel</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Configuration must be initialized first </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Ensure proper dead-time configured for complementary outputs </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga458d338428ee338f681aea91905b4f26" title="Disables PWM output for specified channel.">pwm_disable_output_</a>, <a class="el" href="#ga7d6efaf97c200f7181d544d024429647" title="Initializes PWM modules and configurations.">pwm_init_</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Configuration must be initialized first. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_ga23898da2b0024e62dae58b7059f45397_icgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_ga23898da2b0024e62dae58b7059f45397_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_ga23898da2b0024e62dae58b7059f45397_icgraph" id="agroup___d_r_v___p_w_m_ga23898da2b0024e62dae58b7059f45397_icgraph">
-<area shape="rect" title="Enables PWM output for specified channel." alt="" coords="876,31,1020,57"/>
-<area shape="rect" href="mid__llc__handler_8c.html#ad127a12de6fc65cf8f07d9ab3f301165" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="725,5,828,32"/>
+<area shape="rect" title="Enable PWM output channel." alt="" coords="876,31,1020,57"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="725,5,828,32"/>
 <area shape="poly" title=" " alt="" coords="860,34,828,29,829,24,861,28"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,31,482,57"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,31,482,57"/>
 <area shape="poly" title=" " alt="" coords="861,47,483,47,483,41,861,41"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="530,5,677,32"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="530,5,677,32"/>
 <area shape="poly" title=" " alt="" coords="709,21,677,21,677,16,709,16"/>
 <area shape="poly" title=" " alt="" coords="515,35,483,39,482,34,515,29"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,31,338,57"/>
@@ -576,47 +476,24 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes PWM modules and configurations. </p>
-<dl class="section note"><dt>Note</dt><dd>Must be called before using any other PWM functions</dd></dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#ga7d6efaf97c200f7181d544d024429647">pwm_init_</a>();  <span class="comment">// Initialize PWM modules</span></div>
-<div class="ttc" id="agroup___d_r_v___p_w_m_html_ga7d6efaf97c200f7181d544d024429647"><div class="ttname"><a href="#ga7d6efaf97c200f7181d544d024429647">pwm_init_</a></div><div class="ttdeci">void pwm_init_(void)</div><div class="ttdoc">Initialize PWM modules.</div><div class="ttdef"><b>Definition</b> drv_pwm_core.c:120</div></div>
-</div><!-- fragment --><p>Initializes PWM modules and configurations.</p>
+<p>Initialize PWM modules. </p>
 <p>Performs complete PWM initialization:</p><ol type="1">
-<li>LLC Converter PWM Setup<ul>
-<li>Timer base configuration</li>
-<li>Channel assignment</li>
-<li>Frequency and duty configuration</li>
-<li>Dead-time setup</li>
-</ul>
-</li>
-<li>Fan Control PWM Setup<ul>
-<li>Timer base configuration</li>
-<li>Channel assignment</li>
-<li>Speed control setup</li>
-</ul>
-</li>
+<li>LLC converter setup (frequency, duty, dead-time)</li>
+<li>Fan control setup</li>
 </ol>
-<dl class="section note"><dt>Note</dt><dd>Must be called before using any other PWM functions </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Ensure clocks enabled before calling</dd></dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#ga7d6efaf97c200f7181d544d024429647">pwm_init_</a>();  <span class="comment">// Initialize both PWM channels</span></div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_variable" href="#ga25c20abb9fc1aa6499f4ec10f7e233ec">g_pwm_llc_config_</a>.status_pwm == <a class="code hl_define" href="drv__pwm__core_8c.html#a914ec03815ac9741066a79c3f4aef830">K_PWM_STATUS_ENABLED_</a>) {</div>
-<div class="line">    <span class="comment">// PWM initialization successful</span></div>
-<div class="line">}</div>
-<div class="ttc" id="adrv__pwm__core_8c_html_a914ec03815ac9741066a79c3f4aef830"><div class="ttname"><a href="drv__pwm__core_8c.html#a914ec03815ac9741066a79c3f4aef830">K_PWM_STATUS_ENABLED_</a></div><div class="ttdeci">#define K_PWM_STATUS_ENABLED_</div><div class="ttdoc">PWM output enabled.</div><div class="ttdef"><b>Definition</b> drv_pwm_core.c:36</div></div>
-<div class="ttc" id="agroup___d_r_v___p_w_m_html_ga25c20abb9fc1aa6499f4ec10f7e233ec"><div class="ttname"><a href="#ga25c20abb9fc1aa6499f4ec10f7e233ec">g_pwm_llc_config_</a></div><div class="ttdeci">S_Pwm_Config_TypeDef g_pwm_llc_config_</div><div class="ttdoc">LLC converter PWM configuration.</div></div>
-</div><!-- fragment --> <div class="dynheader">
+<dl class="section note"><dt>Note</dt><dd>Must be called before using any PWM functions. </dd></dl>
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_cgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_cgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_cgraph" id="agroup___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_cgraph">
-<area shape="rect" title="Initializes PWM modules and configurations." alt="" coords="5,56,86,83"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Sets the dead&#45;time value for the specified PWM configuration." alt="" coords="136,5,277,32"/>
+<area shape="rect" title="Initialize PWM modules." alt="" coords="5,56,86,83"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="136,5,277,32"/>
 <area shape="poly" title=" " alt="" coords="85,54,146,35,148,40,87,59"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Sets the PWM duty cycle for the specified configuration (only channel 1, 2, 3 are supported)" alt="" coords="327,81,440,108"/>
-<area shape="poly" title=" " alt="" coords="86,70,312,87,312,92,86,75"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Sets the PWM frequency for the specified configuration." alt="" coords="134,107,279,133"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="150,56,263,83"/>
+<area shape="poly" title=" " alt="" coords="86,67,134,67,134,72,86,72"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="134,107,279,133"/>
 <area shape="poly" title=" " alt="" coords="87,79,148,99,146,104,85,84"/>
-<area shape="poly" title=" " alt="" coords="279,107,311,102,312,108,280,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -624,7 +501,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_icgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_icgraph" id="agroup___d_r_v___p_w_m_ga7d6efaf97c200f7181d544d024429647_icgraph">
-<area shape="rect" title="Initializes PWM modules and configurations." alt="" coords="379,5,459,32"/>
+<area shape="rect" title="Initialize PWM modules." alt="" coords="379,5,459,32"/>
 <area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
 <area shape="poly" title=" " alt="" coords="363,21,332,21,332,16,363,16"/>
 <area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
@@ -653,34 +530,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets PWM dead-time. </p>
+<p>Set PWM dead-time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
-    <tr><td class="paramname">deadtime</td><td>Dead-time in nanoseconds </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Status code </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters </td></tr>
-    <tr><td class="paramname">-2</td><td>Dead-time out of range</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Sets PWM dead-time.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to the PWM configuration structure. </td></tr>
-    <tr><td class="paramname">deadtime</td><td>Desired dead-time value to be set (in ns).</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadtime</td><td>Desired dead-time (ns) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int</td><td>Returns 0 on success, -1 if ppwmConfig is NULL, -2 if timer instance is NULL. </td></tr>
+    <tr><td class="paramname">0</td><td>Success </td></tr>
+    <tr><td class="paramname">-1</td><td>Invalid pointer </td></tr>
   </table>
   </dd>
 </dl>
@@ -689,39 +550,39 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_gad39744fcb0ef85f0b63c4dec1a62ca63_icgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_gad39744fcb0ef85f0b63c4dec1a62ca63_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_gad39744fcb0ef85f0b63c4dec1a62ca63_icgraph" id="agroup___d_r_v___p_w_m_gad39744fcb0ef85f0b63c4dec1a62ca63_icgraph">
-<area shape="rect" title="Sets PWM dead&#45;time." alt="" coords="978,203,1119,229"/>
-<area shape="rect" href="mid__llc__handler_8c.html#aa06d2118dd9547c02d2235dacdac6cc7" title="Executes current regulation loop using frequency control." alt="" coords="779,5,917,48"/>
+<area shape="rect" title="Set PWM dead&#45;time." alt="" coords="978,203,1119,229"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7" title="Executes current regulation loop using frequency control." alt="" coords="779,5,917,48"/>
 <area shape="poly" title=" " alt="" coords="1031,190,990,127,961,92,928,62,911,51,913,46,932,58,965,89,994,124,1035,188"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a740d1b313849d823ccdf78e9155eaa61" title="Duty cycle control loop." alt="" coords="771,72,925,99"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03" title="Duty cycle control loop for LLC converter." alt="" coords="771,72,925,99"/>
 <area shape="poly" title=" " alt="" coords="1024,193,982,152,929,113,904,102,906,97,931,108,985,148,1027,189"/>
-<area shape="rect" href="mid__llc__handler_8c.html#add2f095dc7e8abc77f29433a71129ab7" title="Hybrid PFM/PWM control strategy." alt="" coords="766,123,930,149"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05" title="Hybrid control mode for LLC (PFM/PWM switching)." alt="" coords="766,123,930,149"/>
 <area shape="poly" title=" " alt="" coords="1005,198,929,164,897,152,898,147,931,159,1008,193"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a74381259fff14dcc75e30df64adc10f0" title="Cascaded voltage&#45;duty control." alt="" coords="766,173,930,200"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e" title="Cascaded voltage&#45;duty control loop." alt="" coords="766,173,930,200"/>
 <area shape="poly" title=" " alt="" coords="962,206,930,201,931,196,963,201"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a2a627e165db7f32bc036d791806f01fc" title="Execute voltage regulation loop for LLC." alt="" coords="778,224,918,267"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a" title="Execute voltage regulation loop for LLC converter." alt="" coords="778,224,918,267"/>
 <area shape="poly" title=" " alt="" coords="963,231,919,238,918,232,962,226"/>
-<area shape="rect" href="mid__llc__handler_8c.html#ad127a12de6fc65cf8f07d9ab3f301165" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,291,900,317"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,291,900,317"/>
 <area shape="poly" title=" " alt="" coords="1013,240,931,281,900,293,898,288,929,276,1010,235"/>
-<area shape="rect" href="mid__llc__handler_8c.html#afb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,341,895,368"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,341,895,368"/>
 <area shape="poly" title=" " alt="" coords="1029,244,987,288,960,312,931,332,897,347,895,342,929,327,957,307,983,284,1025,240"/>
 <area shape="rect" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="808,404,888,431"/>
 <area shape="poly" title=" " alt="" coords="1036,245,995,312,965,349,932,382,890,406,887,402,928,378,961,345,990,309,1031,242"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,149,707,176"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,149,707,176"/>
 <area shape="poly" title=" " alt="" coords="751,151,708,156,707,151,750,145"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,277,492,304"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,277,492,304"/>
 <area shape="poly" title=" " alt="" coords="598,187,551,217,465,279,462,275,548,212,595,182"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,277,338,304"/>
 <area shape="poly" title=" " alt="" coords="380,293,338,293,338,288,380,288"/>
 <area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,277,115,304"/>
 <area shape="poly" title=" " alt="" coords="147,293,115,293,115,288,147,288"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,227,707,253"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,227,707,253"/>
 <area shape="poly" title=" " alt="" coords="786,288,680,257,682,251,787,283"/>
 <area shape="poly" title=" " alt="" coords="566,261,493,281,491,275,565,255"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,277,695,304"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,277,695,304"/>
 <area shape="poly" title=" " alt="" coords="786,339,680,307,682,302,787,334"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,328,718,355"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,328,718,355"/>
 <area shape="poly" title=" " alt="" coords="785,353,718,349,718,344,785,348"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,379,693,405"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,379,693,405"/>
 <area shape="poly" title=" " alt="" coords="786,368,694,384,693,379,785,363"/>
 <area shape="poly" title=" " alt="" coords="557,293,492,293,492,288,557,288"/>
 <area shape="poly" title=" " alt="" coords="565,326,491,306,493,301,566,321"/>
@@ -754,34 +615,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets PWM duty cycle. </p>
+<p>Set PWM duty cycle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
-    <tr><td class="paramname">duty</td><td>Duty cycle in percentage (0-100) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Status code </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters </td></tr>
-    <tr><td class="paramname">-2</td><td>Invalid duty cycle value</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Sets PWM duty cycle.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to the PWM configuration structure. </td></tr>
-    <tr><td class="paramname">duty</td><td>Desired duty cycle percentage (0-100) [%]. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>Duty cycle (0–100%) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int</td><td>Returns 0 on success, -1 if ppwmConfig is NULL, -2 if timer instance is NULL. </td></tr>
+    <tr><td class="paramname">0</td><td>Success </td></tr>
+    <tr><td class="paramname">-1</td><td>Invalid pointer </td></tr>
   </table>
   </dd>
 </dl>
@@ -790,54 +635,45 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_ga116567f2c1c3d8f8419bc896bf1fd293_icgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_ga116567f2c1c3d8f8419bc896bf1fd293_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_ga116567f2c1c3d8f8419bc896bf1fd293_icgraph" id="agroup___d_r_v___p_w_m_ga116567f2c1c3d8f8419bc896bf1fd293_icgraph">
-<area shape="rect" title="Sets PWM duty cycle." alt="" coords="1190,183,1304,209"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a740d1b313849d823ccdf78e9155eaa61" title="Duty cycle control loop." alt="" coords="983,5,1137,32"/>
-<area shape="poly" title=" " alt="" coords="1230,170,1194,111,1170,80,1141,53,1108,35,1111,30,1144,49,1174,76,1199,108,1235,167"/>
-<area shape="rect" href="mid__llc__handler_8c.html#add2f095dc7e8abc77f29433a71129ab7" title="Hybrid PFM/PWM control strategy." alt="" coords="766,40,930,67"/>
-<area shape="poly" title=" " alt="" coords="1222,174,1186,142,1141,113,1089,92,1033,78,930,61,931,56,1034,72,1090,87,1144,108,1189,138,1225,170"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a74381259fff14dcc75e30df64adc10f0" title="Cascaded voltage&#45;duty control." alt="" coords="978,360,1142,387"/>
-<area shape="poly" title=" " alt="" coords="1235,225,1199,284,1174,316,1144,343,1111,362,1108,357,1141,339,1170,312,1194,281,1230,222"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a2a627e165db7f32bc036d791806f01fc" title="Execute voltage regulation loop for LLC." alt="" coords="778,259,918,301"/>
-<area shape="poly" title=" " alt="" coords="1175,214,919,268,918,263,1174,208"/>
-<area shape="rect" href="mid__llc__handler_8c.html#ad127a12de6fc65cf8f07d9ab3f301165" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,91,900,117"/>
-<area shape="poly" title=" " alt="" coords="1208,177,1176,161,1142,148,1077,132,1012,120,900,109,900,104,1013,115,1079,126,1143,143,1179,156,1211,172"/>
-<area shape="rect" href="mid__llc__handler_8c.html#afb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,208,895,235"/>
-<area shape="poly" title=" " alt="" coords="1175,203,896,221,895,216,1175,198"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="808,325,888,352"/>
-<area shape="poly" title=" " alt="" coords="1214,220,1143,258,1075,284,1005,305,889,333,888,328,1003,300,1073,279,1141,254,1212,216"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Sets the PWM frequency for the specified configuration." alt="" coords="988,157,1133,184"/>
-<area shape="poly" title=" " alt="" coords="1175,189,1133,183,1134,178,1175,184"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,40,707,67"/>
-<area shape="poly" title=" " alt="" coords="750,56,708,56,708,51,750,51"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,141,492,168"/>
-<area shape="poly" title=" " alt="" coords="564,75,551,81,501,112,462,143,459,139,498,108,548,76,562,70"/>
-<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,141,338,168"/>
-<area shape="poly" title=" " alt="" coords="380,157,338,157,338,152,380,152"/>
-<area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,141,115,168"/>
-<area shape="poly" title=" " alt="" coords="147,157,115,157,115,152,147,152"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,91,707,117"/>
-<area shape="poly" title=" " alt="" coords="781,107,707,107,707,101,781,101"/>
-<area shape="poly" title=" " alt="" coords="566,125,493,145,491,139,565,119"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,141,695,168"/>
-<area shape="poly" title=" " alt="" coords="786,205,765,199,717,183,681,171,682,166,718,177,766,193,788,200"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,192,718,219"/>
-<area shape="poly" title=" " alt="" coords="785,219,718,214,718,209,785,214"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,243,693,269"/>
-<area shape="poly" title=" " alt="" coords="785,234,694,249,693,244,785,229"/>
-<area shape="poly" title=" " alt="" coords="557,157,492,157,492,152,557,152"/>
-<area shape="poly" title=" " alt="" coords="565,190,491,170,493,165,566,185"/>
-<area shape="poly" title=" " alt="" coords="562,239,548,233,498,202,459,171,462,166,501,197,551,228,564,234"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="552,325,715,352"/>
-<area shape="poly" title=" " alt="" coords="792,341,715,341,715,336,792,336"/>
-<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="386,325,501,352"/>
-<area shape="poly" title=" " alt="" coords="537,341,502,341,502,336,537,336"/>
-<area shape="poly" title=" " alt="" coords="1030,149,984,114,929,81,901,70,903,65,931,76,987,110,1033,145"/>
-<area shape="poly" title=" " alt="" coords="1026,195,931,249,906,260,904,256,929,244,1023,190"/>
-<area shape="poly" title=" " alt="" coords="1001,155,929,132,893,120,894,115,931,127,1003,150"/>
-<area shape="poly" title=" " alt="" coords="987,191,896,213,895,208,986,186"/>
-<area shape="poly" title=" " alt="" coords="1044,199,998,257,966,289,931,316,889,333,887,328,929,311,963,285,994,254,1040,195"/>
-<area shape="rect" href="mid__llc__handler_8c.html#aa06d2118dd9547c02d2235dacdac6cc7" title="Executes current regulation loop using frequency control." alt="" coords="779,141,917,184"/>
-<area shape="poly" title=" " alt="" coords="972,170,917,168,918,163,972,165"/>
+<area shape="rect" title="Set PWM duty cycle." alt="" coords="978,165,1091,192"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03" title="Duty cycle control loop for LLC converter." alt="" coords="771,5,925,32"/>
+<area shape="poly" title=" " alt="" coords="1017,153,981,99,957,70,928,46,907,35,910,30,932,42,961,67,986,95,1022,150"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05" title="Hybrid control mode for LLC (PFM/PWM switching)." alt="" coords="766,56,930,83"/>
+<area shape="poly" title=" " alt="" coords="1007,156,972,126,929,97,902,86,904,81,931,92,975,121,1011,152"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e" title="Cascaded voltage&#45;duty control loop." alt="" coords="766,107,930,133"/>
+<area shape="poly" title=" " alt="" coords="975,163,929,148,893,136,894,131,931,143,977,158"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a" title="Execute voltage regulation loop for LLC converter." alt="" coords="778,157,918,200"/>
+<area shape="poly" title=" " alt="" coords="962,181,918,181,918,176,962,176"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,224,900,251"/>
+<area shape="poly" title=" " alt="" coords="977,200,931,215,894,226,893,221,929,209,975,195"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,275,895,301"/>
+<area shape="poly" title=" " alt="" coords="1011,205,975,236,931,265,896,279,894,274,929,260,972,232,1007,201"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="808,337,888,364"/>
+<area shape="poly" title=" " alt="" coords="1020,207,984,261,959,290,932,315,890,339,887,335,928,311,955,286,980,258,1016,204"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,83,707,109"/>
+<area shape="poly" title=" " alt="" coords="751,84,708,89,707,84,750,79"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,211,492,237"/>
+<area shape="poly" title=" " alt="" coords="598,120,551,150,465,212,462,208,548,146,595,116"/>
+<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,211,338,237"/>
+<area shape="poly" title=" " alt="" coords="380,227,338,227,338,221,380,221"/>
+<area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,211,115,237"/>
+<area shape="poly" title=" " alt="" coords="147,227,115,227,115,221,147,221"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,160,707,187"/>
+<area shape="poly" title=" " alt="" coords="786,222,680,190,682,185,787,217"/>
+<area shape="poly" title=" " alt="" coords="566,194,493,214,491,209,565,189"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,211,695,237"/>
+<area shape="poly" title=" " alt="" coords="786,272,680,241,682,235,787,267"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,261,718,288"/>
+<area shape="poly" title=" " alt="" coords="785,287,718,283,718,277,785,281"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,312,693,339"/>
+<area shape="poly" title=" " alt="" coords="786,301,694,318,693,312,785,296"/>
+<area shape="poly" title=" " alt="" coords="557,227,492,227,492,221,557,221"/>
+<area shape="poly" title=" " alt="" coords="565,259,491,239,493,234,566,254"/>
+<area shape="poly" title=" " alt="" coords="562,309,548,302,498,271,459,240,462,236,501,267,551,298,564,304"/>
+<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="552,363,715,389"/>
+<area shape="poly" title=" " alt="" coords="792,360,715,369,715,364,792,355"/>
+<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="386,363,501,389"/>
+<area shape="poly" title=" " alt="" coords="537,379,502,379,502,373,537,373"/>
 </map>
 </div>
 
@@ -862,81 +698,55 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets PWM frequency. </p>
+<p>Set PWM frequency. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
-    <tr><td class="paramname">freq</td><td>Frequency in Hz </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Status code </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters </td></tr>
-    <tr><td class="paramname">-2</td><td>Frequency out of range</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Sets PWM frequency.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">ppwmConfig</td><td>Pointer to the PWM configuration structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>Desired PWM frequency in Hz. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ppwmConfig</td><td>Pointer to PWM configuration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>Desired frequency in Hz </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int</td><td>Returns 0 on success, -1 if ppwmConfig is NULL, -2 if timer instance is NULL, -3 if freq is invalid. </td></tr>
+    <tr><td class="paramname">0</td><td>Success </td></tr>
+    <tr><td class="paramname">-1</td><td>Invalid pointer </td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_cgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_cgraph" loading="lazy" alt=""/></div>
-<map name="agroup___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_cgraph" id="agroup___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_cgraph">
-<area shape="rect" title="Sets PWM frequency." alt="" coords="5,5,151,32"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Sets the PWM duty cycle for the specified configuration (only channel 1, 2, 3 are supported)" alt="" coords="199,5,312,32"/>
-<area shape="poly" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_icgraph.png" border="0" usemap="#agroup___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_icgraph" id="agroup___d_r_v___p_w_m_gaaad481cc551cace115ec60a74249a1da_icgraph">
-<area shape="rect" title="Sets PWM frequency." alt="" coords="978,160,1123,187"/>
-<area shape="rect" href="mid__llc__handler_8c.html#aa06d2118dd9547c02d2235dacdac6cc7" title="Executes current regulation loop using frequency control." alt="" coords="779,5,917,48"/>
+<area shape="rect" title="Set PWM frequency." alt="" coords="978,160,1123,187"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7" title="Executes current regulation loop using frequency control." alt="" coords="779,5,917,48"/>
 <area shape="poly" title=" " alt="" coords="1026,150,983,106,929,62,908,51,911,46,931,58,987,102,1030,146"/>
-<area shape="rect" href="mid__llc__handler_8c.html#add2f095dc7e8abc77f29433a71129ab7" title="Hybrid PFM/PWM control strategy." alt="" coords="766,72,930,99"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05" title="Hybrid control mode for LLC (PFM/PWM switching)." alt="" coords="766,72,930,99"/>
 <area shape="poly" title=" " alt="" coords="1012,155,929,113,897,102,899,97,931,108,1015,150"/>
-<area shape="rect" href="mid__llc__handler_8c.html#a2a627e165db7f32bc036d791806f01fc" title="Execute voltage regulation loop for LLC." alt="" coords="778,123,918,165"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a" title="Execute voltage regulation loop for LLC converter." alt="" coords="778,123,918,165"/>
 <area shape="poly" title=" " alt="" coords="962,163,918,157,919,152,963,158"/>
-<area shape="rect" href="mid__llc__handler_8c.html#ad127a12de6fc65cf8f07d9ab3f301165" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,189,900,216"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,189,900,216"/>
 <area shape="poly" title=" " alt="" coords="963,189,900,198,899,193,962,183"/>
-<area shape="rect" href="mid__llc__handler_8c.html#afb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,240,895,267"/>
+<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,240,895,267"/>
 <area shape="poly" title=" " alt="" coords="1010,196,931,230,896,243,894,237,929,226,1007,191"/>
 <area shape="rect" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="808,308,888,335"/>
 <area shape="poly" title=" " alt="" coords="1027,200,984,240,931,281,881,310,878,305,929,276,980,236,1023,196"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,76,707,103"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,76,707,103"/>
 <area shape="poly" title=" " alt="" coords="750,90,708,91,707,85,750,84"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,185,492,212"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,185,492,212"/>
 <area shape="poly" title=" " alt="" coords="579,111,551,125,502,157,463,187,459,183,499,152,548,120,577,106"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,185,338,212"/>
 <area shape="poly" title=" " alt="" coords="380,201,338,201,338,196,380,196"/>
 <area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,185,115,212"/>
 <area shape="poly" title=" " alt="" coords="147,201,115,201,115,196,147,196"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,135,707,161"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,135,707,161"/>
 <area shape="poly" title=" " alt="" coords="781,188,688,165,689,159,782,183"/>
 <area shape="poly" title=" " alt="" coords="566,169,493,189,491,183,565,163"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,185,695,212"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,185,695,212"/>
 <area shape="poly" title=" " alt="" coords="785,240,688,215,690,210,786,235"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,236,718,263"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,236,718,263"/>
 <area shape="poly" title=" " alt="" coords="785,255,718,254,718,248,785,250"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,287,693,313"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,287,693,313"/>
 <area shape="poly" title=" " alt="" coords="786,269,694,290,693,285,785,264"/>
 <area shape="poly" title=" " alt="" coords="557,201,492,201,492,196,557,196"/>
 <area shape="poly" title=" " alt="" coords="565,234,491,214,493,209,566,229"/>
@@ -970,8 +780,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Fan control PWM configuration. </p>
+<p>Fan control PWM configuration </p>
 
 </div>
 </div>
@@ -995,7 +804,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>LLC converter PWM configuration. </p>
+<p>Global PWM configuration instances. </p>
+<p>LLC converter PWM configuration </p>
 
 </div>
 </div>

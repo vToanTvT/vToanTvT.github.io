@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,42 +92,146 @@ $(function(){initNavTree('struct_s___pwm___config___type_def.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>PWM configuration and status structure.  
+<p>PWM configuration and runtime structure.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="drv__pwm__core_8h_source.html">drv_pwm_core.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for S_Pwm_Config_TypeDef:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_s___pwm___config___type_def__coll__graph.png" border="0" usemap="#a_s___pwm___config___type_def_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="a_s___pwm___config___type_def_coll__map" id="a_s___pwm___config___type_def_coll__map">
-<area shape="rect" title="PWM configuration and status structure." alt="" coords="5,5,163,224"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:gab632fb0b4d5156ea4df0b1e15410e913" id="r_gab632fb0b4d5156ea4df0b1e15410e913"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gab632fb0b4d5156ea4df0b1e15410e913">frequency</a></td></tr>
-<tr class="memdesc:gab632fb0b4d5156ea4df0b1e15410e913"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM frequency in Hz.  <br /></td></tr>
-<tr class="memitem:ga2891a04a3e71b4f88a09aa6636e4e304" id="r_ga2891a04a3e71b4f88a09aa6636e4e304"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga2891a04a3e71b4f88a09aa6636e4e304">duty</a></td></tr>
-<tr class="memdesc:ga2891a04a3e71b4f88a09aa6636e4e304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duty cycle in percentage (0-100)  <br /></td></tr>
-<tr class="memitem:ga964f469bb54ae478e1fbeb52f615ca9b" id="r_ga964f469bb54ae478e1fbeb52f615ca9b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga964f469bb54ae478e1fbeb52f615ca9b">deadtime</a></td></tr>
-<tr class="memdesc:ga964f469bb54ae478e1fbeb52f615ca9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dead-time in nanoseconds.  <br /></td></tr>
-<tr class="memitem:ga0c72dd5e18823aef187a34137983c9a6" id="r_ga0c72dd5e18823aef187a34137983c9a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga0c72dd5e18823aef187a34137983c9a6">channel</a></td></tr>
-<tr class="memdesc:ga0c72dd5e18823aef187a34137983c9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer channel number.  <br /></td></tr>
-<tr class="memitem:ga3884b42792d861acb4e5561ea63fb6ca" id="r_ga3884b42792d861acb4e5561ea63fb6ca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga3884b42792d861acb4e5561ea63fb6ca">cnt_timebase</a></td></tr>
-<tr class="memdesc:ga3884b42792d861acb4e5561ea63fb6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer ARR register value.  <br /></td></tr>
-<tr class="memitem:ga4390687555bbc8035897fbf9457688b2" id="r_ga4390687555bbc8035897fbf9457688b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga4390687555bbc8035897fbf9457688b2">cnt_compare</a></td></tr>
-<tr class="memdesc:ga4390687555bbc8035897fbf9457688b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer CCR register value.  <br /></td></tr>
-<tr class="memitem:ga771c06457025fded13f9140441a5d19d" id="r_ga771c06457025fded13f9140441a5d19d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga771c06457025fded13f9140441a5d19d">cnt_deadtime</a></td></tr>
-<tr class="memdesc:ga771c06457025fded13f9140441a5d19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer dead-time register value.  <br /></td></tr>
-<tr class="memitem:gab5553246ed59452ca8f7745f040b21c2" id="r_gab5553246ed59452ca8f7745f040b21c2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gab5553246ed59452ca8f7745f040b21c2">status_pwm</a></td></tr>
-<tr class="memdesc:gab5553246ed59452ca8f7745f040b21c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM output status.  <br /></td></tr>
+<tr class="memitem:ab632fb0b4d5156ea4df0b1e15410e913" id="r_ab632fb0b4d5156ea4df0b1e15410e913"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab632fb0b4d5156ea4df0b1e15410e913">frequency</a></td></tr>
+<tr class="memitem:a2891a04a3e71b4f88a09aa6636e4e304" id="r_a2891a04a3e71b4f88a09aa6636e4e304"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2891a04a3e71b4f88a09aa6636e4e304">duty</a></td></tr>
+<tr class="memitem:a964f469bb54ae478e1fbeb52f615ca9b" id="r_a964f469bb54ae478e1fbeb52f615ca9b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a964f469bb54ae478e1fbeb52f615ca9b">deadtime</a></td></tr>
+<tr class="memitem:a0c72dd5e18823aef187a34137983c9a6" id="r_a0c72dd5e18823aef187a34137983c9a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c72dd5e18823aef187a34137983c9a6">channel</a></td></tr>
+<tr class="memitem:a3884b42792d861acb4e5561ea63fb6ca" id="r_a3884b42792d861acb4e5561ea63fb6ca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3884b42792d861acb4e5561ea63fb6ca">cnt_timebase</a></td></tr>
+<tr class="memitem:a4390687555bbc8035897fbf9457688b2" id="r_a4390687555bbc8035897fbf9457688b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4390687555bbc8035897fbf9457688b2">cnt_compare</a></td></tr>
+<tr class="memitem:a771c06457025fded13f9140441a5d19d" id="r_a771c06457025fded13f9140441a5d19d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771c06457025fded13f9140441a5d19d">cnt_deadtime</a></td></tr>
+<tr class="memitem:ab5553246ed59452ca8f7745f040b21c2" id="r_ab5553246ed59452ca8f7745f040b21c2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5553246ed59452ca8f7745f040b21c2">status_pwm</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>PWM configuration and status structure. </p>
-<dl class="section note"><dt>Note</dt><dd>Contains all parameters needed for PWM operation </dd></dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>PWM configuration and runtime structure. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a id="a0c72dd5e18823aef187a34137983c9a6" name="a0c72dd5e18823aef187a34137983c9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c72dd5e18823aef187a34137983c9a6">&#9670;&#160;</a></span>channel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Timer channel number </p>
+
+</div>
+</div>
+<a id="a4390687555bbc8035897fbf9457688b2" name="a4390687555bbc8035897fbf9457688b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4390687555bbc8035897fbf9457688b2">&#9670;&#160;</a></span>cnt_compare</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t cnt_compare</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CCR value </p>
+
+</div>
+</div>
+<a id="a771c06457025fded13f9140441a5d19d" name="a771c06457025fded13f9140441a5d19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771c06457025fded13f9140441a5d19d">&#9670;&#160;</a></span>cnt_deadtime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t cnt_deadtime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dead-time register value </p>
+
+</div>
+</div>
+<a id="a3884b42792d861acb4e5561ea63fb6ca" name="a3884b42792d861acb4e5561ea63fb6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3884b42792d861acb4e5561ea63fb6ca">&#9670;&#160;</a></span>cnt_timebase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t cnt_timebase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ARR value </p>
+
+</div>
+</div>
+<a id="a964f469bb54ae478e1fbeb52f615ca9b" name="a964f469bb54ae478e1fbeb52f615ca9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964f469bb54ae478e1fbeb52f615ca9b">&#9670;&#160;</a></span>deadtime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t deadtime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dead-time (ns) </p>
+
+</div>
+</div>
+<a id="a2891a04a3e71b4f88a09aa6636e4e304" name="a2891a04a3e71b4f88a09aa6636e4e304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2891a04a3e71b4f88a09aa6636e4e304">&#9670;&#160;</a></span>duty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t duty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Duty cycle (%) </p>
+
+</div>
+</div>
+<a id="ab632fb0b4d5156ea4df0b1e15410e913" name="ab632fb0b4d5156ea4df0b1e15410e913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab632fb0b4d5156ea4df0b1e15410e913">&#9670;&#160;</a></span>frequency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t frequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PWM frequency (Hz) </p>
+
+</div>
+</div>
+<a id="ab5553246ed59452ca8f7745f040b21c2" name="ab5553246ed59452ca8f7745f040b21c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5553246ed59452ca8f7745f040b21c2">&#9670;&#160;</a></span>status_pwm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t status_pwm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PWM enable status </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="drv__pwm__core_8h_source.html">drv_pwm_core.h</a></li>
 </ul>
 </div><!-- contents -->

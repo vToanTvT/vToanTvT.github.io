@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -89,33 +88,22 @@ $(function(){initNavTree('struct_s___comp___type_def.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">S_Comp_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html">Driver Layer</a> &raquo; <a class="el" href="group___d_r_v___c_o_m_p.html">Comparator Driver Module</a></div></div></div>
+  <div class="headertitle"><div class="title">S_Comp_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html">Driver Layer</a> &raquo; <a class="el" href="group___d_r_v___c_o_m_p.html">COMP Driver Module</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Include necessary header files.  
+<p>Comparator configuration and state structure.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="drv__comp__core_8h_source.html">drv_comp_core.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for S_Comp_TypeDef:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_s___comp___type_def__coll__graph.png" border="0" usemap="#a_s___comp___type_def_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="a_s___comp___type_def_coll__map" id="a_s___comp___type_def_coll__map">
-<area shape="rect" title="Include necessary header files." alt="" coords="5,5,123,96"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ga0b57aa10271a66f3dc936bba1d2f3830" id="r_ga0b57aa10271a66f3dc936bba1d2f3830"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga0b57aa10271a66f3dc936bba1d2f3830">state</a></td></tr>
-<tr class="memdesc:ga0b57aa10271a66f3dc936bba1d2f3830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator state.  <br /></td></tr>
-<tr class="memitem:gaf6ba3377b9f5f09dbce8fd1e03c29e14" id="r_gaf6ba3377b9f5f09dbce8fd1e03c29e14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gaf6ba3377b9f5f09dbce8fd1e03c29e14">comp_threshold</a></td></tr>
-<tr class="memdesc:gaf6ba3377b9f5f09dbce8fd1e03c29e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC threshold value.  <br /></td></tr>
+<tr class="memitem:a0b57aa10271a66f3dc936bba1d2f3830" id="r_a0b57aa10271a66f3dc936bba1d2f3830"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b57aa10271a66f3dc936bba1d2f3830">state</a></td></tr>
+<tr class="memitem:af6ba3377b9f5f09dbce8fd1e03c29e14" id="r_af6ba3377b9f5f09dbce8fd1e03c29e14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6ba3377b9f5f09dbce8fd1e03c29e14">comp_threshold</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Include necessary header files. </p>
-<p>Comparator configuration and state structure</p>
+<div class="textblock"><p>Comparator configuration and state structure. </p>
 <p>Contains all data needed for comparator operation:</p><ol type="1">
 <li>State Management:<ul>
 <li>Binary state tracking (set/reset)</li>
@@ -124,12 +112,43 @@ Data Fields</h2></td></tr>
 </li>
 <li>Threshold Configuration:<ul>
 <li>DAC threshold value</li>
-<li>Range: 0-4095 (12-bit)</li>
-<li>Maps to 0-3.3V analog </li>
+<li>Range: 0–4095 (12-bit)</li>
+<li>Maps to 0–3.3V analog </li>
 </ul>
 </li>
 </ol>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a id="af6ba3377b9f5f09dbce8fd1e03c29e14" name="af6ba3377b9f5f09dbce8fd1e03c29e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ba3377b9f5f09dbce8fd1e03c29e14">&#9670;&#160;</a></span>comp_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t comp_threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DAC threshold value [0–4095] </p>
+
+</div>
+</div>
+<a id="a0b57aa10271a66f3dc936bba1d2f3830" name="a0b57aa10271a66f3dc936bba1d2f3830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b57aa10271a66f3dc936bba1d2f3830">&#9670;&#160;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Protection state: 0 = reset, 1 = triggered </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="drv__comp__core_8h_source.html">drv_comp_core.h</a></li>
 </ul>
 </div><!-- contents -->

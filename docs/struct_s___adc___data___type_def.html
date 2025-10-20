@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,55 +92,28 @@ $(function(){initNavTree('struct_s___adc___data___type_def.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>ADC measurement and configuration data structure.  
+<p>Include necessary header files.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="drv__adc__core_8h_source.html">drv_adc_core.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for S_Adc_Data_TypeDef:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_s___adc___data___type_def__coll__graph.png" border="0" usemap="#a_s___adc___data___type_def_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="a_s___adc___data___type_def_coll__map" id="a_s___adc___data___type_def_coll__map">
-<area shape="rect" title="ADC measurement and configuration data structure." alt="" coords="5,5,146,203"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:af0d2ffa00bdaf3b3b36ecb283f8a5b55" id="r_af0d2ffa00bdaf3b3b36ecb283f8a5b55"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a> [6]</td></tr>
-<tr class="memdesc:af0d2ffa00bdaf3b3b36ecb283f8a5b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA buffer for raw ADC values [0-4095].  <br /></td></tr>
 <tr class="memitem:a7cf0add5681cddfb5760a8076fb9cbce" id="r_a7cf0add5681cddfb5760a8076fb9cbce"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a></td></tr>
-<tr class="memdesc:a7cf0add5681cddfb5760a8076fb9cbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">PFC temperature reading [0-4095] = [0-125°C].  <br /></td></tr>
 <tr class="memitem:acc3f3f60ba83b8809b768dc85180b71c" id="r_acc3f3f60ba83b8809b768dc85180b71c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a></td></tr>
-<tr class="memdesc:acc3f3f60ba83b8809b768dc85180b71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLC temperature reading [0-4095] = [0-125°C].  <br /></td></tr>
 <tr class="memitem:a5f46e99a879143174e4d1f013ad9d34c" id="r_a5f46e99a879143174e4d1f013ad9d34c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a></td></tr>
-<tr class="memdesc:a5f46e99a879143174e4d1f013ad9d34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery current reading [0-4095] = [0-100A].  <br /></td></tr>
 <tr class="memitem:a0f44518e6b76a378568af6bbc365bb2a" id="r_a0f44518e6b76a378568af6bbc365bb2a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a></td></tr>
-<tr class="memdesc:a0f44518e6b76a378568af6bbc365bb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery voltage reading [0-4095] = [0-100V].  <br /></td></tr>
 <tr class="memitem:a942b5893c1e875c5f1a0b7350f16c7b5" id="r_a942b5893c1e875c5f1a0b7350f16c7b5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a></td></tr>
-<tr class="memdesc:a942b5893c1e875c5f1a0b7350f16c7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output voltage reading [0-4095] = [0-400V].  <br /></td></tr>
 <tr class="memitem:a6e4486ef0554e48702f9095253afcc72" id="r_a6e4486ef0554e48702f9095253afcc72"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e4486ef0554e48702f9095253afcc72">ADC_vac</a></td></tr>
-<tr class="memdesc:a6e4486ef0554e48702f9095253afcc72"><td class="mdescLeft">&#160;</td><td class="mdescRight">AC voltage reading [0-4095] = [0-400V].  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ADC measurement and configuration data structure. </p>
-<p>Contains all ADC-related data including:</p><ol type="1">
-<li>DMA Buffer (6 channels):<ul>
-<li>Raw ADC values [0-4095]</li>
-<li>Direct hardware access</li>
-<li>Automatic DMA updates</li>
+<div class="textblock"><p>Include necessary header files. </p>
+<p>ADC measurement and configuration data structure</p>
+<p>Contains all ADC-related data including:</p><ul>
+<li>DMA buffer</li>
+<li>Temperature, voltage, and current channels </li>
 </ul>
-</li>
-<li>Measurement Channels: a) Temperature Sensors:<ul>
-<li>PFC stage [0-125°C]</li>
-<li>LLC stage [0-125°C] b) Power Measurements:</li>
-<li>Battery current [0-100A]</li>
-<li>Battery voltage [0-100V]</li>
-<li>Output voltage [0-400V]</li>
-<li>AC voltage [0-400V] </li>
-</ul>
-</li>
-</ol>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a5f46e99a879143174e4d1f013ad9d34c" name="a5f46e99a879143174e4d1f013ad9d34c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f46e99a879143174e4d1f013ad9d34c">&#9670;&#160;</a></span>ADC_current_bat</h2>
@@ -154,8 +126,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Battery current reading [0-4095] = [0-100A]. </p>
+<p>Battery current reading [0–4095] </p>
 
 </div>
 </div>
@@ -170,8 +141,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>LLC temperature reading [0-4095] = [0-125°C]. </p>
+<p>LLC temperature reading [0–4095] </p>
 
 </div>
 </div>
@@ -186,8 +156,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>PFC temperature reading [0-4095] = [0-125°C]. </p>
+<p>PFC temperature reading [0–4095] </p>
 
 </div>
 </div>
@@ -202,8 +171,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>AC voltage reading [0-4095] = [0-400V]. </p>
+<p>AC voltage reading [0–4095] </p>
 
 </div>
 </div>
@@ -218,8 +186,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Battery voltage reading [0-4095] = [0-100V]. </p>
+<p>Battery voltage reading [0–4095] </p>
 
 </div>
 </div>
@@ -234,8 +201,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Output voltage reading [0-4095] = [0-400V]. </p>
+<p>Output voltage reading [0–4095] </p>
 
 </div>
 </div>
@@ -250,8 +216,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>DMA buffer for raw ADC values [0-4095]. </p>
+<p>DMA buffer for raw ADC values [0–4095] </p>
 
 </div>
 </div>

@@ -1,8 +1,8 @@
 var group___d_r_v___g_p_i_o =
 [
     [ "S_GPIO_Pin_TypeDef", "struct_s___g_p_i_o___pin___type_def.html", [
-      [ "Pin", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga38b1073a17d7b10e6c87f0d97c0e8ab6", null ],
-      [ "state", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga0b57aa10271a66f3dc936bba1d2f3830", null ]
+      [ "Pin", "struct_s___g_p_i_o___pin___type_def.html#a38b1073a17d7b10e6c87f0d97c0e8ab6", null ],
+      [ "state", "struct_s___g_p_i_o___pin___type_def.html#a0b57aa10271a66f3dc936bba1d2f3830", null ]
     ] ],
     [ "K_LED1_PIN_", "group___d_r_v___g_p_i_o.html#ga96b0be61e677b24efbcaac04ec58d736", null ],
     [ "K_LED1_PORT_", "group___d_r_v___g_p_i_o.html#gaac7e2ff01819eb8fdfe0793fc7ed3c3c", null ],
@@ -24,9 +24,15 @@ var group___d_r_v___g_p_i_o =
     [ "gpio_toggle_pin_", "group___d_r_v___g_p_i_o.html#ga3e8410808b48c920702b522e2eec7f46", null ],
     [ "GPIO_LED1", "group___d_r_v___g_p_i_o.html#gad59df21708876559daf8e0afd41f6bba", null ],
     [ "GPIO_LED2", "group___d_r_v___g_p_i_o.html#ga3e99947b310b46e86e8a164f26cc1b44", null ],
+    [ "GPIO_LED2", "group___d_r_v___g_p_i_o.html#ga3e99947b310b46e86e8a164f26cc1b44", null ],
+    [ "GPIO_LED3", "group___d_r_v___g_p_i_o.html#gabc80ee02bd2c56a6e72fb970eb653744", null ],
     [ "GPIO_LED3", "group___d_r_v___g_p_i_o.html#gabc80ee02bd2c56a6e72fb970eb653744", null ],
     [ "GPIO_LED4", "group___d_r_v___g_p_i_o.html#ga1db276d013d8987286d5431d46d97851", null ],
+    [ "GPIO_LED4", "group___d_r_v___g_p_i_o.html#ga1db276d013d8987286d5431d46d97851", null ],
+    [ "GPIO_MCU_LLC_RELAY", "group___d_r_v___g_p_i_o.html#ga6ae638b6e59e0a3daf3db96106732a4b", null ],
     [ "GPIO_MCU_LLC_RELAY", "group___d_r_v___g_p_i_o.html#ga6ae638b6e59e0a3daf3db96106732a4b", null ],
     [ "GPIO_MCU_PFC_RELAY", "group___d_r_v___g_p_i_o.html#ga2781de5a77f5a768d8ef726f0a11d336", null ],
+    [ "GPIO_MCU_PFC_RELAY", "group___d_r_v___g_p_i_o.html#ga2781de5a77f5a768d8ef726f0a11d336", null ],
+    [ "GPIO_MCU_PFC_VCOMP", "group___d_r_v___g_p_i_o.html#ga69bb24112a0eef2ebf392561903dadbc", null ],
     [ "GPIO_MCU_PFC_VCOMP", "group___d_r_v___g_p_i_o.html#ga69bb24112a0eef2ebf392561903dadbc", null ]
 ];

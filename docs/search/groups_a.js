@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resonant_20converter_20middleware_0',['LLC Resonant Converter Middleware',['../group___m_i_d___l_l_c.html',1,'']]]
+  ['state_20machine_20management_0',['State Machine Management',['../group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html',1,'']]]
 ];

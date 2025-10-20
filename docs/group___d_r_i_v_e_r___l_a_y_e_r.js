@@ -1,29 +1,8 @@
 var group___d_r_i_v_e_r___l_a_y_e_r =
 [
     [ "ADC Driver Module", "group___d_r_v___a_d_c.html", "group___d_r_v___a_d_c" ],
-    [ "Comparator Driver Module", "group___d_r_v___c_o_m_p.html", "group___d_r_v___c_o_m_p" ],
+    [ "COMP Driver Module", "group___d_r_v___c_o_m_p.html", "group___d_r_v___c_o_m_p" ],
     [ "GPIO Driver Module", "group___d_r_v___g_p_i_o.html", "group___d_r_v___g_p_i_o" ],
     [ "PWM Driver Module", "group___d_r_v___p_w_m.html", "group___d_r_v___p_w_m" ],
-    [ "UART Driver Module", "group___d_r_v___u_a_r_t.html", "group___d_r_v___u_a_r_t" ],
-    [ "drv_adc_core.c", "drv__adc__core_8c.html", null ],
-    [ "drv_comp_core.c", "drv__comp__core_8c.html", null ],
-    [ "drv_pwm_core.c", "drv__pwm__core_8c.html", null ],
-    [ "adc_calibrate_", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga16393acb40aae65ca9e14eb2444f55c5", null ],
-    [ "adc_get_result_", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga5bff6d15fc0bf77d4b07f54700f4c434", null ],
-    [ "adc_init_", "group___d_r_i_v_e_r___l_a_y_e_r.html#gab85cb16e003e34435b1bba7bfecbb5b9", null ],
-    [ "adc_start_conversion_", "group___d_r_i_v_e_r___l_a_y_e_r.html#gad85cb208269700f968f1441beb35bf8a", null ],
-    [ "S_Pwm_Config_TypeDef::channel", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga0c72dd5e18823aef187a34137983c9a6", null ],
-    [ "S_Pwm_Config_TypeDef::cnt_compare", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga4390687555bbc8035897fbf9457688b2", null ],
-    [ "S_Pwm_Config_TypeDef::cnt_deadtime", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga771c06457025fded13f9140441a5d19d", null ],
-    [ "S_Pwm_Config_TypeDef::cnt_timebase", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga3884b42792d861acb4e5561ea63fb6ca", null ],
-    [ "S_Pwm_Config_TypeDef::deadtime", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga964f469bb54ae478e1fbeb52f615ca9b", null ],
-    [ "S_Pwm_Config_TypeDef::duty", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga2891a04a3e71b4f88a09aa6636e4e304", null ],
-    [ "S_Pwm_Config_TypeDef::frequency", "group___d_r_i_v_e_r___l_a_y_e_r.html#gab632fb0b4d5156ea4df0b1e15410e913", null ],
-    [ "g_adc_data_", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga26caa0d775f89d63143e0f475564a166", null ],
-    [ "S_GPIO_Pin_TypeDef::Pin", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga38b1073a17d7b10e6c87f0d97c0e8ab6", null ],
-    [ "RXBuffer", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga3bb35dc312c491d5ec58208702050587", null ],
-    [ "S_GPIO_Pin_TypeDef::state", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga0b57aa10271a66f3dc936bba1d2f3830", null ],
-    [ "S_Pwm_Config_TypeDef::status_pwm", "group___d_r_i_v_e_r___l_a_y_e_r.html#gab5553246ed59452ca8f7745f040b21c2", null ],
-    [ "TXBuffer", "group___d_r_i_v_e_r___l_a_y_e_r.html#gabaa3661d45010d94234555c1d9ac95c3", null ],
-    [ "TXBuffer", "group___d_r_i_v_e_r___l_a_y_e_r.html#gabaa3661d45010d94234555c1d9ac95c3", null ]
+    [ "UART Driver Module", "group___d_r_v___u_a_r_t.html", "group___d_r_v___u_a_r_t" ]
 ];

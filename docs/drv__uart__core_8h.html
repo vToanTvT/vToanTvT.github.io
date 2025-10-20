@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -96,23 +95,14 @@ $(function(){initNavTree('drv__uart__core_8h.html','',''); });
 <p>UART driver for DMA-based communication.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="mid__global__define__handler_8h_source.html">mid_global_define_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for drv_uart_core.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="drv__uart__core_8h__incl.png" border="0" usemap="#adrv__uart__core_8h" loading="lazy" alt=""/></div>
 <map name="adrv__uart__core_8h" id="adrv__uart__core_8h">
 <area shape="rect" title="UART driver for DMA&#45;based communication." alt="" coords="5,5,117,32"/>
-<area shape="rect" title=" " alt="" coords="14,229,78,256"/>
-<area shape="poly" title=" " alt="" coords="51,34,36,55,24,81,18,116,21,152,38,214,32,215,16,153,13,116,18,79,31,52,47,31"/>
-<area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="34,80,219,107"/>
-<area shape="poly" title=" " alt="" coords="74,31,107,67,103,70,70,34"/>
-<area shape="poly" title=" " alt="" coords="114,109,93,130,74,156,61,185,54,215,48,213,56,184,69,153,89,126,110,105"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="84,155,232,181"/>
-<area shape="poly" title=" " alt="" coords="134,106,149,139,144,142,129,108"/>
-<area shape="poly" title=" " alt="" coords="140,184,80,223,77,218,137,180"/>
-<area shape="rect" title=" " alt="" coords="124,229,192,256"/>
-<area shape="poly" title=" " alt="" coords="161,182,161,214,156,214,156,182"/>
+<area shape="rect" title=" " alt="" coords="29,80,93,107"/>
+<area shape="poly" title=" " alt="" coords="64,33,64,64,58,64,58,33"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -134,27 +124,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:uart_5Ftransfer_5Ft" id="r_uart_5Ftransfer_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__transfer__t.html">uart_transfer_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART transfer configuration structure.  <a href="structuart__transfer__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART transfer structure.  <a href="structuart__transfer__t.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr id="define-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">UART Configuration</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>Include necessary header files.</p>
-<p>Public constant definitions. </p><dl class="section note"><dt>Note</dt><dd>Use prefix K_UART_ for constants. </dd></dl>
-</div></td></tr>
 <tr class="memitem:gad23e624770a8c084ad03098ef52b4fcb" id="r_gad23e624770a8c084ad03098ef52b4fcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gad23e624770a8c084ad03098ef52b4fcb">K_UART_INSTANCE_</a>&#160;&#160;&#160;huart3</td></tr>
-<tr class="memdesc:gad23e624770a8c084ad03098ef52b4fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART peripheral instance.  <br /></td></tr>
-<tr class="memitem:gae49f6372a5d236ed2efadc6c56a5eb4a" id="r_gae49f6372a5d236ed2efadc6c56a5eb4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:gae49f6372a5d236ed2efadc6c56a5eb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TX buffer size in bytes.  <br /></td></tr>
-<tr class="memitem:gaa12f2574042a3c319917b2a5e307e9df" id="r_gaa12f2574042a3c319917b2a5e307e9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>&#160;&#160;&#160;40</td></tr>
-<tr class="memdesc:gaa12f2574042a3c319917b2a5e307e9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">RX buffer size in bytes.  <br /></td></tr>
+<tr class="memitem:gae49f6372a5d236ed2efadc6c56a5eb4a" id="r_gae49f6372a5d236ed2efadc6c56a5eb4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>&#160;&#160;&#160;100U</td></tr>
+<tr class="memitem:gaa12f2574042a3c319917b2a5e307e9df" id="r_gaa12f2574042a3c319917b2a5e307e9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>&#160;&#160;&#160;40U</td></tr>
 <tr id="define-members-1" class="groupHeader"><td colspan="2"><div class="groupHeader">UART Status Codes</div></td></tr>
-<tr class="memitem:gaf66735936071b9fdab3020cfaf8146a5" id="r_gaf66735936071b9fdab3020cfaf8146a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gaf66735936071b9fdab3020cfaf8146a5">K_UART_OK_</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gaf66735936071b9fdab3020cfaf8146a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation successful.  <br /></td></tr>
-<tr class="memitem:ga210f8e5582bedeb12f5dcd75b77e5236" id="r_ga210f8e5582bedeb12f5dcd75b77e5236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#ga210f8e5582bedeb12f5dcd75b77e5236">K_UART_BUSY_</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:ga210f8e5582bedeb12f5dcd75b77e5236"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART busy/in-progress.  <br /></td></tr>
-<tr class="memitem:gaae474f475827ef6ade7b44add61a224b" id="r_gaae474f475827ef6ade7b44add61a224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gaae474f475827ef6ade7b44add61a224b">K_UART_ERROR_</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:gaae474f475827ef6ade7b44add61a224b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation failed.  <br /></td></tr>
+<tr class="memitem:gaf66735936071b9fdab3020cfaf8146a5" id="r_gaf66735936071b9fdab3020cfaf8146a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gaf66735936071b9fdab3020cfaf8146a5">K_UART_OK_</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memitem:ga210f8e5582bedeb12f5dcd75b77e5236" id="r_ga210f8e5582bedeb12f5dcd75b77e5236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#ga210f8e5582bedeb12f5dcd75b77e5236">K_UART_BUSY_</a>&#160;&#160;&#160;1U</td></tr>
+<tr class="memitem:gaae474f475827ef6ade7b44add61a224b" id="r_gaae474f475827ef6ade7b44add61a224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gaae474f475827ef6ade7b44add61a224b">K_UART_ERROR_</a>&#160;&#160;&#160;2U</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -169,11 +150,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">UART Buffers</div></td></tr>
-<tr class="memitem:ga3bb35dc312c491d5ec58208702050587" id="r_ga3bb35dc312c491d5ec58208702050587"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga3bb35dc312c491d5ec58208702050587">RXBuffer</a> [<a class="el" href="group___d_r_v___u_a_r_t.html#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>]</td></tr>
-<tr class="memdesc:ga3bb35dc312c491d5ec58208702050587"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART receive buffer.  <br /></td></tr>
-<tr class="memitem:gabaa3661d45010d94234555c1d9ac95c3" id="r_gabaa3661d45010d94234555c1d9ac95c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gabaa3661d45010d94234555c1d9ac95c3">TXBuffer</a> [<a class="el" href="group___d_r_v___u_a_r_t.html#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>]</td></tr>
-<tr class="memdesc:gabaa3661d45010d94234555c1d9ac95c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART transmit buffer.  <br /></td></tr>
+<tr class="memitem:ga3bb35dc312c491d5ec58208702050587" id="r_ga3bb35dc312c491d5ec58208702050587"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#ga3bb35dc312c491d5ec58208702050587">RXBuffer</a> [<a class="el" href="group___d_r_v___u_a_r_t.html#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>]</td></tr>
+<tr class="memitem:gabaa3661d45010d94234555c1d9ac95c3" id="r_gabaa3661d45010d94234555c1d9ac95c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gabaa3661d45010d94234555c1d9ac95c3">TXBuffer</a> [<a class="el" href="group___d_r_v___u_a_r_t.html#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>]</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UART driver for DMA-based communication. </p>

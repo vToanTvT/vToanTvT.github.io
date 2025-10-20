@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bug_20list_0',['Bug List',['../bug.html',1,'']]]
+  ['architecture_0',['🧩 Software Architecture',['../md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#arch_sec',1,'']]]
 ];

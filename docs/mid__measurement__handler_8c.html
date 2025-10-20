@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('mid__measurement__handler_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of measurement and signal processing system.  
+<p>Implementation of MID_Measurement_Handler module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mid__measurement__handler_8h_source.html">mid_measurement_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -101,14 +100,14 @@ Include dependency graph for mid_measurement_handler.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__measurement__handler_8c__incl.png" border="0" usemap="#amid__measurement__handler_8c" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8c" id="amid__measurement__handler_8c">
-<area shape="rect" title="Implementation of measurement and signal processing system." alt="" coords="144,5,332,32"/>
-<area shape="rect" href="mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="144,80,332,107"/>
+<area shape="rect" title="Implementation of MID_Measurement_Handler module." alt="" coords="144,5,332,32"/>
+<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="144,80,332,107"/>
 <area shape="poly" title=" " alt="" coords="240,33,240,64,235,64,235,33"/>
 <area shape="rect" href="drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="5,229,116,256"/>
 <area shape="poly" title=" " alt="" coords="145,110,103,127,85,140,69,156,62,169,58,184,58,214,53,214,53,183,57,167,65,153,81,136,100,123,143,105"/>
 <area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="80,155,265,181"/>
 <area shape="poly" title=" " alt="" coords="228,109,196,145,192,141,224,105"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="200,229,348,256"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="200,229,348,256"/>
 <area shape="poly" title=" " alt="" coords="252,106,268,127,280,154,285,185,282,215,277,214,279,185,275,155,263,130,247,109"/>
 <area shape="rect" title=" " alt="" coords="341,155,415,181"/>
 <area shape="poly" title=" " alt="" coords="263,105,341,145,338,149,261,110"/>
@@ -126,7 +125,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__measurement__handler_8c__dep__incl.png" border="0" usemap="#amid__measurement__handler_8cdep" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8cdep" id="amid__measurement__handler_8cdep">
-<area shape="rect" title="Implementation of measurement and signal processing system." alt="" coords="5,5,194,32"/>
+<area shape="rect" title="Implementation of MID_Measurement_Handler module." alt="" coords="5,5,194,32"/>
 <area shape="rect" href="main_8c.html" title=" " alt="" coords="69,80,130,107"/>
 <area shape="poly" title=" " alt="" coords="102,48,102,80,97,80,97,48"/>
 </map>
@@ -136,9 +135,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a63dc2f3c304af995705835ccce693b62" id="r_a63dc2f3c304af995705835ccce693b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63dc2f3c304af995705835ccce693b62">meas_init_value_</a> (<a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pMeas, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> offset, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gae234d17b50fa96668860a592a5c9f21c">uq31_t</a> scale_factor, float alpha, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> high_limit_soft, float gain_f32, float offset_f32, uint8_t calc_method)</td></tr>
+<tr class="memitem:a63dc2f3c304af995705835ccce693b62" id="r_a63dc2f3c304af995705835ccce693b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63dc2f3c304af995705835ccce693b62">meas_init_value_</a> (<a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pMeas, q15_t offset, uq31_t scale_factor, float alpha, uq15_t high_limit_soft, float gain_f32, float offset_f32, uint8_t calc_method)</td></tr>
 <tr class="memdesc:a63dc2f3c304af995705835ccce693b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a measurement channel with specified parameters.  <br /></td></tr>
-<tr class="memitem:a79486749f0f8934f861610a7c7005b63" id="r_a79486749f0f8934f861610a7c7005b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79486749f0f8934f861610a7c7005b63">meas_set_raw_value_</a> (<a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pMeas, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> raw_value)</td></tr>
+<tr class="memitem:a79486749f0f8934f861610a7c7005b63" id="r_a79486749f0f8934f861610a7c7005b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79486749f0f8934f861610a7c7005b63">meas_set_raw_value_</a> (<a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pMeas, q15_t raw_value)</td></tr>
 <tr class="memdesc:a79486749f0f8934f861610a7c7005b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates raw ADC value in measurement structure.  <br /></td></tr>
 <tr class="memitem:abfe051fb6eeef8a004f7a56dcdb1a0ef" id="r_abfe051fb6eeef8a004f7a56dcdb1a0ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfe051fb6eeef8a004f7a56dcdb1a0ef">meas_convert_to_q15_</a> (<a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pMeas)</td></tr>
 <tr class="memdesc:abfe051fb6eeef8a004f7a56dcdb1a0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts raw ADC value to normalized Q15 format.  <br /></td></tr>
@@ -146,11 +145,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a60b8a41f4a3ae79e98e3bf64b24b4779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts measurement to floating-point format.  <br /></td></tr>
 <tr class="memitem:aecfbba2e55ac8e1591036ef6f6dae1e9" id="r_aecfbba2e55ac8e1591036ef6f6dae1e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecfbba2e55ac8e1591036ef6f6dae1e9">meas_config_</a> (<a class="el" href="struct_s___meas___update_type_def.html">S_Meas_UpdateTypeDef</a> *pUpdateMeas)</td></tr>
 <tr class="memdesc:aecfbba2e55ac8e1591036ef6f6dae1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures measurement update timing.  <br /></td></tr>
-<tr class="memitem:gaeda8e8d8c2e6a1efbaacdcc006494774" id="r_gaeda8e8d8c2e6a1efbaacdcc006494774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774">meas_init_system_</a> ()</td></tr>
+<tr class="memitem:gaeda8e8d8c2e6a1efbaacdcc006494774" id="r_gaeda8e8d8c2e6a1efbaacdcc006494774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774">meas_init_system_</a> ()</td></tr>
 <tr class="memdesc:gaeda8e8d8c2e6a1efbaacdcc006494774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the complete measurement system.  <br /></td></tr>
-<tr class="memitem:ga7ec30b7794b47ae2138c478f132022d2" id="r_ga7ec30b7794b47ae2138c478f132022d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2">meas_update_all_q15_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *adcbuf)</td></tr>
+<tr class="memitem:ga7ec30b7794b47ae2138c478f132022d2" id="r_ga7ec30b7794b47ae2138c478f132022d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga7ec30b7794b47ae2138c478f132022d2">meas_update_all_q15_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *adcbuf)</td></tr>
 <tr class="memdesc:ga7ec30b7794b47ae2138c478f132022d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all measurements in Q15 fixed-point format.  <br /></td></tr>
-<tr class="memitem:gab8a9c3244586ea0d412e3e391157fa5e" id="r_gab8a9c3244586ea0d412e3e391157fa5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e">meas_update_all_float_</a> ()</td></tr>
+<tr class="memitem:gab8a9c3244586ea0d412e3e391157fa5e" id="r_gab8a9c3244586ea0d412e3e391157fa5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e">meas_update_all_float_</a> ()</td></tr>
 <tr class="memdesc:gab8a9c3244586ea0d412e3e391157fa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all measurements to floating-point format.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
@@ -158,33 +157,21 @@ Variables</h2></td></tr>
 <tr class="memitem:a6d44b524d530ce4f413925eba07a72c2" id="r_a6d44b524d530ce4f413925eba07a72c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___update_type_def.html">S_Meas_UpdateTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d44b524d530ce4f413925eba07a72c2">thisMeas</a></td></tr>
 <tr class="memdesc:a6d44b524d530ce4f413925eba07a72c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measurement update timing control structure.  <br /></td></tr>
 <tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Global Measurement Instances</div></td></tr>
-<tr class="memitem:ga93cbeb6b1222c281b737365e0ffd27d7" id="r_ga93cbeb6b1222c281b737365e0ffd27d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga93cbeb6b1222c281b737365e0ffd27d7">g_thermal_pfc_inst</a></td></tr>
+<tr class="memitem:ga93cbeb6b1222c281b737365e0ffd27d7" id="r_ga93cbeb6b1222c281b737365e0ffd27d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga93cbeb6b1222c281b737365e0ffd27d7">g_thermal_pfc_inst</a></td></tr>
 <tr class="memdesc:ga93cbeb6b1222c281b737365e0ffd27d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature measurement for PFC stage.  <br /></td></tr>
-<tr class="memitem:ga649965e1259a0dc5aa4b765a9031085a" id="r_ga649965e1259a0dc5aa4b765a9031085a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga649965e1259a0dc5aa4b765a9031085a">g_thermal_llc_inst</a></td></tr>
+<tr class="memitem:ga649965e1259a0dc5aa4b765a9031085a" id="r_ga649965e1259a0dc5aa4b765a9031085a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga649965e1259a0dc5aa4b765a9031085a">g_thermal_llc_inst</a></td></tr>
 <tr class="memdesc:ga649965e1259a0dc5aa4b765a9031085a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature measurement for LLC stage.  <br /></td></tr>
-<tr class="memitem:ga18bc3c28f5ba4c416d5d478719c5d354" id="r_ga18bc3c28f5ba4c416d5d478719c5d354"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga18bc3c28f5ba4c416d5d478719c5d354">g_bat_current_inst</a></td></tr>
+<tr class="memitem:ga18bc3c28f5ba4c416d5d478719c5d354" id="r_ga18bc3c28f5ba4c416d5d478719c5d354"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga18bc3c28f5ba4c416d5d478719c5d354">g_bat_current_inst</a></td></tr>
 <tr class="memdesc:ga18bc3c28f5ba4c416d5d478719c5d354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery current measurement.  <br /></td></tr>
-<tr class="memitem:ga10f564c2445f40c1d4eea4343860c4fa" id="r_ga10f564c2445f40c1d4eea4343860c4fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga10f564c2445f40c1d4eea4343860c4fa">g_bat_voltage_inst</a></td></tr>
+<tr class="memitem:ga10f564c2445f40c1d4eea4343860c4fa" id="r_ga10f564c2445f40c1d4eea4343860c4fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga10f564c2445f40c1d4eea4343860c4fa">g_bat_voltage_inst</a></td></tr>
 <tr class="memdesc:ga10f564c2445f40c1d4eea4343860c4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery voltage measurement.  <br /></td></tr>
-<tr class="memitem:ga4f3011600d0fc9fcff58aa734c4a034e" id="r_ga4f3011600d0fc9fcff58aa734c4a034e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4f3011600d0fc9fcff58aa734c4a034e">g_dc_voltage_inst</a></td></tr>
+<tr class="memitem:ga4f3011600d0fc9fcff58aa734c4a034e" id="r_ga4f3011600d0fc9fcff58aa734c4a034e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga4f3011600d0fc9fcff58aa734c4a034e">g_dc_voltage_inst</a></td></tr>
 <tr class="memdesc:ga4f3011600d0fc9fcff58aa734c4a034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DC bus voltage measurement.  <br /></td></tr>
-<tr class="memitem:gaf57285f549d0bbcef5076f1823b4c790" id="r_gaf57285f549d0bbcef5076f1823b4c790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaf57285f549d0bbcef5076f1823b4c790">g_ac_voltage_inst</a></td></tr>
+<tr class="memitem:gaf57285f549d0bbcef5076f1823b4c790" id="r_gaf57285f549d0bbcef5076f1823b4c790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaf57285f549d0bbcef5076f1823b4c790">g_ac_voltage_inst</a></td></tr>
 <tr class="memdesc:gaf57285f549d0bbcef5076f1823b4c790"><td class="mdescLeft">&#160;</td><td class="mdescRight">AC input voltage measurement.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of measurement and signal processing system. </p>
-<dl class="section author"><dt>Author</dt><dd>ADMIN </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025</dd></dl>
-<p>This module implements a comprehensive measurement system with:</p><ul>
-<li>ADC data acquisition and processing</li>
-<li>Fixed-point (Q15) and floating-point calculations</li>
-<li>Digital filtering and calibration</li>
-<li>Multiple measurement channels for voltage, current, and temperature</li>
-<li>Configurable update rates and processing methods</li>
-</ul>
-<p>Signal flow: ADC → Raw Data → Scaling/Offset → Digital Filter → Q15/Float Output </p>
+<div class="textblock"><p>Implementation of MID_Measurement_Handler module. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="aecfbba2e55ac8e1591036ef6f6dae1e9" name="aecfbba2e55ac8e1591036ef6f6dae1e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecfbba2e55ac8e1591036ef6f6dae1e9">&#9670;&#160;</a></span>meas_config_()</h2>
@@ -220,7 +207,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="mid__measurement__handler_8c_aecfbba2e55ac8e1591036ef6f6dae1e9_icgraph.png" border="0" usemap="#amid__measurement__handler_8c_aecfbba2e55ac8e1591036ef6f6dae1e9_icgraph" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8c_aecfbba2e55ac8e1591036ef6f6dae1e9_icgraph" id="amid__measurement__handler_8c_aecfbba2e55ac8e1591036ef6f6dae1e9_icgraph">
 <area shape="rect" title="Configures measurement update timing." alt="" coords="561,5,664,32"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,5,513,32"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,5,513,32"/>
 <area shape="poly" title=" " alt="" coords="546,21,514,21,514,16,546,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
 <area shape="poly" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
@@ -272,7 +259,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="mid__measurement__handler_8c_a60b8a41f4a3ae79e98e3bf64b24b4779_icgraph.png" border="0" usemap="#amid__measurement__handler_8c_a60b8a41f4a3ae79e98e3bf64b24b4779_icgraph" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8c_a60b8a41f4a3ae79e98e3bf64b24b4779_icgraph" id="amid__measurement__handler_8c_a60b8a41f4a3ae79e98e3bf64b24b4779_icgraph">
 <area shape="rect" title="Converts measurement to floating&#45;point format." alt="" coords="556,5,710,32"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Updates all measurements to floating&#45;point format." alt="" coords="350,5,508,32"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Updates all measurements to floating&#45;point format." alt="" coords="350,5,508,32"/>
 <area shape="poly" title=" " alt="" coords="541,21,509,21,509,16,541,16"/>
 <area shape="rect" href="_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540" title="Infinite loop system function implementation." alt="" coords="163,5,302,32"/>
 <area shape="poly" title=" " alt="" coords="334,21,302,21,302,16,334,16"/>
@@ -317,7 +304,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="mid__measurement__handler_8c_abfe051fb6eeef8a004f7a56dcdb1a0ef_icgraph.png" border="0" usemap="#amid__measurement__handler_8c_abfe051fb6eeef8a004f7a56dcdb1a0ef_icgraph" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8c_abfe051fb6eeef8a004f7a56dcdb1a0ef_icgraph" id="amid__measurement__handler_8c_abfe051fb6eeef8a004f7a56dcdb1a0ef_icgraph">
 <area shape="rect" title="Converts raw ADC value to normalized Q15 format." alt="" coords="588,5,745,32"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2" title="Updates all measurements in Q15 fixed&#45;point format." alt="" coords="386,5,540,32"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga7ec30b7794b47ae2138c478f132022d2" title="Updates all measurements in Q15 fixed&#45;point format." alt="" coords="386,5,540,32"/>
 <area shape="poly" title=" " alt="" coords="573,21,541,21,541,16,573,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
 <area shape="poly" title=" " alt="" coords="370,21,338,21,338,16,370,16"/>
@@ -342,12 +329,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+          <td class="paramtype">q15_t</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gae234d17b50fa96668860a592a5c9f21c">uq31_t</a></td>          <td class="paramname"><span class="paramname"><em>scale_factor</em></span>, </td>
+          <td class="paramtype">uq31_t</td>          <td class="paramname"><span class="paramname"><em>scale_factor</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -357,7 +344,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a></td>          <td class="paramname"><span class="paramname"><em>high_limit_soft</em></span>, </td>
+          <td class="paramtype">uq15_t</td>          <td class="paramname"><span class="paramname"><em>high_limit_soft</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -406,7 +393,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="mid__measurement__handler_8c_a63dc2f3c304af995705835ccce693b62_icgraph.png" border="0" usemap="#amid__measurement__handler_8c_a63dc2f3c304af995705835ccce693b62_icgraph" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8c_a63dc2f3c304af995705835ccce693b62_icgraph" id="amid__measurement__handler_8c_a63dc2f3c304af995705835ccce693b62_icgraph">
 <area shape="rect" title="Initializes a measurement channel with specified parameters." alt="" coords="561,5,684,32"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,5,513,32"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,5,513,32"/>
 <area shape="poly" title=" " alt="" coords="546,21,514,21,514,16,546,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
 <area shape="poly" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
@@ -431,7 +418,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a></td>          <td class="paramname"><span class="paramname"><em>raw_value</em></span>&#160;)</td>
+          <td class="paramtype">q15_t</td>          <td class="paramname"><span class="paramname"><em>raw_value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -451,7 +438,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="mid__measurement__handler_8c_a79486749f0f8934f861610a7c7005b63_icgraph.png" border="0" usemap="#amid__measurement__handler_8c_a79486749f0f8934f861610a7c7005b63_icgraph" loading="lazy" alt=""/></div>
 <map name="amid__measurement__handler_8c_a79486749f0f8934f861610a7c7005b63_icgraph" id="amid__measurement__handler_8c_a79486749f0f8934f861610a7c7005b63_icgraph">
 <area shape="rect" title="Updates raw ADC value in measurement structure." alt="" coords="588,5,740,32"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2" title="Updates all measurements in Q15 fixed&#45;point format." alt="" coords="386,5,540,32"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga7ec30b7794b47ae2138c478f132022d2" title="Updates all measurements in Q15 fixed&#45;point format." alt="" coords="386,5,540,32"/>
 <area shape="poly" title=" " alt="" coords="572,21,541,21,541,16,572,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
 <area shape="poly" title=" " alt="" coords="370,21,338,21,338,16,370,16"/>

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -102,11 +101,11 @@ Include dependency graph for mid_fault_management_handler.c:</div>
 <div class="center"><img src="mid__fault__management__handler_8c__incl.png" border="0" usemap="#amid__fault__management__handler_8c" loading="lazy" alt=""/></div>
 <map name="amid__fault__management__handler_8c" id="amid__fault__management__handler_8c">
 <area shape="rect" title="Implementation of comprehensive fault management system." alt="" coords="134,5,290,48"/>
-<area shape="rect" href="mid__fault__management__handler_8h.html" title="Comprehensive fault management system for power supply protection." alt="" coords="134,96,290,139"/>
+<area shape="rect" href="mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="134,96,290,139"/>
 <area shape="poly" title=" " alt="" coords="214,48,214,81,209,81,209,48"/>
 <area shape="rect" title=" " alt="" coords="5,261,80,288"/>
 <area shape="poly" title=" " alt="" coords="174,141,140,163,107,189,80,219,59,250,55,247,76,216,103,185,137,158,171,137"/>
-<area shape="rect" href="mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="118,187,306,213"/>
+<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="118,187,306,213"/>
 <area shape="poly" title=" " alt="" coords="214,139,214,171,209,171,209,139"/>
 <area shape="rect" href="drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="419,336,540,363"/>
 <area shape="poly" title=" " alt="" coords="250,137,320,185,400,258,461,322,457,326,396,261,317,189,247,141"/>
@@ -115,7 +114,7 @@ Include dependency graph for mid_fault_management_handler.c:</div>
 <area shape="poly" title=" " alt="" coords="283,212,323,230,341,243,355,260,362,275,363,292,355,323,350,321,357,291,356,276,351,263,337,247,320,234,281,216"/>
 <area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="155,261,340,288"/>
 <area shape="poly" title=" " alt="" coords="220,213,237,246,232,248,216,215"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="62,336,210,363"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="62,336,210,363"/>
 <area shape="poly" title=" " alt="" coords="191,216,166,236,145,263,137,291,135,320,130,320,131,291,140,260,162,232,188,212"/>
 <area shape="rect" title=" " alt="" coords="261,411,325,437"/>
 <area shape="poly" title=" " alt="" coords="334,365,312,399,307,396,329,362"/>
@@ -142,371 +141,25 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af8589a7fecc4080c0c66c60e22a11e9e" id="r_af8589a7fecc4080c0c66c60e22a11e9e"><td class="memItemLeft" align="right" valign="top">_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8589a7fecc4080c0c66c60e22a11e9e">fault_debounce_</a> (_Bool condition, uint16_t timeout, uint16_t *counter)</td></tr>
-<tr class="memdesc:af8589a7fecc4080c0c66c60e22a11e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements generic fault condition debouncing.  <br /></td></tr>
-<tr class="memitem:ad2bc2cfbcc9b9b46f7eae106fa04fde7" id="r_ad2bc2cfbcc9b9b46f7eae106fa04fde7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2bc2cfbcc9b9b46f7eae106fa04fde7">fault_init_</a> (void)</td></tr>
-<tr class="memdesc:ad2bc2cfbcc9b9b46f7eae106fa04fde7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the fault management system.  <br /></td></tr>
+<tr class="memitem:gaf8589a7fecc4080c0c66c60e22a11e9e" id="r_gaf8589a7fecc4080c0c66c60e22a11e9e"><td class="memItemLeft" align="right" valign="top">_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___f_a_u_l_t.html#gaf8589a7fecc4080c0c66c60e22a11e9e">fault_debounce_</a> (_Bool condition, uint16_t timeout, uint16_t *counter)</td></tr>
+<tr class="memdesc:gaf8589a7fecc4080c0c66c60e22a11e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic debounce function for fault condition filtering.  <br /></td></tr>
+<tr class="memitem:gad2bc2cfbcc9b9b46f7eae106fa04fde7" id="r_gad2bc2cfbcc9b9b46f7eae106fa04fde7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___f_a_u_l_t.html#gad2bc2cfbcc9b9b46f7eae106fa04fde7">fault_init_</a> (void)</td></tr>
+<tr class="memdesc:gad2bc2cfbcc9b9b46f7eae106fa04fde7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the fault management system.  <br /></td></tr>
 <tr class="memitem:ad7b48f6e97e4d9eae5d65f18f2b09a69" id="r_ad7b48f6e97e4d9eae5d65f18f2b09a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b48f6e97e4d9eae5d65f18f2b09a69">fault_update_status_</a> (<a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *pFaultManage, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pIpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVac, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTpfc, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTllc)</td></tr>
-<tr class="memdesc:ad7b48f6e97e4d9eae5d65f18f2b09a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates fault status based on all monitored parameters.  <br /></td></tr>
-<tr class="memitem:a4edd34895d407967e0d85945fe8a4449" id="r_a4edd34895d407967e0d85945fe8a4449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4edd34895d407967e0d85945fe8a4449">fault_update_mode_</a> (<a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *pFaultManage, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pIpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVac, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTpfc, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTllc)</td></tr>
-<tr class="memdesc:a4edd34895d407967e0d85945fe8a4449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the fault handling mode based on current fault status.  <br /></td></tr>
-<tr class="memitem:a15097dba3133d9c0e90ecaa8ec49033f" id="r_a15097dba3133d9c0e90ecaa8ec49033f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15097dba3133d9c0e90ecaa8ec49033f">fault_standby_</a> (void)</td></tr>
-<tr class="memdesc:a15097dba3133d9c0e90ecaa8ec49033f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places fault management system in standby mode.  <br /></td></tr>
-<tr class="memitem:a2ef8a4e52363253bce2a4ceb62aa94fb" id="r_a2ef8a4e52363253bce2a4ceb62aa94fb"><td class="memItemLeft" align="right" valign="top">_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ef8a4e52363253bce2a4ceb62aa94fb">fault_release_</a> (<a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *pFaultManage, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pIpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVac, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTpfc, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTllc)</td></tr>
-<tr class="memdesc:a2ef8a4e52363253bce2a4ceb62aa94fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies if all fault conditions have been cleared.  <br /></td></tr>
+<tr class="memitem:ga4edd34895d407967e0d85945fe8a4449" id="r_ga4edd34895d407967e0d85945fe8a4449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449">fault_update_mode_</a> (<a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *pFaultManage, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pIpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVac, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTpfc, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTllc)</td></tr>
+<tr class="memdesc:ga4edd34895d407967e0d85945fe8a4449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates overall fault mode and evaluates protection hierarchy.  <br /></td></tr>
+<tr class="memitem:ga15097dba3133d9c0e90ecaa8ec49033f" id="r_ga15097dba3133d9c0e90ecaa8ec49033f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___f_a_u_l_t.html#ga15097dba3133d9c0e90ecaa8ec49033f">fault_standby_</a> (void)</td></tr>
+<tr class="memdesc:ga15097dba3133d9c0e90ecaa8ec49033f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts fault management into standby and clears status.  <br /></td></tr>
+<tr class="memitem:ga2ef8a4e52363253bce2a4ceb62aa94fb" id="r_ga2ef8a4e52363253bce2a4ceb62aa94fb"><td class="memItemLeft" align="right" valign="top">_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___f_a_u_l_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb">fault_release_</a> (<a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *pFaultManage, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pIpsu, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pVac, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTpfc, <a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *pTllc)</td></tr>
+<tr class="memdesc:ga2ef8a4e52363253bce2a4ceb62aa94fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether all faults are cleared and safe for restart.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3e480be0462de6fc8538f8b1871936f7" id="r_a3e480be0462de6fc8538f8b1871936f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e480be0462de6fc8538f8b1871936f7">g_fault_instance_</a></td></tr>
-<tr class="memdesc:a3e480be0462de6fc8538f8b1871936f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global fault management instance.  <br /></td></tr>
-<tr class="memitem:a9737b684a390714069bbe487518be47d" id="r_a9737b684a390714069bbe487518be47d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9737b684a390714069bbe487518be47d">temp_fault_status</a> = 0x0000</td></tr>
-<tr class="memdesc:a9737b684a390714069bbe487518be47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary storage for fault status bits.  <br /></td></tr>
-<tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Fault Debounce Counters</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>Static counters for fault debouncing </p>
-</div></td></tr>
+<tr class="memitem:ga3e480be0462de6fc8538f8b1871936f7" id="r_ga3e480be0462de6fc8538f8b1871936f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___f_a_u_l_t.html#ga3e480be0462de6fc8538f8b1871936f7">g_fault_instance_</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of comprehensive fault management system. </p>
-<dl class="section author"><dt>Author</dt><dd>ADMIN </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025</dd></dl>
-<p>This file implements a robust fault management system with features:</p><ul>
-<li>Fault detection with configurable thresholds</li>
-<li>Debounce mechanism to prevent false triggers</li>
-<li>Fault status tracking and history</li>
-<li>Multiple protection levels (soft/hard)</li>
-<li>Auto-recovery and latching fault modes </li>
-</ul>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="af8589a7fecc4080c0c66c60e22a11e9e" name="af8589a7fecc4080c0c66c60e22a11e9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8589a7fecc4080c0c66c60e22a11e9e">&#9670;&#160;</a></span>fault_debounce_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Bool fault_debounce_ </td>
-          <td>(</td>
-          <td class="paramtype">_Bool</td>          <td class="paramname"><span class="paramname"><em>condition</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>counter</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implements generic fault condition debouncing. </p>
-<p>This function provides a generic debounce mechanism for fault detection:</p><ol type="1">
-<li>If fault condition is active, increment counter</li>
-<li>If counter exceeds timeout, confirm fault</li>
-<li>If condition clears, reset counter This prevents spurious fault triggers from noise or transients.</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">condition</td><td>True if fault condition is currently active </td></tr>
-    <tr><td class="paramname">timeout</td><td>Number of consecutive checks required to confirm fault </td></tr>
-    <tr><td class="paramname">counter</td><td>Pointer to the static counter for this fault type</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true Fault condition confirmed (counter exceeded timeout) </dd>
-<dd>
-false Fault not confirmed or condition cleared</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Timeout value determines the required duration of fault condition: actual_time = timeout * sampling_period </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_af8589a7fecc4080c0c66c60e22a11e9e_icgraph.png" border="0" usemap="#amid__fault__management__handler_8c_af8589a7fecc4080c0c66c60e22a11e9e_icgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_af8589a7fecc4080c0c66c60e22a11e9e_icgraph" id="amid__fault__management__handler_8c_af8589a7fecc4080c0c66c60e22a11e9e_icgraph">
-<area shape="rect" title="Implements generic fault condition debouncing." alt="" coords="763,5,879,32"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#ad7b48f6e97e4d9eae5d65f18f2b09a69" title="Updates fault status based on all monitored parameters." alt="" coords="572,5,715,32"/>
-<area shape="poly" title=" " alt="" coords="747,21,715,21,715,16,747,16"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#a4edd34895d407967e0d85945fe8a4449" title="Updates the fault handling mode based on current fault status." alt="" coords="386,5,524,32"/>
-<area shape="poly" title=" " alt="" coords="557,21,525,21,525,16,557,16"/>
-<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
-<area shape="poly" title=" " alt="" coords="370,21,338,21,338,16,370,16"/>
-<area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad2bc2cfbcc9b9b46f7eae106fa04fde7" name="ad2bc2cfbcc9b9b46f7eae106fa04fde7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2bc2cfbcc9b9b46f7eae106fa04fde7">&#9670;&#160;</a></span>fault_init_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fault_init_ </td>
-          <td>(</td>
-          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the fault management system. </p>
-<p>Performs complete initialization of fault management:</p><ol type="1">
-<li>Clears all fault status bits to 0</li>
-<li>Resets fault history buffer</li>
-<li>Prepares system for fresh fault detection</li>
-</ol>
-<p>This function should be called:</p><ul>
-<li>During system startup</li>
-<li>After system reset</li>
-<li>Before enabling any power stage </li>
-</ul>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_ad2bc2cfbcc9b9b46f7eae106fa04fde7_icgraph.png" border="0" usemap="#amid__fault__management__handler_8c_ad2bc2cfbcc9b9b46f7eae106fa04fde7_icgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_ad2bc2cfbcc9b9b46f7eae106fa04fde7_icgraph" id="amid__fault__management__handler_8c_ad2bc2cfbcc9b9b46f7eae106fa04fde7_icgraph">
-<area shape="rect" title="Initializes the fault management system." alt="" coords="379,5,456,32"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
-<area shape="poly" title=" " alt="" coords="363,21,332,21,332,16,363,16"/>
-<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
-<area shape="poly" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a2ef8a4e52363253bce2a4ceb62aa94fb" name="a2ef8a4e52363253bce2a4ceb62aa94fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ef8a4e52363253bce2a4ceb62aa94fb">&#9670;&#160;</a></span>fault_release_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Bool fault_release_ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pFaultManage</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pVpsu</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pIpsu</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pVac</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pTpfc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pTllc</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Verifies if all fault conditions have been cleared. </p>
-<p>Checks if all monitored parameters have returned to safe levels:</p><ol type="1">
-<li>LLC output voltage within limits</li>
-<li>LLC output current below limit</li>
-<li>LLC and PFC temperatures normal</li>
-<li>PFC input voltage within range</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFaultManage</td><td>Pointer to fault management instance </td></tr>
-    <tr><td class="paramname">pVpsu</td><td>Pointer to PSU output voltage measurement </td></tr>
-    <tr><td class="paramname">pIpsu</td><td>Pointer to PSU output current measurement </td></tr>
-    <tr><td class="paramname">pVac</td><td>Pointer to AC input voltage measurement </td></tr>
-    <tr><td class="paramname">pTpfc</td><td>Pointer to PFC temperature measurement </td></tr>
-    <tr><td class="paramname">pTllc</td><td>Pointer to LLC temperature measurement</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true All parameters within safe operating limits </dd>
-<dd>
-false One or more parameters still outside limits</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Used primarily for auto-recovery functionality </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_a2ef8a4e52363253bce2a4ceb62aa94fb_icgraph.png" border="0" usemap="#amid__fault__management__handler_8c_a2ef8a4e52363253bce2a4ceb62aa94fb_icgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_a2ef8a4e52363253bce2a4ceb62aa94fb_icgraph" id="amid__fault__management__handler_8c_a2ef8a4e52363253bce2a4ceb62aa94fb_icgraph">
-<area shape="rect" title="Verifies if all fault conditions have been cleared." alt="" coords="530,5,633,32"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
-<area shape="poly" title=" " alt="" coords="515,21,483,21,483,16,515,16"/>
-<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
-<area shape="poly" title=" " alt="" coords="371,21,339,21,339,16,371,16"/>
-<area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a15097dba3133d9c0e90ecaa8ec49033f" name="a15097dba3133d9c0e90ecaa8ec49033f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15097dba3133d9c0e90ecaa8ec49033f">&#9670;&#160;</a></span>fault_standby_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fault_standby_ </td>
-          <td>(</td>
-          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Places fault management system in standby mode. </p>
-<p>Performs complete system reset:</p><ol type="1">
-<li>Resets hardware comparator protection</li>
-<li>Clears temporary fault status</li>
-<li>Clears global fault instance status</li>
-<li>Sets fault mode to FAULT_NONE</li>
-</ol>
-<p>This function should be called:</p><ul>
-<li>During system shutdown</li>
-<li>After fault recovery</li>
-<li>Before system restart </li>
-</ul>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_cgraph.png" border="0" usemap="#amid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_cgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_cgraph" id="amid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_cgraph">
-<area shape="rect" title="Places fault management system in standby mode." alt="" coords="5,5,112,32"/>
-<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e" title="Reset protection system." alt="" coords="160,5,313,32"/>
-<area shape="poly" title=" " alt="" coords="112,16,144,16,144,21,112,21"/>
-<area shape="rect" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d" title="Initialize comparator module." alt="" coords="361,5,445,32"/>
-<area shape="poly" title=" " alt="" coords="314,16,345,16,345,21,314,21"/>
-<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9" title="Update comparator threshold." alt="" coords="493,5,639,32"/>
-<area shape="poly" title=" " alt="" coords="446,16,478,16,478,21,446,21"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_icgraph.png" border="0" usemap="#amid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_icgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_icgraph" id="amid__fault__management__handler_8c_a15097dba3133d9c0e90ecaa8ec49033f_icgraph">
-<area shape="rect" title="Places fault management system in standby mode." alt="" coords="530,5,637,32"/>
-<area shape="rect" href="group___a_p_p___l_a_y_e_r.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
-<area shape="poly" title=" " alt="" coords="515,21,483,21,483,16,515,16"/>
-<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
-<area shape="poly" title=" " alt="" coords="371,21,339,21,339,16,371,16"/>
-<area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4edd34895d407967e0d85945fe8a4449" name="a4edd34895d407967e0d85945fe8a4449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4edd34895d407967e0d85945fe8a4449">&#9670;&#160;</a></span>fault_update_mode_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fault_update_mode_ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pFaultManage</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pVpsu</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pIpsu</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pVac</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pTpfc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s___meas___type_def.html">S_Meas_TypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>pTllc</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates the fault handling mode based on current fault status. </p>
-<p>Determines the appropriate fault handling mode by:</p><ol type="1">
-<li>First updating all fault status bits</li>
-<li>Checking for latching faults (require manual reset)</li>
-<li>Checking for auto-recovery faults</li>
-<li>Setting mode to normal if no faults detected</li>
-</ol>
-<p>Fault modes (in order of priority):</p><ol type="1">
-<li>FAULT_LATCH: Requires manual intervention to reset</li>
-<li>FAULT_AUTO_RECOVER: System attempts automatic recovery</li>
-<li>FAULT_NONE: Normal operation, no faults detected</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFaultManage</td><td>Pointer to fault management instance </td></tr>
-    <tr><td class="paramname">pVpsu</td><td>Pointer to PSU output voltage measurement </td></tr>
-    <tr><td class="paramname">pIpsu</td><td>Pointer to PSU output current measurement </td></tr>
-    <tr><td class="paramname">pVac</td><td>Pointer to AC input voltage measurement </td></tr>
-    <tr><td class="paramname">pTpfc</td><td>Pointer to PFC temperature measurement </td></tr>
-    <tr><td class="paramname">pTllc</td><td>Pointer to LLC temperature measurement</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Fault mode hierarchy ensures most severe faults take precedence </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_cgraph.png" border="0" usemap="#amid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_cgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_cgraph" id="amid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_cgraph">
-<area shape="rect" title="Updates the fault handling mode based on current fault status." alt="" coords="5,5,144,32"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#ad7b48f6e97e4d9eae5d65f18f2b09a69" title="Updates fault status based on all monitored parameters." alt="" coords="192,5,334,32"/>
-<area shape="poly" title=" " alt="" coords="144,16,176,16,176,21,144,21"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#af8589a7fecc4080c0c66c60e22a11e9e" title="Implements generic fault condition debouncing." alt="" coords="382,5,498,32"/>
-<area shape="poly" title=" " alt="" coords="334,16,366,16,366,21,334,21"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_icgraph.png" border="0" usemap="#amid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_icgraph" loading="lazy" alt=""/></div>
-<map name="amid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_icgraph" id="amid__fault__management__handler_8c_a4edd34895d407967e0d85945fe8a4449_icgraph">
-<area shape="rect" title="Updates the fault handling mode based on current fault status." alt="" coords="386,5,524,32"/>
-<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
-<area shape="poly" title=" " alt="" coords="370,21,338,21,338,16,370,16"/>
-<area shape="rect" href="main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="ad7b48f6e97e4d9eae5d65f18f2b09a69" name="ad7b48f6e97e4d9eae5d65f18f2b09a69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7b48f6e97e4d9eae5d65f18f2b09a69">&#9670;&#160;</a></span>fault_update_status_()</h2>
 
@@ -545,39 +198,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Updates fault status based on all monitored parameters. </p>
-<p>Comprehensive fault detection routine that:</p><ol type="1">
-<li>Checks all protection thresholds</li>
-<li>Applies debouncing to prevent false triggers</li>
-<li>Updates fault status register bits</li>
-<li>Handles both LLC and PFC stage protections</li>
-</ol>
-<p>Protection types monitored:</p><ul>
-<li>Over/Under Voltage Protection (OVP/UVP)</li>
-<li>Over Current Protection (OCP)</li>
-<li>Short Circuit Protection (SCP)</li>
-<li>Over Temperature Protection (OTP)</li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pFaultManage</td><td>Pointer to fault management instance </td></tr>
-    <tr><td class="paramname">pVpsu</td><td>Pointer to PSU output voltage measurement (Q15) </td></tr>
-    <tr><td class="paramname">pIpsu</td><td>Pointer to PSU output current measurement (Q15) </td></tr>
-    <tr><td class="paramname">pVac</td><td>Pointer to AC input voltage measurement (Q15) </td></tr>
-    <tr><td class="paramname">pTpfc</td><td>Pointer to PFC temperature measurement (Q15) </td></tr>
-    <tr><td class="paramname">pTllc</td><td>Pointer to LLC temperature measurement (Q15)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>All measurements are expected in Q15 fixed-point format </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_cgraph.png" border="0" usemap="#amid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_cgraph" loading="lazy" alt=""/></div>
 <map name="amid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_cgraph" id="amid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_cgraph">
-<area shape="rect" title="Updates fault status based on all monitored parameters." alt="" coords="5,5,148,32"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#af8589a7fecc4080c0c66c60e22a11e9e" title="Implements generic fault condition debouncing." alt="" coords="196,5,312,32"/>
+<area shape="rect" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#gaf8589a7fecc4080c0c66c60e22a11e9e" title="Generic debounce function for fault condition filtering." alt="" coords="196,5,312,32"/>
 <area shape="poly" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
 </map>
 </div>
@@ -586,8 +213,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_icgraph.png" border="0" usemap="#amid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_icgraph" loading="lazy" alt=""/></div>
 <map name="amid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_icgraph" id="amid__fault__management__handler_8c_ad7b48f6e97e4d9eae5d65f18f2b09a69_icgraph">
-<area shape="rect" title="Updates fault status based on all monitored parameters." alt="" coords="572,5,715,32"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#a4edd34895d407967e0d85945fe8a4449" title="Updates the fault handling mode based on current fault status." alt="" coords="386,5,524,32"/>
+<area shape="rect" title=" " alt="" coords="572,5,715,32"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449" title="Updates overall fault mode and evaluates protection hierarchy." alt="" coords="386,5,524,32"/>
 <area shape="poly" title=" " alt="" coords="557,21,525,21,525,16,557,16"/>
 <area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
 <area shape="poly" title=" " alt="" coords="370,21,338,21,338,16,370,16"/>
@@ -595,39 +222,6 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
 </map>
 </div>
-
-</div>
-</div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a3e480be0462de6fc8538f8b1871936f7" name="a3e480be0462de6fc8538f8b1871936f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e480be0462de6fc8538f8b1871936f7">&#9670;&#160;</a></span>g_fault_instance_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_s___fault___type_def.html">S_Fault_TypeDef</a> g_fault_instance_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Global fault management instance. </p>
-
-</div>
-</div>
-<a id="a9737b684a390714069bbe487518be47d" name="a9737b684a390714069bbe487518be47d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9737b684a390714069bbe487518be47d">&#9670;&#160;</a></span>temp_fault_status</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t temp_fault_status = 0x0000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Temporary storage for fault status bits. </p>
 
 </div>
 </div>

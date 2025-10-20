@@ -1,6 +1,6 @@
 <map id="mid_llc_handler.c" name="mid_llc_handler.c">
-<area shape="rect" id="Node000001" title="Implementation of LLC resonant converter control system." alt="" coords="221,5,343,32"/>
-<area shape="rect" id="Node000002" href="$mid__llc__handler_8h.html" title="LLC resonant converter control system interface." alt="" coords="221,80,343,107"/>
+<area shape="rect" id="Node000001" title="Implementation of MID_LLC_Handler module." alt="" coords="221,5,343,32"/>
+<area shape="rect" id="Node000002" href="$mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="221,80,343,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,33,285,64,279,64,279,33"/>
 <area shape="rect" id="Node000003" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="5,229,191,256"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,98,186,104,150,114,117,131,91,156,85,169,83,184,89,214,84,215,78,184,80,168,87,153,114,127,148,109,185,98,220,93"/>
@@ -8,11 +8,11 @@
 <area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="266,109,213,147,210,143,263,105"/>
 <area shape="rect" id="Node000008" href="$drv__pwm__core_8h.html" title="PWM driver for LLC converter and fan control." alt="" coords="459,304,577,331"/>
 <area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="344,93,381,99,421,109,459,127,491,153,511,185,521,222,524,258,524,289,518,288,519,258,516,223,506,187,487,156,456,131,419,114,380,104,343,99"/>
-<area shape="rect" id="Node000009" href="$mid__measurement__handler_8h.html" title="Measurement system and signal processing middleware handler." alt="" coords="288,155,476,181"/>
+<area shape="rect" id="Node000009" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="288,155,476,181"/>
 <area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="301,105,354,143,351,147,298,109"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="316,379,381,405"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,256,116,292,127,312,142,329,170,343,211,357,302,379,301,384,209,362,167,348,139,333,123,315,111,294,98,258"/>
-<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="153,304,302,331"/>
+<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="153,304,302,331"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="122,254,193,294,190,298,119,259"/>
 <area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="250,329,316,368,313,373,247,334"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="193,379,262,405"/>

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('mid__controller__handler_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of digital PI controller functions.  
+<p>Source file implementing digital PI controller functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mid__controller__handler_8h_source.html">mid_controller_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -101,10 +100,10 @@ Include dependency graph for mid_controller_handler.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__controller__handler_8c__incl.png" border="0" usemap="#amid__controller__handler_8c" loading="lazy" alt=""/></div>
 <map name="amid__controller__handler_8c" id="amid__controller__handler_8c">
-<area shape="rect" title="Implementation of digital PI controller functions." alt="" coords="45,5,207,32"/>
+<area shape="rect" title="Source file implementing digital PI controller functions." alt="" coords="45,5,207,32"/>
 <area shape="rect" href="mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="45,80,207,107"/>
 <area shape="poly" title=" " alt="" coords="129,33,129,64,124,64,124,33"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="5,229,154,256"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="5,229,154,256"/>
 <area shape="poly" title=" " alt="" coords="118,109,103,130,90,156,83,185,81,214,76,214,78,185,85,154,98,127,113,106"/>
 <area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="99,155,284,181"/>
 <area shape="poly" title=" " alt="" coords="140,105,172,141,168,145,136,109"/>
@@ -121,7 +120,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__controller__handler_8c__dep__incl.png" border="0" usemap="#amid__controller__handler_8cdep" loading="lazy" alt=""/></div>
 <map name="amid__controller__handler_8cdep" id="amid__controller__handler_8cdep">
-<area shape="rect" title="Implementation of digital PI controller functions." alt="" coords="5,5,168,32"/>
+<area shape="rect" title="Source file implementing digital PI controller functions." alt="" coords="5,5,168,32"/>
 <area shape="rect" href="main_8c.html" title=" " alt="" coords="56,80,117,107"/>
 <area shape="poly" title=" " alt="" coords="89,48,89,80,84,80,84,48"/>
 </map>
@@ -131,20 +130,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadd845e487a875c4bc2392010cc7375de" id="r_gadd845e487a875c4bc2392010cc7375de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de">controller_config_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Kp, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Ki, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Ki_x_Tz, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> RefVal, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> HighLimit, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> LowLimit)</td></tr>
+<tr class="memitem:gadd845e487a875c4bc2392010cc7375de" id="r_gadd845e487a875c4bc2392010cc7375de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de">controller_config_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, q31_t Kp, q31_t Ki, q31_t Ki_x_Tz, uq15_t RefVal, uq15_t HighLimit, uq15_t LowLimit)</td></tr>
 <tr class="memdesc:gadd845e487a875c4bc2392010cc7375de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a new PI controller instance.  <br /></td></tr>
-<tr class="memitem:gadc53cdf15e0b9ec3f7c05d87dd854dda" id="r_gadc53cdf15e0b9ec3f7c05d87dd854dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda">controller_process_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> Status)</td></tr>
+<tr class="memitem:gadc53cdf15e0b9ec3f7c05d87dd854dda" id="r_gadc53cdf15e0b9ec3f7c05d87dd854dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda">controller_process_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, uq15_t Status)</td></tr>
 <tr class="memdesc:gadc53cdf15e0b9ec3f7c05d87dd854dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the PI control algorithm.  <br /></td></tr>
 <tr class="memitem:ga23f0cb4d2dac6d0886892547dc0eba47" id="r_ga23f0cb4d2dac6d0886892547dc0eba47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47">controller_anti_windup_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController)</td></tr>
-<tr class="memdesc:ga23f0cb4d2dac6d0886892547dc0eba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements anti-windup protection for the PI controller.  <br /></td></tr>
+<tr class="memdesc:ga23f0cb4d2dac6d0886892547dc0eba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies anti-windup protection to prevent integral saturation.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of digital PI controller functions. </p>
-<dl class="section author"><dt>Author</dt><dd>Admin </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025</dd></dl>
-<p>This file implements the core functionality of a digital PI controller including initialization, processing, and anti-windup protection. The implementation uses fixed-point arithmetic for efficient execution on embedded systems. </p>
+<div class="textblock"><p>Source file implementing digital PI controller functions. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

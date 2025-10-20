@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -89,27 +88,24 @@ $(function(){initNavTree('struct_s___fault___type_def.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">S_Fault_TypeDef Struct Reference</div></div>
+  <div class="headertitle"><div class="title">S_Fault_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group___m_i_d_d_l_e___l_a_y_e_r.html">Middleware Layer</a> &raquo; <a class="el" href="group___m_i_d___f_a_u_l_t.html">Fault Management Middleware</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>Holds fault status, history, and current operating mode.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mid__fault__management__handler_8h_source.html">mid_fault_management_handler.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for S_Fault_TypeDef:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_s___fault___type_def__coll__graph.png" border="0" usemap="#a_s___fault___type_def_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="a_s___fault___type_def_coll__map" id="a_s___fault___type_def_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,117,117"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a7939db63a358e1f4800d00a780f1ec1c" id="r_a7939db63a358e1f4800d00a780f1ec1c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7939db63a358e1f4800d00a780f1ec1c">fault_status</a></td></tr>
-<tr class="memitem:a1494ae33897e9d580c9f5c90f20cb595" id="r_a1494ae33897e9d580c9f5c90f20cb595"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1494ae33897e9d580c9f5c90f20cb595">fault_save</a> [<a class="el" href="mid__fault__management__handler_8h.html#a067035a0ccab66c9f02d30a2d0baff75">FAULT_SAVE_MEMORY</a>]</td></tr>
-<tr class="memitem:a99d866b8d336b32ea36b7cedf760163d" id="r_a99d866b8d336b32ea36b7cedf760163d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mid__fault__management__handler_8h.html#a92639028765f67b22031dcedd2b5e7e2">E_Fault_Mode_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d866b8d336b32ea36b7cedf760163d">fault_mode</a></td></tr>
+<tr class="memitem:a1494ae33897e9d580c9f5c90f20cb595" id="r_a1494ae33897e9d580c9f5c90f20cb595"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1494ae33897e9d580c9f5c90f20cb595">fault_save</a> [FAULT_SAVE_MEMORY]</td></tr>
+<tr class="memitem:a99d866b8d336b32ea36b7cedf760163d" id="r_a99d866b8d336b32ea36b7cedf760163d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___f_a_u_l_t.html#ga92639028765f67b22031dcedd2b5e7e2">E_Fault_Mode_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d866b8d336b32ea36b7cedf760163d">fault_mode</a></td></tr>
 </table>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Holds fault status, history, and current operating mode. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a99d866b8d336b32ea36b7cedf760163d" name="a99d866b8d336b32ea36b7cedf760163d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99d866b8d336b32ea36b7cedf760163d">&#9670;&#160;</a></span>fault_mode</h2>
 
@@ -117,10 +113,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mid__fault__management__handler_8h.html#a92639028765f67b22031dcedd2b5e7e2">E_Fault_Mode_TypeDef</a> fault_mode</td>
+          <td class="memname"><a class="el" href="group___m_i_d___f_a_u_l_t.html#ga92639028765f67b22031dcedd2b5e7e2">E_Fault_Mode_TypeDef</a> fault_mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Current fault mode </p>
 
 </div>
 </div>
@@ -131,10 +128,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t fault_save[<a class="el" href="mid__fault__management__handler_8h.html#a067035a0ccab66c9f02d30a2d0baff75">FAULT_SAVE_MEMORY</a>]</td>
+          <td class="memname">uint16_t fault_save[FAULT_SAVE_MEMORY]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Circular buffer for fault history </p>
 
 </div>
 </div>
@@ -149,6 +147,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Current fault bitmask </p>
 
 </div>
 </div>

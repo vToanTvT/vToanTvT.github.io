@@ -10,6 +10,6 @@ var drv__uart__core_8h =
     [ "drv_uart_init", "group___d_r_v___u_a_r_t.html#ga3380362530cfe4cf815bec8a02e461af", null ],
     [ "drv_uart_receive", "group___d_r_v___u_a_r_t.html#gad6ad211dfe3a3db322f67372964a37c5", null ],
     [ "drv_uart_transmit", "group___d_r_v___u_a_r_t.html#ga9adfd7151133054f167fcd643058b2dc", null ],
-    [ "RXBuffer", "group___d_r_i_v_e_r___l_a_y_e_r.html#ga3bb35dc312c491d5ec58208702050587", null ],
-    [ "TXBuffer", "group___d_r_i_v_e_r___l_a_y_e_r.html#gabaa3661d45010d94234555c1d9ac95c3", null ]
+    [ "RXBuffer", "group___d_r_v___u_a_r_t.html#ga3bb35dc312c491d5ec58208702050587", null ],
+    [ "TXBuffer", "group___d_r_v___u_a_r_t.html#gabaa3661d45010d94234555c1d9ac95c3", null ]
 ];

@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('group___d_r_v___u_a_r_t.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Public APIs and definitions for UART communication.  
+<p>Implementation of Comp driver core functions.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for UART Driver Module:</div>
@@ -101,14 +100,14 @@ Collaboration diagram for UART Driver Module:</div>
 <div class="center"><img src="group___d_r_v___u_a_r_t.png" border="0" usemap="#agroup______d__r__v______u__a__r__t" loading="lazy" alt=""/></div>
 <map name="agroup______d__r__v______u__a__r__t" id="agroup______d__r__v______u__a__r__t">
 <area shape="rect" href="group___d_r_i_v_e_r___l_a_y_e_r.html" title="Low&#45;level hardware drivers (ADC, GPIO, PWM, UART...)." alt="" coords="5,5,98,32"/>
-<area shape="rect" title="Public APIs and definitions for UART communication." alt="" coords="146,5,288,32"/>
+<area shape="rect" title="Implementation of Comp driver core functions." alt="" coords="146,5,288,32"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:uart_5Ftransfer_5Ft" id="r_uart_5Ftransfer_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__transfer__t.html">uart_transfer_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART transfer configuration structure.  <a href="structuart__transfer__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART transfer structure.  <a href="structuart__transfer__t.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -121,30 +120,43 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3a356630dc4706229fa359797fd1bb50" id="r_ga3a356630dc4706229fa359797fd1bb50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3a356630dc4706229fa359797fd1bb50">drv_uart_get_status</a> (<a class="el" href="structuart__transfer__t.html">uart_transfer_t</a> *p_transfer)</td></tr>
 <tr class="memdesc:ga3a356630dc4706229fa359797fd1bb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get UART transfer status.  <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga3bb35dc312c491d5ec58208702050587" id="r_ga3bb35dc312c491d5ec58208702050587"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3bb35dc312c491d5ec58208702050587">RXBuffer</a> [<a class="el" href="#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>]</td></tr>
+<tr class="memitem:gabaa3661d45010d94234555c1d9ac95c3" id="r_gabaa3661d45010d94234555c1d9ac95c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabaa3661d45010d94234555c1d9ac95c3">TXBuffer</a> [<a class="el" href="#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>]</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
+Communication Buffers</h2></td></tr>
+<tr class="memitem:gabaa3661d45010d94234555c1d9ac95c3" id="r_gabaa3661d45010d94234555c1d9ac95c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabaa3661d45010d94234555c1d9ac95c3">TXBuffer</a> [<a class="el" href="#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>]</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 UART Configuration</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p>Include necessary header files.</p>
-<p>Public constant definitions. </p><dl class="section note"><dt>Note</dt><dd>Use prefix K_UART_ for constants. </dd></dl>
-</td></tr>
 <tr class="memitem:gad23e624770a8c084ad03098ef52b4fcb" id="r_gad23e624770a8c084ad03098ef52b4fcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad23e624770a8c084ad03098ef52b4fcb">K_UART_INSTANCE_</a>&#160;&#160;&#160;huart3</td></tr>
-<tr class="memdesc:gad23e624770a8c084ad03098ef52b4fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART peripheral instance.  <br /></td></tr>
-<tr class="memitem:gae49f6372a5d236ed2efadc6c56a5eb4a" id="r_gae49f6372a5d236ed2efadc6c56a5eb4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:gae49f6372a5d236ed2efadc6c56a5eb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TX buffer size in bytes.  <br /></td></tr>
-<tr class="memitem:gaa12f2574042a3c319917b2a5e307e9df" id="r_gaa12f2574042a3c319917b2a5e307e9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>&#160;&#160;&#160;40</td></tr>
-<tr class="memdesc:gaa12f2574042a3c319917b2a5e307e9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">RX buffer size in bytes.  <br /></td></tr>
+<tr class="memitem:gae49f6372a5d236ed2efadc6c56a5eb4a" id="r_gae49f6372a5d236ed2efadc6c56a5eb4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>&#160;&#160;&#160;100U</td></tr>
+<tr class="memitem:gaa12f2574042a3c319917b2a5e307e9df" id="r_gaa12f2574042a3c319917b2a5e307e9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>&#160;&#160;&#160;40U</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 UART Status Codes</h2></td></tr>
-<tr class="memitem:gaf66735936071b9fdab3020cfaf8146a5" id="r_gaf66735936071b9fdab3020cfaf8146a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf66735936071b9fdab3020cfaf8146a5">K_UART_OK_</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gaf66735936071b9fdab3020cfaf8146a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation successful.  <br /></td></tr>
-<tr class="memitem:ga210f8e5582bedeb12f5dcd75b77e5236" id="r_ga210f8e5582bedeb12f5dcd75b77e5236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga210f8e5582bedeb12f5dcd75b77e5236">K_UART_BUSY_</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:ga210f8e5582bedeb12f5dcd75b77e5236"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART busy/in-progress.  <br /></td></tr>
-<tr class="memitem:gaae474f475827ef6ade7b44add61a224b" id="r_gaae474f475827ef6ade7b44add61a224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaae474f475827ef6ade7b44add61a224b">K_UART_ERROR_</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:gaae474f475827ef6ade7b44add61a224b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation failed.  <br /></td></tr>
+<tr class="memitem:gaf66735936071b9fdab3020cfaf8146a5" id="r_gaf66735936071b9fdab3020cfaf8146a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf66735936071b9fdab3020cfaf8146a5">K_UART_OK_</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memitem:ga210f8e5582bedeb12f5dcd75b77e5236" id="r_ga210f8e5582bedeb12f5dcd75b77e5236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga210f8e5582bedeb12f5dcd75b77e5236">K_UART_BUSY_</a>&#160;&#160;&#160;1U</td></tr>
+<tr class="memitem:gaae474f475827ef6ade7b44add61a224b" id="r_gaae474f475827ef6ade7b44add61a224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaae474f475827ef6ade7b44add61a224b">K_UART_ERROR_</a>&#160;&#160;&#160;2U</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<p>Public APIs and definitions for UART communication. </p>
-<p>This file contains all the exported function prototypes, macros, and data structures for the UART driver module. The module provides:</p><ul>
+<p>Implementation of Comp driver core functions. </p>
+<p>Public APIs and definitions for UART communication.</p>
+<p>Implements the initialization and processing functions for UART:</p><ul>
+<li>DMA-based transmission and reception</li>
+<li>Buffer management and overflow protection</li>
+<li>Error detection and handling</li>
+<li>Non-blocking operation support</li>
+</ul>
+<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#ga3380362530cfe4cf815bec8a02e461af">drv_uart_init</a>();</div>
+<div class="line"><a class="code hl_function" href="#ga9adfd7151133054f167fcd643058b2dc">drv_uart_transmit</a>((uint8_t*)<span class="stringliteral">&quot;Hello&quot;</span>, 5);</div>
+<div class="ttc" id="agroup___d_r_v___u_a_r_t_html_ga3380362530cfe4cf815bec8a02e461af"><div class="ttname"><a href="#ga3380362530cfe4cf815bec8a02e461af">drv_uart_init</a></div><div class="ttdeci">void drv_uart_init(void)</div><div class="ttdoc">Initialize UART module and DMA channels.</div><div class="ttdef"><b>Definition</b> drv_uart_core.c:96</div></div>
+<div class="ttc" id="agroup___d_r_v___u_a_r_t_html_ga9adfd7151133054f167fcd643058b2dc"><div class="ttname"><a href="#ga9adfd7151133054f167fcd643058b2dc">drv_uart_transmit</a></div><div class="ttdeci">int drv_uart_transmit(const uint8_t *p_data, uint16_t size)</div><div class="ttdoc">Start UART transmission using DMA.</div><div class="ttdef"><b>Definition</b> drv_uart_core.c:115</div></div>
+</div><!-- fragment --><dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-10-17 @autho EVSELab</dd></dl>
+<p>This file contains all exported function prototypes, macros, and data structures for the UART driver module:</p><ul>
 <li>Non-blocking UART transmission using DMA</li>
 <li>Configurable TX/RX buffer management</li>
 <li>Error detection and handling</li>
@@ -161,12 +173,11 @@ UART Status Codes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define K_UART_BUSY_&#160;&#160;&#160;1</td>
+          <td class="memname">#define K_UART_BUSY_&#160;&#160;&#160;1U</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>UART busy/in-progress. </p>
+<p>UART busy or transfer in progress </p>
 
 </div>
 </div>
@@ -177,12 +188,11 @@ UART Status Codes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define K_UART_ERROR_&#160;&#160;&#160;2</td>
+          <td class="memname">#define K_UART_ERROR_&#160;&#160;&#160;2U</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Operation failed. </p>
+<p>Operation failed </p>
 
 </div>
 </div>
@@ -197,8 +207,7 @@ UART Status Codes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>UART peripheral instance. </p>
+<p>UART hardware instance </p>
 
 </div>
 </div>
@@ -209,12 +218,11 @@ UART Status Codes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define K_UART_OK_&#160;&#160;&#160;0</td>
+          <td class="memname">#define K_UART_OK_&#160;&#160;&#160;0U</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Operation successful. </p>
+<p>Operation successful </p>
 
 </div>
 </div>
@@ -225,12 +233,11 @@ UART Status Codes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define K_UART_RX_BUFFER_SIZE_&#160;&#160;&#160;40</td>
+          <td class="memname">#define K_UART_RX_BUFFER_SIZE_&#160;&#160;&#160;40U</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>RX buffer size in bytes. </p>
+<p>RX buffer size (bytes) </p>
 
 </div>
 </div>
@@ -241,12 +248,11 @@ UART Status Codes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define K_UART_TX_BUFFER_SIZE_&#160;&#160;&#160;100</td>
+          <td class="memname">#define K_UART_TX_BUFFER_SIZE_&#160;&#160;&#160;100U</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>TX buffer size in bytes. </p>
+<p>TX buffer size (bytes) </p>
 
 </div>
 </div>
@@ -269,15 +275,14 @@ UART Status Codes</h2></td></tr>
 <p>Get UART transfer status. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_transfer</td><td>Pointer to transfer status structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_transfer</td><td>Pointer to status structure. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int Operation result </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">K_UART_OK_</td><td>Success </td></tr>
-    <tr><td class="paramname">K_UART_ERROR_</td><td>Invalid parameter </td></tr>
+    <tr><td class="paramname">K_UART_OK_</td><td>Success. </td></tr>
+    <tr><td class="paramname">K_UART_ERROR_</td><td>Invalid parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -300,13 +305,7 @@ UART Status Codes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize UART module and DMA channels. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Must be called before using any UART API. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Must be called before using any UART APIs. </dd></dl>
 
 </div>
 </div>
@@ -332,17 +331,16 @@ UART Status Codes</h2></td></tr>
 <p>Start UART reception using DMA. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_data</td><td>Pointer to data buffer </td></tr>
-    <tr><td class="paramname">size</td><td>Maximum number of bytes to receive </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_data</td><td>Pointer to receive buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of bytes to receive. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int Operation result </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">K_UART_OK_</td><td>Success </td></tr>
-    <tr><td class="paramname">K_UART_BUSY_</td><td>Channel busy </td></tr>
-    <tr><td class="paramname">K_UART_ERROR_</td><td>Invalid parameter </td></tr>
+    <tr><td class="paramname">K_UART_OK_</td><td>Success. </td></tr>
+    <tr><td class="paramname">K_UART_BUSY_</td><td>Channel busy. </td></tr>
+    <tr><td class="paramname">K_UART_ERROR_</td><td>Invalid parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -371,20 +369,82 @@ UART Status Codes</h2></td></tr>
 <p>Start UART transmission using DMA. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_data</td><td>Pointer to data buffer </td></tr>
-    <tr><td class="paramname">size</td><td>Number of bytes to transmit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>Pointer to data buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of bytes to transmit. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int Operation result </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">K_UART_OK_</td><td>Success </td></tr>
-    <tr><td class="paramname">K_UART_BUSY_</td><td>Channel busy </td></tr>
-    <tr><td class="paramname">K_UART_ERROR_</td><td>Invalid parameter </td></tr>
+    <tr><td class="paramname">K_UART_OK_</td><td>Success. </td></tr>
+    <tr><td class="paramname">K_UART_BUSY_</td><td>Channel busy. </td></tr>
+    <tr><td class="paramname">K_UART_ERROR_</td><td>Invalid parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>Non-blocking mode. Use <a class="el" href="#ga3a356630dc4706229fa359797fd1bb50">drv_uart_get_status</a> to check completion. </dd></dl>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="ga3bb35dc312c491d5ec58208702050587" name="ga3bb35dc312c491d5ec58208702050587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bb35dc312c491d5ec58208702050587">&#9670;&#160;</a></span>RXBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RXBuffer[<a class="el" href="#gaa12f2574042a3c319917b2a5e307e9df">K_UART_RX_BUFFER_SIZE_</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>UART receive buffer </p>
+
+</div>
+</div>
+<a id="gabaa3661d45010d94234555c1d9ac95c3" name="gabaa3661d45010d94234555c1d9ac95c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabaa3661d45010d94234555c1d9ac95c3">&#9670;&#160;</a></span>TXBuffer <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char TXBuffer[<a class="el" href="#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UART transmit buffer </p>
+
+</div>
+</div>
+<a id="gabaa3661d45010d94234555c1d9ac95c3" name="gabaa3661d45010d94234555c1d9ac95c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabaa3661d45010d94234555c1d9ac95c3">&#9670;&#160;</a></span>TXBuffer <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char TXBuffer[<a class="el" href="#gae49f6372a5d236ed2efadc6c56a5eb4a">K_UART_TX_BUFFER_SIZE_</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>UART transmit buffer </p>
 
 </div>
 </div>

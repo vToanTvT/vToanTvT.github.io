@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -97,132 +96,132 @@ $(function(){initNavTree('drv__adc__core_8c_source.html','',''); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/*==================================================================================================</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *                                      INCLUDE FILES</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="drv__adc__core_8h.html">drv_adc_core.h</a>&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// #include &quot;main.h&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> *                                      LOCAL DEFINES</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="drv__adc__core_8c.html#adffac13c9ed303087df5376912f2f6bf">   49</a></span><span class="preprocessor">#define K_ADC_TIMEOUT_MS_          1000    </span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="drv__adc__core_8c.html#a06df8b827269d26565943e7898a12dbc">   50</a></span><span class="preprocessor">#define K_ADC_MAX_RETRIES_         3       </span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="drv__adc__core_8c.html#aab3ae09012311e80ab56555d2f667213">   51</a></span><span class="preprocessor">#define K_ADC_CHANNELS_            6       </span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> *                                      LOCAL VARIABLES</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">static</span> <a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> s_adc_data_;     </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">static</span> uint8_t s_adc_initialized = 0;       </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> *                                  LOCAL FUNCTION PROTOTYPES</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">static</span> <span class="keywordtype">int</span> validate_adc_params_(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> *                                    FUNCTION DEFINITIONS</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">static</span> <span class="keywordtype">int</span> validate_adc_params_(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (pADC == NULL || !s_adc_initialized) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> <span class="comment">// End of Private Functions</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">*                                   FUNCTION DEFINITIONS</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">==================================================================================================*/</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
-<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gab85cb16e003e34435b1bba7bfecbb5b9">  120</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">/* Parameter validation */</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">if</span> (pADC == NULL)</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">return</span> -1;  <span class="comment">/* Invalid parameter: NULL pointer */</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">/* Initialize buffer array */</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">for</span> (i = 0; i &lt; 6; i++)</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[i] = 0;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">/* Initialize ADC values */</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">ADC_vac</a>           = 0;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a>   = 0;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a>     = 0;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a>     = 0;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a>     = 0;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a>   = 0;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_function" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a>(pADC);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_function" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(pADC);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="drv__adc__core_8h.html">drv_adc_core.h</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// #include &quot;main.h&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> *                                      LOCAL DEFINES</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#gadffac13c9ed303087df5376912f2f6bf">   43</a></span><span class="preprocessor">#define K_ADC_TIMEOUT_MS_     1000   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga06df8b827269d26565943e7898a12dbc">   44</a></span><span class="preprocessor">#define K_ADC_MAX_RETRIES_    3      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#gaab3ae09012311e80ab56555d2f667213">   45</a></span><span class="preprocessor">#define K_ADC_CHANNELS_       6      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> *                                      LOCAL VARIABLES</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">static</span> <a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> s_adc_data_;  </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">static</span> uint8_t s_adc_initialized = 0;   </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> *                                  LOCAL FUNCTION PROTOTYPES</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">static</span> <span class="keywordtype">int</span> validate_adc_params_(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> *                                    LOCAL FUNCTION DEFINITIONS</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">static</span> <span class="keywordtype">int</span> validate_adc_params_(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (pADC == NULL || !s_adc_initialized) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> *                                    PUBLIC FUNCTION DEFINITIONS</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">  103</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_define" href="group___d_r_v___a_d_c.html#gaab3ae09012311e80ab56555d2f667213">K_ADC_CHANNELS_</a>; i++) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[i] = 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">ADC_vac</a>           = 0;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a>   = 0;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a>   = 0;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a>   = 0;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a>   = 0;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a>   = 0;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    s_adc_initialized = 1;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a>(pADC);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_function" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(pADC);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">  137</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">// if (HAL_ADC_Start_DMA(&amp;hadc1, (uint32_t*)pADC-&gt;buffer_adc, K_ADC_CHANNELS_) != HAL_OK)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="comment">//     return -2;</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
 </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
-<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gad85cb208269700f968f1441beb35bf8a">  167</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_i_v_e_r___l_a_y_e_r.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC){</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="comment">/* Invalid parameter: NULL pointer */</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="comment">// if (HAL_ADC_Start_DMA(&amp;hadc, (uint32_t*) pADC-&gt;buffer_adc, 6) != HAL_OK) {</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="comment">//     /* HAL error */</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">//     return -2;</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">  162</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">ADC_vac</a>           = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[0];</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[1];</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[2];</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[3];</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[4];</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[5];</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
 </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span></div>
-<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga5bff6d15fc0bf77d4b07f54700f4c434">  196</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC) {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="comment">/* Invalid parameter: NULL pointer */</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">ADC_vac</a>        = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[0];</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[1];</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a>     = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[2];</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a>     = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[3];</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a>     = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[4];</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a>   = pADC-&gt;<a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[5];</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span></div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">  188</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="comment">// if (HAL_ADCEx_Calibration_Start(&amp;hadc1) != HAL_OK)</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="comment">//     return -2;</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}</div>
 </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span></div>
-<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga16393acb40aae65ca9e14eb2444f55c5">  228</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC){</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keywordflow">if</span> (pADC == NULL) {</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="comment">/* Invalid parameter: NULL pointer */</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="comment">// if (HAL_ADCEx_Calibration_Start(&amp;hadc1) != HAL_OK) {</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="comment">//     /* HAL error */</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="comment">//     return -2;</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
-</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> <span class="comment">// End of DRV_ADC group</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * End of file</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> **************************************************************************************************/</span></div>
 <div class="ttc" id="adrv__adc__core_8h_html"><div class="ttname"><a href="drv__adc__core_8h.html">drv_adc_core.h</a></div><div class="ttdoc">ADC driver for hardware interfacing.</div></div>
-<div class="ttc" id="agroup___d_r_i_v_e_r___l_a_y_e_r_html_ga16393acb40aae65ca9e14eb2444f55c5"><div class="ttname"><a href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a></div><div class="ttdeci">int adc_calibrate_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Perform ADC calibration sequence.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:228</div></div>
-<div class="ttc" id="agroup___d_r_i_v_e_r___l_a_y_e_r_html_ga5bff6d15fc0bf77d4b07f54700f4c434"><div class="ttname"><a href="group___d_r_i_v_e_r___l_a_y_e_r.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a></div><div class="ttdeci">int adc_get_result_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Process and store ADC conversion results.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:196</div></div>
-<div class="ttc" id="agroup___d_r_i_v_e_r___l_a_y_e_r_html_gab85cb16e003e34435b1bba7bfecbb5b9"><div class="ttname"><a href="group___d_r_i_v_e_r___l_a_y_e_r.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a></div><div class="ttdeci">int adc_init_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Initialize ADC hardware and data structure.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:120</div></div>
-<div class="ttc" id="agroup___d_r_i_v_e_r___l_a_y_e_r_html_gad85cb208269700f968f1441beb35bf8a"><div class="ttname"><a href="group___d_r_i_v_e_r___l_a_y_e_r.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a></div><div class="ttdeci">int adc_start_conversion_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Start ADC conversion sequence in DMA mode.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:167</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html"><div class="ttname"><a href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a></div><div class="ttdoc">ADC measurement and configuration data structure.</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:70</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a0f44518e6b76a378568af6bbc365bb2a"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">S_Adc_Data_TypeDef::ADC_voltage_bat</a></div><div class="ttdeci">uint16_t ADC_voltage_bat</div><div class="ttdoc">Battery voltage reading [0-4095] = [0-100V].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:84</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a5f46e99a879143174e4d1f013ad9d34c"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">S_Adc_Data_TypeDef::ADC_current_bat</a></div><div class="ttdeci">uint16_t ADC_current_bat</div><div class="ttdoc">Battery current reading [0-4095] = [0-100A].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:81</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a6e4486ef0554e48702f9095253afcc72"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">S_Adc_Data_TypeDef::ADC_vac</a></div><div class="ttdeci">uint16_t ADC_vac</div><div class="ttdoc">AC voltage reading [0-4095] = [0-400V].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:90</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a7cf0add5681cddfb5760a8076fb9cbce"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">S_Adc_Data_TypeDef::ADC_thermal_pfc</a></div><div class="ttdeci">uint16_t ADC_thermal_pfc</div><div class="ttdoc">PFC temperature reading [0-4095] = [0-125°C].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:75</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a942b5893c1e875c5f1a0b7350f16c7b5"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">S_Adc_Data_TypeDef::ADC_voltage_out</a></div><div class="ttdeci">uint16_t ADC_voltage_out</div><div class="ttdoc">Output voltage reading [0-4095] = [0-400V].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:87</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_acc3f3f60ba83b8809b768dc85180b71c"><div class="ttname"><a href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">S_Adc_Data_TypeDef::ADC_thermal_llc</a></div><div class="ttdeci">uint16_t ADC_thermal_llc</div><div class="ttdoc">LLC temperature reading [0-4095] = [0-125°C].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:78</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_af0d2ffa00bdaf3b3b36ecb283f8a5b55"><div class="ttname"><a href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">S_Adc_Data_TypeDef::buffer_adc</a></div><div class="ttdeci">uint16_t buffer_adc[6]</div><div class="ttdoc">DMA buffer for raw ADC values [0-4095].</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:72</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga16393acb40aae65ca9e14eb2444f55c5"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a></div><div class="ttdeci">int adc_calibrate_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Performs ADC calibration sequence.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:188</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga5bff6d15fc0bf77d4b07f54700f4c434"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a></div><div class="ttdeci">int adc_get_result_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Retrieves and processes ADC conversion results.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:162</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gaab3ae09012311e80ab56555d2f667213"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gaab3ae09012311e80ab56555d2f667213">K_ADC_CHANNELS_</a></div><div class="ttdeci">#define K_ADC_CHANNELS_</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:45</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gab85cb16e003e34435b1bba7bfecbb5b9"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a></div><div class="ttdeci">int adc_init_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Initializes the ADC hardware and data structure.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:103</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gad85cb208269700f968f1441beb35bf8a"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a></div><div class="ttdeci">int adc_start_conversion_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Starts ADC conversion sequence in DMA mode.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:137</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html"><div class="ttname"><a href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a></div><div class="ttdoc">Include necessary header files.</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:47</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_a0f44518e6b76a378568af6bbc365bb2a"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">S_Adc_Data_TypeDef::ADC_voltage_bat</a></div><div class="ttdeci">uint16_t ADC_voltage_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:52</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_a5f46e99a879143174e4d1f013ad9d34c"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">S_Adc_Data_TypeDef::ADC_current_bat</a></div><div class="ttdeci">uint16_t ADC_current_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:51</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_a6e4486ef0554e48702f9095253afcc72"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">S_Adc_Data_TypeDef::ADC_vac</a></div><div class="ttdeci">uint16_t ADC_vac</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:54</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_a7cf0add5681cddfb5760a8076fb9cbce"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">S_Adc_Data_TypeDef::ADC_thermal_pfc</a></div><div class="ttdeci">uint16_t ADC_thermal_pfc</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:49</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_a942b5893c1e875c5f1a0b7350f16c7b5"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">S_Adc_Data_TypeDef::ADC_voltage_out</a></div><div class="ttdeci">uint16_t ADC_voltage_out</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:53</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_acc3f3f60ba83b8809b768dc85180b71c"><div class="ttname"><a href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">S_Adc_Data_TypeDef::ADC_thermal_llc</a></div><div class="ttdeci">uint16_t ADC_thermal_llc</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:50</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html_af0d2ffa00bdaf3b3b36ecb283f8a5b55"><div class="ttname"><a href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">S_Adc_Data_TypeDef::buffer_adc</a></div><div class="ttdeci">uint16_t buffer_adc[6]</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

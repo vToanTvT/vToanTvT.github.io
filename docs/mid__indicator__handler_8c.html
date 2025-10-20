@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">LadyBug<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +92,7 @@ $(function(){initNavTree('mid__indicator__handler_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of LED indicator control system.  
+<p>Implementation of LED indicator control middleware.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mid__indicator__handler_8h_source.html">mid_indicator_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -101,7 +100,7 @@ Include dependency graph for mid_indicator_handler.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__indicator__handler_8c__incl.png" border="0" usemap="#amid__indicator__handler_8c" loading="lazy" alt=""/></div>
 <map name="amid__indicator__handler_8c" id="amid__indicator__handler_8c">
-<area shape="rect" title="Implementation of LED indicator control system." alt="" coords="5,5,164,32"/>
+<area shape="rect" title="Implementation of LED indicator control middleware." alt="" coords="5,5,164,32"/>
 <area shape="rect" href="mid__indicator__handler_8h.html" title="LED indicator control system interface." alt="" coords="5,80,164,107"/>
 <area shape="poly" title=" " alt="" coords="87,33,87,64,82,64,82,33"/>
 <area shape="rect" title=" " alt="" coords="52,229,117,256"/>
@@ -116,7 +115,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mid__indicator__handler_8c__dep__incl.png" border="0" usemap="#amid__indicator__handler_8cdep" loading="lazy" alt=""/></div>
 <map name="amid__indicator__handler_8cdep" id="amid__indicator__handler_8cdep">
-<area shape="rect" title="Implementation of LED indicator control system." alt="" coords="5,5,164,32"/>
+<area shape="rect" title="Implementation of LED indicator control middleware." alt="" coords="5,5,164,32"/>
 <area shape="rect" href="main_8c.html" title=" " alt="" coords="54,80,115,107"/>
 <area shape="poly" title=" " alt="" coords="87,48,87,80,82,80,82,48"/>
 </map>
@@ -127,15 +126,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a69f43f50592bfb336afcad55dbce7a2a" id="r_a69f43f50592bfb336afcad55dbce7a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f43f50592bfb336afcad55dbce7a2a">INDI_ConfigLED</a> (<a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a> *pledConfig, <a class="el" href="struct_s___g_p_i_o___pin___type_def.html">S_GPIO_Pin_TypeDef</a> LED_Number, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> ledPeriod)</td></tr>
-<tr class="memdesc:a69f43f50592bfb336afcad55dbce7a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures an individual LED's operating parameters.  <br /></td></tr>
+<tr class="memdesc:a69f43f50592bfb336afcad55dbce7a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure an individual LED’s operating parameters.  <br /></td></tr>
 <tr class="memitem:gacfa75aa809762cf0ad8a5d4a5dc196c6" id="r_gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6">indicator_init_</a> (void)</td></tr>
-<tr class="memdesc:gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the complete LED indicator subsystem.  <br /></td></tr>
+<tr class="memdesc:gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LED indicator subsystem.  <br /></td></tr>
 <tr class="memitem:ga787e0e208d169789ad0777b293c369c8" id="r_ga787e0e208d169789ad0777b293c369c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8">indicator_process_led_</a> (<a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a> *pledConfig)</td></tr>
-<tr class="memdesc:ga787e0e208d169789ad0777b293c369c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes LED blinking based on configured period.  <br /></td></tr>
+<tr class="memdesc:ga787e0e208d169789ad0777b293c369c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED blinking according to configured period.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Global LED Configuration Instances</div></td></tr>
 <tr class="memitem:ga8d85f10b3364f5df950a7162bdbc65f8" id="r_ga8d85f10b3364f5df950a7162bdbc65f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a></td></tr>
 <tr class="memdesc:ga8d85f10b3364f5df950a7162bdbc65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 1 configuration instance.  <br /></td></tr>
 <tr class="memitem:ga3931b379848708892ef911ed354220d3" id="r_ga3931b379848708892ef911ed354220d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga3931b379848708892ef911ed354220d3">g_indicator_led2_</a></td></tr>
@@ -146,17 +144,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:ga996a5e3c1318fef1a32df7cf319283b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 4 configuration instance.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of LED indicator control system. </p>
-<dl class="section author"><dt>Author</dt><dd>Admin </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025</dd></dl>
-<p>This module implements a flexible LED indicator system with features:</p><ul>
-<li>Configurable blinking periods (SLOW, MEDIUM, FAST)</li>
-<li>Independent control of multiple LEDs</li>
-<li>Non-blocking timer-based operation</li>
-<li>Runtime period modification </li>
-</ul>
+<div class="textblock"><p>Implementation of LED indicator control middleware. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a69f43f50592bfb336afcad55dbce7a2a" name="a69f43f50592bfb336afcad55dbce7a2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69f43f50592bfb336afcad55dbce7a2a">&#9670;&#160;</a></span>INDI_ConfigLED()</h2>
@@ -182,27 +170,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Configures an individual LED's operating parameters. </p>
-<p>This function sets up a single LED configuration by:</p><ol type="1">
-<li>Assigning the GPIO pin for control</li>
-<li>Resetting the internal blink counter</li>
-<li>Setting the desired blink period</li>
+<p>Configure an individual LED’s operating parameters. </p>
+<p>Initializes a single LED indicator with:</p><ol type="1">
+<li>GPIO pin mapping</li>
+<li>Reset blink counter</li>
+<li>Set blinking period</li>
 </ol>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="comment">// Configure LED1 for medium-speed blinking</span></div>
-<div class="line"><a class="code hl_function" href="#a69f43f50592bfb336afcad55dbce7a2a">INDI_ConfigLED</a>(&amp;<a class="code hl_variable" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a>, <a class="code hl_variable" href="group___g_p_i_o___driver.html#gad59df21708876559daf8e0afd41f6bba">GPIO_LED1</a>, <a class="code hl_enumvalue" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a>);</div>
-<div class="ttc" id="agroup___g_p_i_o___driver_html_gad59df21708876559daf8e0afd41f6bba"><div class="ttname"><a href="group___g_p_i_o___driver.html#gad59df21708876559daf8e0afd41f6bba">GPIO_LED1</a></div><div class="ttdeci">S_GPIO_Pin_TypeDef GPIO_LED1</div><div class="ttdoc">LED1 configuration.</div><div class="ttdef"><b>Definition</b> drv_gpio_core.c:61</div></div>
-<div class="ttc" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_html_ga8d85f10b3364f5df950a7162bdbc65f8"><div class="ttname"><a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a></div><div class="ttdeci">S_Indicator_Led_Config_TypeDef g_indicator_led1_</div><div class="ttdoc">LED 1 configuration instance.</div><div class="ttdef"><b>Definition</b> mid_indicator_handler.c:23</div></div>
-<div class="ttc" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_html_gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64"><div class="ttname"><a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a></div><div class="ttdeci">@ MEDIUM</div><div class="ttdoc">Medium blinking: 200 * T_sampling.</div><div class="ttdef"><b>Definition</b> mid_indicator_handler.h:48</div></div>
-<div class="ttc" id="amid__indicator__handler_8c_html_a69f43f50592bfb336afcad55dbce7a2a"><div class="ttname"><a href="#a69f43f50592bfb336afcad55dbce7a2a">INDI_ConfigLED</a></div><div class="ttdeci">void INDI_ConfigLED(S_Indicator_Led_Config_TypeDef *pledConfig, S_GPIO_Pin_TypeDef LED_Number, E_Indicator_Blink_Period_TypeDef ledPeriod)</div><div class="ttdoc">Configures an individual LED&#39;s operating parameters.</div><div class="ttdef"><b>Definition</b> mid_indicator_handler.c:52</div></div>
+<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#a69f43f50592bfb336afcad55dbce7a2a">INDI_ConfigLED</a>(&amp;<a class="code hl_variable" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a>, <a class="code hl_variable" href="group___d_r_v___g_p_i_o.html#gad59df21708876559daf8e0afd41f6bba">GPIO_LED1</a>, <a class="code hl_enumvalue" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a>);</div>
+<div class="ttc" id="agroup___d_r_v___g_p_i_o_html_gad59df21708876559daf8e0afd41f6bba"><div class="ttname"><a href="group___d_r_v___g_p_i_o.html#gad59df21708876559daf8e0afd41f6bba">GPIO_LED1</a></div><div class="ttdeci">S_GPIO_Pin_TypeDef GPIO_LED1</div><div class="ttdef"><b>Definition</b> drv_gpio_core.c:50</div></div>
+<div class="ttc" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_html_ga8d85f10b3364f5df950a7162bdbc65f8"><div class="ttname"><a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a></div><div class="ttdeci">S_Indicator_Led_Config_TypeDef g_indicator_led1_</div><div class="ttdoc">LED 1 configuration instance.</div><div class="ttdef"><b>Definition</b> mid_indicator_handler.c:28</div></div>
+<div class="ttc" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_html_gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64"><div class="ttname"><a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a></div><div class="ttdeci">@ MEDIUM</div><div class="ttdef"><b>Definition</b> mid_indicator_handler.h:46</div></div>
+<div class="ttc" id="amid__indicator__handler_8c_html_a69f43f50592bfb336afcad55dbce7a2a"><div class="ttname"><a href="#a69f43f50592bfb336afcad55dbce7a2a">INDI_ConfigLED</a></div><div class="ttdeci">void INDI_ConfigLED(S_Indicator_Led_Config_TypeDef *pledConfig, S_GPIO_Pin_TypeDef LED_Number, E_Indicator_Blink_Period_TypeDef ledPeriod)</div><div class="ttdoc">Configure an individual LED’s operating parameters.</div><div class="ttdef"><b>Definition</b> mid_indicator_handler.c:57</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">pledConfig</td><td>Pointer to LED configuration structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">LED_Number</td><td>GPIO pin assigned to the LED </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ledPeriod</td><td>Desired blinking period (SLOW/MEDIUM/FAST)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">LED_Number</td><td>GPIO pin used for LED control </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ledPeriod</td><td>Blinking period (SLOW, MEDIUM, FAST) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The actual blinking period will be: ledPeriod * system_sampling_time </dd></dl>
 
 </div>
 </div>
