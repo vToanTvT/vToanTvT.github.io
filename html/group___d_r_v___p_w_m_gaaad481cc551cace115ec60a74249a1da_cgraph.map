@@ -1,0 +1,5 @@
+<map id="pwm_set_frequency_" name="pwm_set_frequency_">
+<area shape="rect" id="Node000001" title="Sets PWM frequency." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Sets the PWM duty cycle for the specified configuration (only channel 1, 2, 3 are supported)" alt="" coords="199,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+</map>

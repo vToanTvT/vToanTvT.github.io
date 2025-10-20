@@ -1,0 +1,5 @@
+<map id="pwrctrl_get_median_" name="pwrctrl_get_median_">
+<area shape="rect" id="Node000001" title="Get median of 4&#45;sample array." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="Node000002" href="$mid__power__control__handler_8c.html#aef859e2b7a51ae3ed4534469a76d1fdc" title="Swap two integer values." alt="" coords="195,5,338,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,21,147,21"/>
+</map>

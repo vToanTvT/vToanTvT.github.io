@@ -1,0 +1,13 @@
+<map id="drv_uart_core.h" name="drv_uart_core.h">
+<area shape="rect" id="Node000001" title="UART driver for DMA&#45;based communication." alt="" coords="5,5,117,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="14,229,78,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,34,36,55,24,81,18,116,21,152,38,214,32,215,16,153,13,116,18,79,31,52,47,31"/>
+<area shape="rect" id="Node000003" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="34,80,219,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,31,107,67,103,70,70,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="114,109,93,130,74,156,61,185,54,215,48,213,56,184,69,153,89,126,110,105"/>
+<area shape="rect" id="Node000004" href="$mid__iqmath__handler_8h.html" title="Fixed&#45;point mathematics library for Q15 and Q31 formats." alt="" coords="84,155,232,181"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="134,106,149,139,144,142,129,108"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="140,184,80,223,77,218,137,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="124,229,192,256"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="161,182,161,214,156,214,156,182"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="mid_indicator_handler.h" name="mid_indicator_handler.h">
+<area shape="rect" id="Node000001" title="LED indicator control system interface." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="52,155,117,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,33,66,80,67,111,75,140,70,141,61,112,61,80,76,32"/>
+<area shape="rect" id="Node000003" href="$drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="76,80,189,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,31,118,66,114,69,91,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="126,109,103,143,99,140,122,106"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="gpio_toggle_pin_" name="gpio_toggle_pin_">
+<area shape="rect" id="Node000001" title="Toggles a GPIO pin state." alt="" coords="208,5,326,32"/>
+<area shape="rect" id="Node000002" href="$mid__indicator__handler_8c.html#a787e0e208d169789ad0777b293c369c8" title="Processes LED blinking based on configured period." alt="" coords="5,5,160,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,21,160,21,160,16,192,16"/>
+</map>

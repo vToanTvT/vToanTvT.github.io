@@ -1,0 +1,16 @@
+<map id="state_faultHandle" name="state_faultHandle">
+<area shape="rect" id="Node000001" title="Handle FAULT state." alt="" coords="5,107,129,133"/>
+<area shape="rect" id="Node000002" href="$group__llc__functions.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="177,107,271,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,117,161,117,161,123,129,123"/>
+<area shape="rect" id="Node000003" href="$mid__controller__handler_8c.html#adc53cdf15e0b9ec3f7c05d87dd854dda" title="Executes one iteration of the PI control algorithm." alt="" coords="319,5,470,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,104,272,73,318,42,329,36,331,41,320,46,275,78,240,108"/>
+<area shape="rect" id="Node000004" href="$group___drivers_group___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disables the PWM output for the specified timer configuration." alt="" coords="321,56,468,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="271,103,332,85,334,90,272,109"/>
+<area shape="rect" id="Node000005" href="$group___drivers_group___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Sets the dead&#45;time value for the specified PWM configuration." alt="" coords="324,107,465,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="272,117,309,117,309,123,272,123"/>
+<area shape="rect" id="Node000006" href="$group___drivers_group___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Sets the PWM duty cycle for the specified configuration (only channel 1, 2, 3 are supported)" alt="" coords="518,183,632,209"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="272,131,320,143,504,181,503,186,318,148,271,136"/>
+<area shape="rect" id="Node000007" href="$group___drivers_group___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Sets the PWM frequency for the specified configuration." alt="" coords="322,208,467,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="243,131,277,159,320,187,344,199,342,204,318,192,274,163,239,136"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="467,208,503,203,503,209,468,214"/>
+</map>

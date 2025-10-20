@@ -1,0 +1,4 @@
+<map id="Fault Protection Thresholds" name="Fault Protection Thresholds">
+<area shape="rect" id="Node000002" href="$group___m_i_d___f_a_u_l_t.html" title="Handles all fault detection, protection, and recovery mechanisms." alt="" coords="5,5,205,32"/>
+<area shape="rect" id="Node000001" title="User configurable protection thresholds for various fault conditions." alt="" coords="253,5,433,32"/>
+</map>
