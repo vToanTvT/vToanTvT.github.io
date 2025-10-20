@@ -1,5 +1,0 @@
-<map id="peripheral_off_llc_relay_" name="peripheral_off_llc_relay_">
-<area shape="rect" id="Node000001" title="Disable LLC stage relay." alt="" coords="5,5,124,48"/>
-<area shape="rect" id="Node000002" href="$group___d_r_v___g_p_i_o.html#ga85f5f35c656ebc7b4fc33ea8f35289db" title="Clear GPIO pin to low logic level." alt="" coords="172,13,283,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,24,156,24,156,29,124,29"/>
-</map>

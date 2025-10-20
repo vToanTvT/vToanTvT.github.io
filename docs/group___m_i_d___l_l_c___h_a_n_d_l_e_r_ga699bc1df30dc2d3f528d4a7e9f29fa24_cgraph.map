@@ -1,7 +1,0 @@
-<map id="llc_init_" name="llc_init_">
-<area shape="rect" id="Node000001" title="Initializes LLC converter subsystem." alt="" coords="5,31,71,57"/>
-<area shape="rect" id="Node000002" href="$group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de" title="Configures a new PI controller instance." alt="" coords="119,5,259,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,36,103,30,103,36,72,41"/>
-<area shape="rect" id="Node000003" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="Configures LLC converter operating mode." alt="" coords="147,56,230,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="72,47,133,57,132,63,71,52"/>
-</map>

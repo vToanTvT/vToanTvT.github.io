@@ -1,4 +1,0 @@
-<map id="Controller Handler Middleware" name="Controller Handler Middleware">
-<area shape="rect" id="Node000002" href="$group___m_i_d_d_l_e___l_a_y_e_r.html" title="Intermediate control logic (PI controller, Fault handler...)." alt="" coords="5,13,129,40"/>
-<area shape="rect" id="Node000001" title="Middleware implementing digital PI control with anti&#45;windup." alt="" coords="177,5,303,48"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="pwrctrl_compute_temp_coef_" name="pwrctrl_compute_temp_coef_">
-<area shape="rect" id="Node000001" title="Compute temperature derating coefficient." alt="" coords="543,5,697,48"/>
-<area shape="rect" id="Node000002" href="$group___m_i_d___p_o_w_e_r.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update overall derating coefficient." alt="" coords="350,13,495,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="528,29,495,29,495,24,528,24"/>
-<area shape="rect" id="Node000003" href="$_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540" title="Infinite loop system function implementation." alt="" coords="163,13,302,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,29,302,29,302,24,335,24"/>
-<area shape="rect" id="Node000004" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,13,115,40"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="147,29,115,29,115,24,147,24"/>
-</map>

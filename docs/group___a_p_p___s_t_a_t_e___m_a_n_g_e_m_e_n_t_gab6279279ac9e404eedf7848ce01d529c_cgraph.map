@@ -1,5 +1,0 @@
-<map id="state_init" name="state_init">
-<area shape="rect" id="Node000001" title="Initialize EVSE state." alt="" coords="5,5,80,32"/>
-<area shape="rect" id="Node000002" href="$app__state__management__handler_8c.html#a6867f0e73cb92030fee0b24785908e29" title="Initialize state management configuration." alt="" coords="128,5,220,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,16,112,16,112,21,80,21"/>
-</map>
