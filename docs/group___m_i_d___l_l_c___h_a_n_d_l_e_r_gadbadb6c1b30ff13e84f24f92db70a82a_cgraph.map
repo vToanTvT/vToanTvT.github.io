@@ -1,0 +1,13 @@
+<map id="llc_regulator_voltage_loop_" name="llc_regulator_voltage_loop_">
+<area shape="rect" id="Node000001" title="Executes cascaded voltage&#45;current control." alt="" coords="5,99,146,141"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47" title="Applies anti&#45;windup protection to prevent integral saturation." alt="" coords="194,5,351,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,96,145,68,192,42,207,35,209,40,195,46,148,73,107,100"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda" title="Executes one iteration of the PI control algorithm." alt="" coords="197,56,348,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,99,202,84,204,90,147,105"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="202,107,343,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,117,186,117,186,123,146,123"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="216,157,329,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="147,135,204,150,202,156,145,141"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="200,208,345,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="107,140,148,167,195,194,209,200,207,205,192,198,145,172,104,144"/>
+</map>

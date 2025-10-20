@@ -1,0 +1,46 @@
+<map id="app_state_management_handler.h" name="app_state_management_handler.h">
+<area shape="rect" id="Node000001" title="Header file for EVSE state machine module." alt="" coords="536,5,696,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="461,411,525,437"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="697,33,735,41,775,53,813,71,848,94,873,117,890,139,899,165,901,199,901,276,898,291,890,305,859,329,815,351,761,370,642,400,541,418,540,413,641,395,759,365,812,346,856,325,886,301,893,289,896,276,896,199,893,166,885,142,869,120,845,98,811,75,773,58,734,46,696,38"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="620,261,694,288"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="697,30,732,37,767,50,799,68,825,94,835,119,834,144,822,167,804,189,753,227,701,256,698,252,750,223,800,185,818,164,829,142,830,120,820,98,795,72,764,54,730,42,696,35"/>
+<area shape="rect" id="Node000004" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="124,261,310,288"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="535,34,451,40,360,52,282,71,252,83,232,98,221,114,213,132,206,172,207,212,213,246,207,247,202,213,201,172,208,131,216,111,229,94,250,79,280,66,359,46,450,35,535,28"/>
+<area shape="rect" id="Node000007" href="$mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="654,96,810,139"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="644,46,694,84,691,88,641,51"/>
+<area shape="rect" id="Node000008" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="403,187,591,213"/>
+<area shape="poly" id="edge26_Node000001_Node000008" title=" " alt="" coords="618,49,612,93,605,118,593,140,570,164,544,181,541,177,567,160,588,137,600,115,607,92,613,48"/>
+<area shape="rect" id="Node000011" href="$mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="243,104,365,131"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="543,51,364,102,362,97,542,46"/>
+<area shape="rect" id="Node000014" href="$mid__power__control__handler_8h.html" title="Power control and derating system middleware." alt="" coords="389,104,579,131"/>
+<area shape="poly" id="edge27_Node000001_Node000014" title=" " alt="" coords="586,51,517,97,514,93,583,46"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="241,286,376,360,455,401,453,406,373,365,238,291"/>
+<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="163,336,311,363"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="223,288,232,320,227,322,218,289"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="282,361,447,407,445,412,281,366"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="203,411,271,437"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="240,363,240,395,234,395,234,363"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="724,140,672,248,667,246,720,138"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="672,142,549,184,548,179,671,137"/>
+<area shape="rect" id="Node000010" href="$drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="626,336,747,363"/>
+<area shape="poly" id="edge16_Node000007_Node000010" title=" " alt="" coords="733,140,724,206,709,289,699,322,694,321,704,287,719,205,727,139"/>
+<area shape="poly" id="edge15_Node000008_Node000003" title=" " alt="" coords="526,211,617,252,614,257,524,216"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="449,216,281,260,280,254,448,211"/>
+<area shape="poly" id="edge14_Node000008_Node000005" title=" " alt="" coords="481,216,431,251,368,290,283,332,280,327,365,286,428,247,478,212"/>
+<area shape="rect" id="Node000009" href="$drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="486,261,596,288"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="507,212,528,247,523,249,503,215"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="540,289,518,364,506,397,501,395,513,362,535,288"/>
+<area shape="poly" id="edge17_Node000010_Node000002" title=" " alt="" coords="654,366,541,408,539,403,652,361"/>
+<area shape="poly" id="edge19_Node000011_Node000004" title=" " alt="" coords="299,133,234,249,229,247,294,130"/>
+<area shape="poly" id="edge25_Node000011_Node000008" title=" " alt="" coords="335,129,454,178,452,183,333,134"/>
+<area shape="rect" id="Node000012" href="$mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="5,187,168,213"/>
+<area shape="poly" id="edge20_Node000011_Node000012" title=" " alt="" coords="271,134,136,183,134,178,269,129"/>
+<area shape="rect" id="Node000013" href="$drv__pwm__core_8h.html" title="PWM driver for LLC converter and fan control." alt="" coords="386,336,504,363"/>
+<area shape="poly" id="edge23_Node000011_Node000013" title=" " alt="" coords="314,130,432,322,428,324,309,133"/>
+<area shape="poly" id="edge22_Node000012_Node000004" title=" " alt="" coords="111,212,182,251,180,256,108,216"/>
+<area shape="poly" id="edge21_Node000012_Node000005" title=" " alt="" coords="90,213,96,249,103,269,114,286,143,311,176,328,174,333,140,315,110,290,98,271,90,250,84,214"/>
+<area shape="poly" id="edge24_Node000013_Node000002" title=" " alt="" coords="456,362,479,396,474,399,451,365"/>
+<area shape="poly" id="edge28_Node000014_Node000003" title=" " alt="" coords="516,129,561,152,606,185,630,215,648,246,643,249,626,218,602,189,558,156,514,134"/>
+<area shape="poly" id="edge29_Node000014_Node000005" title=" " alt="" coords="464,133,429,157,392,189,372,215,359,239,346,263,324,290,300,311,274,330,271,325,296,307,321,286,342,260,354,236,367,212,389,185,426,153,461,129"/>
+<area shape="poly" id="edge30_Node000014_Node000008" title=" " alt="" coords="489,131,495,171,490,172,483,132"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="mid_measurement_handler.h" name="mid_measurement_handler.h">
+<area shape="rect" id="Node000001" title="Header file for MID_Measurement_Handler module." alt="" coords="144,5,332,32"/>
+<area shape="rect" id="Node000002" href="$drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="5,155,116,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,35,103,53,85,66,69,82,62,95,58,109,58,140,53,139,53,109,57,93,65,78,81,62,100,48,143,30"/>
+<area shape="rect" id="Node000004" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="80,80,265,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,34,196,70,192,67,224,31"/>
+<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="200,155,348,181"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="252,31,268,52,280,79,285,111,282,140,277,140,279,111,275,81,263,55,247,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="341,80,415,107"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="263,30,341,70,338,75,261,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,229,194,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,180,133,218,130,222,77,184"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="174,107,166,214,161,214,169,107"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="192,105,245,143,242,147,189,109"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="256,184,196,223,193,218,253,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="240,229,308,256"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="276,182,276,214,271,214,271,182"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="mid_fault_management_handler.h" name="mid_fault_management_handler.h">
+<area shape="rect" id="Node000001" title="Middleware for comprehensive fault management and protection system." alt="" coords="333,5,489,48"/>
+<area shape="rect" id="Node000002" href="$app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="155,96,315,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,58,277,98,275,93,355,53"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title=" " alt="" coords="188,368,248,395"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="416,63,413,143,405,188,388,231,356,277,316,317,275,348,241,370,238,365,272,344,312,313,352,274,383,228,399,186,408,142,411,63"/>
+<area shape="rect" id="Node000007" href="$mid__fault__management__handler_8c.html" title="Implementation of comprehensive fault management system." alt="" coords="449,277,605,320"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="428,61,521,276,516,278,423,63"/>
+<area shape="rect" id="Node000003" href="$_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="56,195,139,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,150,119,196,116,192,189,145"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="217,154,204,187,199,239,201,290,217,367,211,368,196,291,193,239,199,186,212,152"/>
+<area shape="rect" id="Node000006" href="$app__state__management__handler_8c.html" title="Implementation of the EVSE state machine module." alt="" coords="214,187,374,229"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="259,150,282,185,278,188,255,153"/>
+<area shape="rect" id="Node000004" href="$_lady_bug_8c.html" title="Main implementation file for LadyBug system core functions." alt="" coords="5,285,89,312"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,236,57,286,52,283,81,234"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="112,234,132,275,160,318,183,345,205,366,201,370,179,348,156,322,128,278,107,237"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="89,317,192,365,190,370,86,321"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="281,245,226,369,221,366,276,243"/>
+<area shape="poly" id="edge11_Node000007_Node000005" title=" " alt="" coords="434,327,249,375,248,369,433,322"/>
+</map>

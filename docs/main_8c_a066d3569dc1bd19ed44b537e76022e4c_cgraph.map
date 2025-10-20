@@ -1,0 +1,41 @@
+<map id="SimulationBegin" name="SimulationBegin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,233,121,260"/>
+<area shape="rect" id="Node000002" href="$_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,233,331,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,244,153,244,153,249,121,249"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initializes the ADC hardware and data structure." alt="" coords="410,56,483,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="257,231,303,166,338,127,377,92,394,83,396,88,381,97,341,131,307,169,262,234"/>
+<area shape="rect" id="Node000006" href="$group___m_i_d___f_a_u_l_t.html#gad2bc2cfbcc9b9b46f7eae106fa04fde7" title="Initializes the fault management system." alt="" coords="408,107,485,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="264,231,312,189,378,143,392,136,394,140,380,148,315,193,267,235"/>
+<area shape="rect" id="Node000007" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6" title="Initialize the LED indicator subsystem." alt="" coords="396,157,497,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="285,230,378,194,394,187,396,192,380,198,287,235"/>
+<area shape="rect" id="Node000008" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24" title="Initializes the complete LLC control system." alt="" coords="414,208,479,235"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="331,233,398,225,398,230,332,239"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,259,513,285"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="332,255,364,259,363,264,331,260"/>
+<area shape="rect" id="Node000014" href="$group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="406,309,486,336"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="287,258,380,295,396,301,394,306,378,300,285,263"/>
+<area shape="rect" id="Node000018" href="$group___m_i_d___p_o_w_e_r.html#ga3ea28682838bb6082b26dbaf4b46d561" title="Initialize power control structure." alt="" coords="400,360,492,387"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="267,258,315,300,380,346,390,351,388,356,378,350,312,305,264,262"/>
+<area shape="rect" id="Node000019" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Initialize state machine with initial state." alt="" coords="409,436,483,463"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="263,259,312,321,381,397,414,425,411,429,377,401,308,324,259,262"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Performs ADC calibration sequence." alt="" coords="585,5,690,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="483,57,569,34,570,39,484,62"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Starts ADC conversion sequence in DMA mode." alt="" coords="561,56,714,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="483,67,546,67,546,72,483,72"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de" title="Configures a new PI controller instance." alt="" coords="567,107,708,133"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="478,210,512,194,526,181,535,169,544,156,560,143,569,138,572,142,563,148,548,160,539,172,530,185,515,198,481,215"/>
+<area shape="rect" id="Node000010" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="Configures LLC converter operating mode." alt="" coords="596,157,679,184"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="478,210,580,183,581,188,480,215"/>
+<area shape="rect" id="Node000012" href="$mid__measurement__handler_8c.html#aecfbba2e55ac8e1591036ef6f6dae1e9" title="Configures measurement update timing." alt="" coords="586,208,689,235"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="499,255,571,236,572,241,500,261"/>
+<area shape="rect" id="Node000013" href="$mid__measurement__handler_8c.html#a63dc2f3c304af995705835ccce693b62" title="Initializes a measurement channel with specified parameters." alt="" coords="576,259,699,285"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="513,269,561,269,561,275,513,275"/>
+<area shape="rect" id="Node000015" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="567,309,708,336"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="487,320,552,320,552,325,487,325"/>
+<area shape="rect" id="Node000016" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="581,360,694,387"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="487,331,570,353,569,358,486,336"/>
+<area shape="rect" id="Node000017" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="565,411,710,437"/>
+<area shape="poly" id="edge16_Node000014_Node000017" title=" " alt="" coords="488,332,515,346,530,359,539,372,548,384,563,396,572,402,569,406,560,401,544,388,535,375,526,363,512,350,486,337"/>
+<area shape="rect" id="Node000020" href="$app__state__management__handler_8c.html#a6867f0e73cb92030fee0b24785908e29" title="Initialize state management configuration." alt="" coords="591,461,684,488"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="484,452,576,464,576,469,484,457"/>
+</map>

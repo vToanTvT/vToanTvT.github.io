@@ -1,0 +1,8 @@
+<map id="drv_uart_core.h" name="drv_uart_core.h">
+<area shape="rect" id="Node000001" title="UART driver for DMA&#45;based communication." alt="" coords="52,5,163,32"/>
+<area shape="rect" id="Node000002" href="$drv__uart__core_8c.html" title="Source file for UART driver module." alt="" coords="5,80,117,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,71,81,67,78,89,44"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title=" " alt="" coords="78,155,138,181"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="122,46,132,80,132,101,129,122,116,155,111,154,124,120,127,100,126,80,117,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,118,102,153,97,156,75,121"/>
+</map>

@@ -1,0 +1,41 @@
+<map id="pwm_set_duty_" name="pwm_set_duty_">
+<area shape="rect" id="Node000001" title="Set PWM duty cycle." alt="" coords="978,165,1091,192"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03" title="Duty cycle control loop for LLC converter." alt="" coords="771,5,925,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1017,153,981,99,957,70,928,46,907,35,910,30,932,42,961,67,986,95,1022,150"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05" title="Hybrid control mode for LLC (PFM/PWM switching)." alt="" coords="766,56,930,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1007,156,972,126,929,97,902,86,904,81,931,92,975,121,1011,152"/>
+<area shape="rect" id="Node000008" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e" title="Cascaded voltage&#45;duty control loop." alt="" coords="766,107,930,133"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="975,163,929,148,893,136,894,131,931,143,977,158"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a" title="Execute voltage regulation loop for LLC converter." alt="" coords="778,157,918,200"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="962,181,918,181,918,176,962,176"/>
+<area shape="rect" id="Node000010" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="796,224,900,251"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="977,200,931,215,894,226,893,221,929,209,975,195"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="801,275,895,301"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1011,205,975,236,931,265,896,279,894,274,929,260,972,232,1007,201"/>
+<area shape="rect" id="Node000016" href="$group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="808,337,888,364"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1020,207,984,261,959,290,932,315,890,339,887,335,928,311,955,286,980,258,1016,204"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="560,83,707,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="751,84,708,89,707,84,750,79"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="396,211,492,237"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="598,120,551,150,465,212,462,208,548,146,595,116"/>
+<area shape="rect" id="Node000006" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,211,338,237"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="380,227,338,227,338,221,380,221"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,211,115,237"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="147,227,115,227,115,221,147,221"/>
+<area shape="rect" id="Node000011" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="560,160,707,187"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="786,222,680,190,682,185,787,217"/>
+<area shape="poly" id="edge11_Node000011_Node000005" title=" " alt="" coords="566,194,493,214,491,209,565,189"/>
+<area shape="rect" id="Node000013" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="572,211,695,237"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="786,272,680,241,682,235,787,267"/>
+<area shape="rect" id="Node000014" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="549,261,718,288"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="785,287,718,283,718,277,785,281"/>
+<area shape="rect" id="Node000015" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="574,312,693,339"/>
+<area shape="poly" id="edge17_Node000012_Node000015" title=" " alt="" coords="786,301,694,318,693,312,785,296"/>
+<area shape="poly" id="edge14_Node000013_Node000005" title=" " alt="" coords="557,227,492,227,492,221,557,221"/>
+<area shape="poly" id="edge16_Node000014_Node000005" title=" " alt="" coords="565,259,491,239,493,234,566,254"/>
+<area shape="poly" id="edge18_Node000015_Node000005" title=" " alt="" coords="562,309,548,302,498,271,459,240,462,236,501,267,551,298,564,304"/>
+<area shape="rect" id="Node000017" href="$_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="552,363,715,389"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="792,360,715,369,715,364,792,355"/>
+<area shape="rect" id="Node000018" href="$main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="386,363,501,389"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="537,379,502,379,502,373,537,373"/>
+</map>

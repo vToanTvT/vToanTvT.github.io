@@ -1,0 +1,9 @@
+<map id="meas_init_value_" name="meas_init_value_">
+<area shape="rect" id="Node000001" title="Initializes a measurement channel with specified parameters." alt="" coords="561,5,684,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,5,513,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="546,21,514,21,514,16,546,16"/>
+<area shape="rect" id="Node000003" href="$_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+</map>

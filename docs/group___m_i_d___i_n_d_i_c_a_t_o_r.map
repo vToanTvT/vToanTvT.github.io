@@ -1,0 +1,4 @@
+<map id="LED Indicator Middleware" name="LED Indicator Middleware">
+<area shape="rect" id="Node000002" href="$group___m_i_d_d_l_e___l_a_y_e_r.html" title="Intermediate control logic (PI controller, Fault handler...)." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="Node000001" title="Middleware for controlling multiple LEDs with flexible blinking patterns." alt="" coords="177,5,348,32"/>
+</map>

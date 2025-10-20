@@ -1,0 +1,7 @@
+<map id="gpio_clear_pin_" name="gpio_clear_pin_">
+<area shape="rect" id="Node000001" title="Clear GPIO pin to low logic level." alt="" coords="177,47,288,73"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga3964b50e6ae1e0fffa533ee5ce56211d" title="Disable LLC relay (set GPIO low)" alt="" coords="8,5,126,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,48,126,41,127,36,162,43"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga5ab6542999b127993cd599854a65f2fb" title="Disable PFC relay (set GPIO low)" alt="" coords="5,72,129,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,77,130,83,129,78,161,72"/>
+</map>

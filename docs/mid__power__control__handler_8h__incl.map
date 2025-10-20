@@ -1,0 +1,22 @@
+<map id="mid_power_control_handler.h" name="mid_power_control_handler.h">
+<area shape="rect" id="Node000001" title="Power control and derating system middleware." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="75,155,150,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,32,113,139,108,139,99,33"/>
+<area shape="rect" id="Node000003" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="122,229,271,256"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,34,77,62,61,100,54,142,57,161,65,180,89,204,120,221,118,226,86,209,61,183,52,163,49,142,56,99,72,60,89,31"/>
+<area shape="rect" id="Node000006" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="138,80,327,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="125,30,198,70,195,75,122,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="286,304,350,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="219,254,285,293,282,298,216,259"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="162,304,231,331"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,257,199,288,194,288,194,257"/>
+<area shape="poly" id="edge12_Node000006_Node000002" title=" " alt="" coords="213,109,148,149,145,144,210,105"/>
+<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="231,108,216,155,204,214,199,213,211,154,226,106"/>
+<area shape="rect" id="Node000007" href="$drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="373,229,484,256"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="328,100,381,118,405,133,425,153,433,167,437,184,437,215,432,215,432,184,428,169,421,156,402,137,379,123,326,105"/>
+<area shape="rect" id="Node000008" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="225,155,410,181"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="249,105,294,143,290,147,246,109"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="411,259,351,298,348,293,408,254"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="298,184,232,223,229,219,295,180"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="320,182,320,288,315,288,315,182"/>
+</map>

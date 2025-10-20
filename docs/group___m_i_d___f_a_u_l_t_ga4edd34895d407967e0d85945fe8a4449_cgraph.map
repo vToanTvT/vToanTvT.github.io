@@ -1,0 +1,7 @@
+<map id="fault_update_mode_" name="fault_update_mode_">
+<area shape="rect" id="Node000001" title="Updates overall fault mode and evaluates protection hierarchy." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="Node000002" href="$mid__fault__management__handler_8c.html#ad7b48f6e97e4d9eae5d65f18f2b09a69" title=" " alt="" coords="192,5,334,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,16,176,16,176,21,144,21"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___f_a_u_l_t.html#gaf8589a7fecc4080c0c66c60e22a11e9e" title="Generic debounce function for fault condition filtering." alt="" coords="382,5,498,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,16,366,16,366,21,334,21"/>
+</map>

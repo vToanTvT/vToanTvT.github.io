@@ -1,0 +1,11 @@
+<map id="fault_debounce_" name="fault_debounce_">
+<area shape="rect" id="Node000001" title="Generic debounce function for fault condition filtering." alt="" coords="763,5,879,32"/>
+<area shape="rect" id="Node000002" href="$mid__fault__management__handler_8c.html#ad7b48f6e97e4d9eae5d65f18f2b09a69" title=" " alt="" coords="572,5,715,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="747,21,715,21,715,16,747,16"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449" title="Updates overall fault mode and evaluates protection hierarchy." alt="" coords="386,5,524,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="557,21,525,21,525,16,557,16"/>
+<area shape="rect" id="Node000004" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="370,21,338,21,338,16,370,16"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
+</map>

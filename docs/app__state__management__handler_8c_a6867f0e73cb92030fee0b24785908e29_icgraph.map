@@ -1,0 +1,9 @@
+<map id="state_config" name="state_config">
+<area shape="rect" id="Node000001" title="Initialize state management configuration." alt="" coords="501,5,594,32"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Initialize state machine with initial state." alt="" coords="379,5,453,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="486,21,454,21,454,16,486,16"/>
+<area shape="rect" id="Node000003" href="$_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,21,332,21,332,16,363,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+</map>

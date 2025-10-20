@@ -1,0 +1,15 @@
+<map id="comp_set_threshold_" name="comp_set_threshold_">
+<area shape="rect" id="Node000001" title="Update comparator threshold." alt="" coords="1018,5,1164,32"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d" title="Initialize comparator module." alt="" coords="886,5,970,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1003,21,971,21,971,16,1003,16"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e" title="Reset protection system." alt="" coords="685,5,838,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="870,21,839,21,839,16,870,16"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___f_a_u_l_t.html#ga15097dba3133d9c0e90ecaa8ec49033f" title="Puts fault management into standby and clears status." alt="" coords="530,5,637,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="669,21,637,21,637,16,669,16"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="515,21,483,21,483,16,515,16"/>
+<area shape="rect" id="Node000006" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="371,21,339,21,339,16,371,16"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
+</map>

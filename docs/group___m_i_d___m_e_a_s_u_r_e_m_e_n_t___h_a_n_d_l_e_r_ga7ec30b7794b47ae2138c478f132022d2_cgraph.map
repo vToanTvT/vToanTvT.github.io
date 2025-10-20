@@ -1,0 +1,7 @@
+<map id="meas_update_all_q15_" name="meas_update_all_q15_">
+<area shape="rect" id="Node000001" title="Update all measurements in Q15 format." alt="" coords="5,31,160,57"/>
+<area shape="rect" id="Node000002" href="$mid__measurement__handler_8c.html#abfe051fb6eeef8a004f7a56dcdb1a0ef" title="Converts raw ADC value to normalized Q15 format." alt="" coords="208,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,32,192,28,193,33,161,37"/>
+<area shape="rect" id="Node000003" href="$mid__measurement__handler_8c.html#a79486749f0f8934f861610a7c7005b63" title="Updates raw ADC value in measurement structure." alt="" coords="210,56,362,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,51,195,55,194,61,160,56"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Fault Management Middleware" name="Fault Management Middleware">
+<area shape="rect" id="Node000002" href="$group___m_i_d_d_l_e___l_a_y_e_r.html" title="Intermediate control logic (PI controller, Fault handler...)." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="Node000001" title="Handles all fault detection, protection, and recovery mechanisms." alt="" coords="177,5,376,32"/>
+</map>

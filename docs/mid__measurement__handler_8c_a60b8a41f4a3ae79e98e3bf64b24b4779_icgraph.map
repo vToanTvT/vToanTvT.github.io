@@ -1,0 +1,9 @@
+<map id="meas_convert_to_f32_" name="meas_convert_to_f32_">
+<area shape="rect" id="Node000001" title="Converts measurement to floating&#45;point format." alt="" coords="556,5,710,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Updates all measurements to floating&#45;point format." alt="" coords="350,5,508,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="541,21,509,21,509,16,541,16"/>
+<area shape="rect" id="Node000003" href="$_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540" title="Infinite loop system function implementation." alt="" coords="163,5,302,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,21,302,21,302,16,334,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
+</map>

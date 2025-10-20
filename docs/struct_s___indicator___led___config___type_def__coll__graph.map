@@ -1,0 +1,5 @@
+<map id="S_Indicator_Led_Config_TypeDef" name="S_Indicator_Led_Config_TypeDef">
+<area shape="rect" id="Node000001" title="LED configuration and runtime state structure." alt="" coords="5,104,166,147"/>
+<area shape="rect" id="Node000002" href="$struct_s___g_p_i_o___pin___type_def.html" title="GPIO pin configuration and state structure." alt="" coords="9,5,162,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,47,88,103,83,103,83,47"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="RampUpRate" name="RampUpRate">
+<area shape="rect" id="Node000001" title="Ramp up a value at a specified rate with initialization support." alt="" coords="938,5,1039,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05" title="Hybrid control mode for LLC (PFM/PWM switching)." alt="" coords="726,5,890,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="922,21,891,21,891,16,922,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="530,5,678,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="710,21,678,21,678,16,710,16"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="515,21,483,21,483,16,515,16"/>
+<area shape="rect" id="Node000005" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="371,21,339,21,339,16,371,16"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
+</map>

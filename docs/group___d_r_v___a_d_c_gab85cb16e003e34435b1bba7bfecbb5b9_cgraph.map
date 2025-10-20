@@ -1,0 +1,7 @@
+<map id="adc_init_" name="adc_init_">
+<area shape="rect" id="Node000001" title="Initializes the ADC hardware and data structure." alt="" coords="5,31,79,57"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Performs ADC calibration sequence." alt="" coords="150,5,256,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,36,134,27,135,32,80,41"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Starts ADC conversion sequence in DMA mode." alt="" coords="127,56,279,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="80,47,112,52,111,58,79,52"/>
+</map>

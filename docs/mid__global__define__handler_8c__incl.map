@@ -1,0 +1,12 @@
+<map id="mid_global_define_handler.c" name="mid_global_define_handler.c">
+<area shape="rect" id="Node000001" title="Implementation of fixed&#45;point ramping and transition functions." alt="" coords="5,5,191,32"/>
+<area shape="rect" id="Node000002" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="5,80,191,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,33,101,64,95,64,95,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="20,229,85,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,108,70,156,58,214,53,213,65,154,88,106"/>
+<area shape="rect" id="Node000004" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="80,155,228,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="110,106,137,141,133,144,106,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="138,184,84,222,81,218,135,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="120,229,188,256"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="157,182,157,214,151,214,151,182"/>
+</map>

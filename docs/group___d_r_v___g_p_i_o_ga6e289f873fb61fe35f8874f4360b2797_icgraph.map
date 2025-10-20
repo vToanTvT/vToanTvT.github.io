@@ -1,0 +1,7 @@
+<map id="gpio_set_pin_" name="gpio_set_pin_">
+<area shape="rect" id="Node000001" title="Set GPIO pin to high logic level." alt="" coords="219,31,320,57"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga2ab40e496ed47c23875cbb65b689e9a4" title="Enable LLC relay (set GPIO high)" alt="" coords="8,5,168,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,37,168,33,169,27,204,32"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#gae09a4fb82f031ec0de625ec8271496f4" title="Enable PFC relay (set GPIO high)" alt="" coords="5,56,171,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,56,171,60,171,55,203,51"/>
+</map>

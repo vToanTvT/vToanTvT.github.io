@@ -1,0 +1,15 @@
+<map id="mid_controller_handler.c" name="mid_controller_handler.c">
+<area shape="rect" id="Node000001" title="Source file implementing digital PI controller functions." alt="" coords="45,5,207,32"/>
+<area shape="rect" id="Node000002" href="$mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="45,80,207,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,33,129,64,124,64,124,33"/>
+<area shape="rect" id="Node000003" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="5,229,154,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,109,103,130,90,156,83,185,81,214,76,214,78,185,85,154,98,127,113,106"/>
+<area shape="rect" id="Node000006" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="99,155,284,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="140,105,172,141,168,145,136,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,304,213,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,254,152,292,149,297,96,259"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="45,304,114,331"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="82,257,82,288,77,288,77,257"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="173,184,113,223,110,218,171,180"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="193,182,185,289,180,288,188,182"/>
+</map>

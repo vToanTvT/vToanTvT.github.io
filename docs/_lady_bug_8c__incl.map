@@ -1,0 +1,60 @@
+<map id="LadyBug.c" name="LadyBug.c">
+<area shape="rect" id="Node000001" title="Main implementation file for LadyBug system core functions." alt="" coords="325,5,408,32"/>
+<area shape="rect" id="Node000002" href="$_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="325,80,408,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="369,33,369,64,364,64,364,33"/>
+<area shape="rect" id="Node000003" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="194,411,379,437"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,109,326,167,306,205,291,246,281,290,279,336,279,362,283,395,278,396,273,363,273,336,276,290,285,245,301,203,321,164,356,106"/>
+<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="255,485,404,512"/>
+<area shape="poly" id="edge14_Node000002_Node000005" title=" " alt="" coords="325,98,235,107,182,117,130,132,83,154,44,182,29,200,18,219,10,241,8,265,8,350,14,385,31,414,56,437,88,455,124,469,163,480,240,491,239,497,162,485,123,474,85,460,53,441,26,417,9,387,3,351,3,265,5,240,13,217,24,197,40,179,80,149,128,127,181,112,234,102,324,93"/>
+<area shape="rect" id="Node000007" href="$mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="43,336,205,363"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="326,107,275,125,249,139,226,157,192,196,166,241,147,285,134,322,129,320,142,283,161,239,188,193,222,153,246,135,272,120,324,101"/>
+<area shape="rect" id="Node000008" href="$mid__indicator__handler_8h.html" title="LED indicator control system interface." alt="" coords="1057,411,1215,437"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="409,96,553,113,746,142,844,162,933,186,1006,213,1035,227,1058,243,1088,278,1110,319,1125,360,1134,395,1129,396,1120,362,1105,322,1084,281,1054,247,1032,232,1004,218,931,191,842,168,745,148,552,118,408,101"/>
+<area shape="rect" id="Node000010" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="447,336,636,363"/>
+<area shape="poly" id="edge15_Node000002_Node000010" title=" " alt="" coords="378,106,526,321,522,324,373,109"/>
+<area shape="rect" id="Node000013" href="$app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="561,155,722,197"/>
+<area shape="poly" id="edge21_Node000002_Node000013" title=" " alt="" coords="410,104,557,147,556,153,408,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="804,560,868,587"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,435,423,471,550,509,679,540,789,561,788,566,678,545,549,515,422,476,320,440"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="296,437,317,471,312,473,292,439"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="404,508,789,563,789,568,404,513"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="295,560,364,587"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="332,513,332,544,327,544,327,513"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="153,361,245,401,243,406,151,366"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="132,362,151,398,166,418,183,435,222,460,264,478,262,483,220,465,180,439,162,421,147,401,127,364"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="1154,436,1170,452,1185,471,1193,493,1192,504,1186,514,1165,530,1134,542,1052,560,961,570,883,574,883,568,961,564,1051,555,1132,537,1162,525,1182,510,1187,502,1188,493,1181,474,1166,455,1150,440"/>
+<area shape="rect" id="Node000009" href="$drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="1058,485,1171,512"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="1135,439,1125,471,1120,470,1130,437"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="1067,515,884,562,883,557,1065,510"/>
+<area shape="poly" id="edge18_Node000010_Node000003" title=" " alt="" coords="498,366,346,409,345,403,496,361"/>
+<area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="525,365,361,479,358,474,522,361"/>
+<area shape="rect" id="Node000011" href="$drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="713,485,823,512"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="562,361,738,475,735,479,559,365"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="762,411,836,437"/>
+<area shape="poly" id="edge20_Node000010_Node000012" title=" " alt="" coords="587,361,747,406,746,411,585,366"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="782,511,816,547,812,550,778,514"/>
+<area shape="poly" id="edge24_Node000013_Node000003" title=" " alt="" coords="561,187,492,195,421,208,359,225,336,236,321,247,308,263,299,281,288,321,284,361,286,395,280,395,279,361,282,320,294,279,304,260,317,243,334,231,358,220,420,203,492,190,561,181"/>
+<area shape="poly" id="edge22_Node000013_Node000004" title=" " alt="" coords="722,187,904,217,978,232,1014,243,1027,264,1035,285,1038,306,1037,328,1023,373,998,417,966,458,930,495,866,552,863,548,927,492,962,454,993,414,1018,371,1032,327,1033,306,1030,286,1023,266,1010,247,977,237,903,222,721,192"/>
+<area shape="poly" id="edge36_Node000013_Node000010" title=" " alt="" coords="613,200,589,221,569,247,554,284,546,321,541,320,549,283,564,244,586,217,610,196"/>
+<area shape="poly" id="edge23_Node000013_Node000012" title=" " alt="" coords="718,196,753,215,782,244,800,282,808,323,809,362,806,395,801,395,804,362,803,323,795,283,778,247,750,219,715,200"/>
+<area shape="rect" id="Node000014" href="$mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="843,245,1000,288"/>
+<area shape="poly" id="edge25_Node000013_Node000014" title=" " alt="" coords="708,195,842,238,840,243,706,201"/>
+<area shape="rect" id="Node000016" href="$mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="331,253,453,280"/>
+<area shape="poly" id="edge30_Node000013_Node000016" title=" " alt="" coords="584,200,443,250,441,245,582,195"/>
+<area shape="rect" id="Node000018" href="$mid__power__control__handler_8h.html" title="Power control and derating system middleware." alt="" coords="578,253,768,280"/>
+<area shape="poly" id="edge37_Node000013_Node000018" title=" " alt="" coords="651,197,666,238,661,239,646,199"/>
+<area shape="poly" id="edge27_Node000014_Node000010" title=" " alt="" coords="843,287,617,335,615,330,842,282"/>
+<area shape="poly" id="edge26_Node000014_Node000012" title=" " alt="" coords="907,290,869,338,820,400,815,397,865,334,903,287"/>
+<area shape="rect" id="Node000015" href="$drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="878,336,999,363"/>
+<area shape="poly" id="edge28_Node000014_Node000015" title=" " alt="" coords="928,288,935,320,930,321,923,289"/>
+<area shape="poly" id="edge29_Node000015_Node000004" title=" " alt="" coords="935,364,850,547,846,545,930,362"/>
+<area shape="poly" id="edge31_Node000016_Node000003" title=" " alt="" coords="386,282,306,399,302,396,381,279"/>
+<area shape="poly" id="edge32_Node000016_Node000007" title=" " alt="" coords="351,283,181,334,180,329,349,278"/>
+<area shape="poly" id="edge35_Node000016_Node000010" title=" " alt="" coords="417,278,506,326,504,331,414,283"/>
+<area shape="rect" id="Node000017" href="$drv__pwm__core_8h.html" title="PWM driver for LLC converter and fan control." alt="" coords="561,485,679,512"/>
+<area shape="poly" id="edge33_Node000016_Node000017" title=" " alt="" coords="398,279,412,318,437,361,471,397,510,428,583,475,580,480,507,433,468,401,433,364,407,320,393,281"/>
+<area shape="poly" id="edge34_Node000017_Node000004" title=" " alt="" coords="658,510,790,554,788,559,657,515"/>
+<area shape="poly" id="edge39_Node000018_Node000005" title=" " alt="" coords="676,281,671,321,663,344,650,364,626,388,599,410,539,444,478,468,420,484,418,479,476,463,537,439,596,405,622,384,646,361,658,342,666,320,671,280"/>
+<area shape="poly" id="edge40_Node000018_Node000010" title=" " alt="" coords="654,283,576,330,573,325,651,278"/>
+<area shape="poly" id="edge38_Node000018_Node000012" title=" " alt="" coords="686,279,781,397,777,400,682,282"/>
+</map>

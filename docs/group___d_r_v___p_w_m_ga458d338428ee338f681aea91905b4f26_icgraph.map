@@ -1,0 +1,20 @@
+<map id="pwm_disable_output_" name="pwm_disable_output_">
+<area shape="rect" id="Node000001" title="Disable PWM output channel." alt="" coords="889,132,1036,159"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="747,81,841,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="901,130,840,111,842,106,902,125"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,81,482,108"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="874,160,799,166,712,169,620,163,530,148,488,131,453,111,456,106,490,127,531,143,621,158,712,163,799,161,873,155"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="553,5,676,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="756,76,698,46,666,35,668,30,700,42,758,71"/>
+<area shape="rect" id="Node000007" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="530,56,699,83"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="731,88,699,84,700,79,731,83"/>
+<area shape="rect" id="Node000008" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="555,107,674,133"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="731,106,674,114,674,109,731,101"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="549,40,531,46,459,83,457,79,529,42,547,35"/>
+<area shape="rect" id="Node000005" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,81,338,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="371,97,339,97,339,92,371,92"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,81,115,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="147,97,115,97,115,92,147,92"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="516,86,483,91,482,85,515,81"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="540,112,482,104,483,99,541,107"/>
+</map>

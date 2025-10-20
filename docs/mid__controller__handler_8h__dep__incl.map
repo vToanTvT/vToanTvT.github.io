@@ -1,0 +1,27 @@
+<map id="mid_controller_handler.h" name="mid_controller_handler.h">
+<area shape="rect" id="Node000001" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="99,5,262,32"/>
+<area shape="rect" id="Node000002" href="$_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="231,253,314,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,46,270,252,265,254,188,48"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="346,411,407,437"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="134,41,93,62,52,92,35,110,22,129,13,151,10,175,10,268,10,320,17,340,34,361,57,375,91,386,178,404,272,414,346,419,346,424,271,419,178,409,89,392,55,379,31,365,13,343,5,321,4,268,4,174,8,150,17,127,31,106,49,88,90,58,131,36"/>
+<area shape="rect" id="Node000005" href="$mid__controller__handler_8c.html" title="Source file implementing digital PI controller functions." alt="" coords="45,336,207,363"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="178,48,130,336,125,335,173,47"/>
+<area shape="rect" id="Node000006" href="$mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="349,80,471,107"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="236,35,370,77,369,82,234,40"/>
+<area shape="rect" id="Node000003" href="$_lady_bug_8c.html" title="Main implementation file for LadyBug system core functions." alt="" coords="231,336,314,363"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,296,275,336,270,336,270,296"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="295,290,328,335,372,409,368,412,323,337,290,294"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,369,360,408,357,412,301,374"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="184,365,347,411,345,416,183,370"/>
+<area shape="poly" id="edge14_Node000006_Node000004" title=" " alt="" coords="394,121,379,155,367,230,366,304,371,367,377,410,372,410,366,368,361,304,362,229,374,154,390,119"/>
+<area shape="rect" id="Node000007" href="$app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="388,155,549,197"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="430,118,456,153,451,156,426,121"/>
+<area shape="rect" id="Node000009" href="$mid__llc__handler_8c.html" title="Implementation of MID_LLC_Handler module." alt="" coords="574,163,696,189"/>
+<area shape="poly" id="edge15_Node000006_Node000009" title=" " alt="" coords="460,110,601,160,599,165,458,115"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="410,207,302,255,299,250,407,202"/>
+<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="526,204,547,222,563,244,569,267,563,289,548,312,531,333,489,368,446,395,408,413,406,409,443,390,486,364,527,330,544,309,558,287,564,267,558,247,543,226,523,208"/>
+<area shape="rect" id="Node000008" href="$app__state__management__handler_8c.html" title="Implementation of the EVSE state machine module." alt="" coords="388,245,549,288"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="471,213,471,245,466,245,466,213"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="455,303,423,364,389,412,384,409,418,361,450,301"/>
+<area shape="poly" id="edge16_Node000009_Node000004" title=" " alt="" coords="629,205,615,242,594,285,565,328,529,365,499,384,466,399,407,418,406,413,464,394,496,379,525,361,561,324,589,282,610,239,624,204"/>
+</map>

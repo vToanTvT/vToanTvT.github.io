@@ -1,0 +1,13 @@
+<map id="RampDown" name="RampDown">
+<area shape="rect" id="Node000001" title="Gradually decrease a value towards a target by a fixed step." alt="" coords="876,5,966,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="725,5,828,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="860,21,828,21,828,16,860,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="530,5,677,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="709,21,677,21,677,16,709,16"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="386,5,482,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="515,21,483,21,483,16,515,16"/>
+<area shape="rect" id="Node000005" href="$_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,5,338,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="371,21,339,21,339,16,371,16"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#ae83fe01293877f782caac6df58624f94" title=" " alt="" coords="5,5,115,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="147,21,115,21,115,16,147,16"/>
+</map>

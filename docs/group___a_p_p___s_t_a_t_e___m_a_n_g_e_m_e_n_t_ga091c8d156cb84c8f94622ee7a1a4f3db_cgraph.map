@@ -1,0 +1,15 @@
+<map id="state_idleHandle" name="state_idleHandle">
+<area shape="rect" id="Node000001" title="State handler functions." alt="" coords="5,107,124,133"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="172,107,266,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,117,156,117,156,123,124,123"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda" title="Executes one iteration of the PI control algorithm." alt="" coords="314,5,465,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,104,267,73,313,42,324,36,326,41,315,46,270,78,235,108"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output channel." alt="" coords="316,56,463,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="266,103,327,85,329,90,267,109"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="319,107,460,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="267,117,304,117,304,123,267,123"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="333,157,446,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="267,131,329,150,327,155,266,137"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="317,208,462,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="235,132,270,162,315,194,326,199,324,204,313,198,267,167,232,136"/>
+</map>

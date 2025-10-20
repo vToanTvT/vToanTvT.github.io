@@ -1,0 +1,20 @@
+<map id="mid_measurement_handler.c" name="mid_measurement_handler.c">
+<area shape="rect" id="Node000001" title="Implementation of MID_Measurement_Handler module." alt="" coords="144,5,332,32"/>
+<area shape="rect" id="Node000002" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="144,80,332,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,33,240,64,235,64,235,33"/>
+<area shape="rect" id="Node000003" href="$drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="5,229,116,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,110,103,127,85,140,69,156,62,169,58,184,58,214,53,214,53,183,57,167,65,153,81,136,100,123,143,105"/>
+<area shape="rect" id="Node000005" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="80,155,265,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="228,109,196,145,192,141,224,105"/>
+<area shape="rect" id="Node000006" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="200,229,348,256"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="252,106,268,127,280,154,285,185,282,215,277,214,279,185,275,155,263,130,247,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="341,155,415,181"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="263,105,341,145,338,149,261,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="130,304,194,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="80,254,133,292,130,297,77,259"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="174,182,166,289,161,288,169,182"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="192,180,245,218,242,222,189,184"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="256,259,196,298,193,293,253,254"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="240,304,308,331"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="276,257,276,288,271,288,271,257"/>
+</map>

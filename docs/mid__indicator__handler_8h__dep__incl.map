@@ -1,0 +1,14 @@
+<map id="mid_indicator_handler.h" name="mid_indicator_handler.h">
+<area shape="rect" id="Node000001" title="LED indicator control system interface." alt="" coords="97,5,256,32"/>
+<area shape="rect" id="Node000002" href="$_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="56,80,139,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,45,113,82,109,78,150,41"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="121,229,181,256"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="176,48,155,229,150,229,171,47"/>
+<area shape="rect" id="Node000005" href="$mid__indicator__handler_8c.html" title="Implementation of LED indicator control middleware." alt="" coords="213,155,372,181"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="198,42,285,153,280,156,193,46"/>
+<area shape="rect" id="Node000003" href="$_lady_bug_8c.html" title="Main implementation file for LadyBug system core functions." alt="" coords="5,155,89,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,121,58,156,54,153,78,118"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="110,120,149,228,144,230,105,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,188,134,227,131,231,76,192"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="256,191,177,231,175,226,253,186"/>
+</map>

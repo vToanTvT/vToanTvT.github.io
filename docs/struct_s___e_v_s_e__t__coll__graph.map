@@ -1,0 +1,5 @@
+<map id="S_EVSE_t" name="S_EVSE_t">
+<area shape="rect" id="Node000001" title="Main EVSE state structure." alt="" coords="32,125,116,152"/>
+<area shape="rect" id="Node000002" href="$struct_s___e_v_s_e___counter__t.html" title="State counter structure for debounce and delay." alt="" coords="5,5,143,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,48,77,125,71,125,71,48"/>
+</map>
